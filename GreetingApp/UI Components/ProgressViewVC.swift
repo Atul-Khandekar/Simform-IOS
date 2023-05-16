@@ -24,11 +24,11 @@ extension ProgressViewVC {
         
         if isRunning {
             progressBarTimer.invalidate()
-            btnStart.setTitle("Start", for: .normal)
+            btnStart.setTitle(ProgressViewStates.start.rawValue, for: .normal)
         } else {
-            btnStart.setTitle("Stop", for: .normal)
-            progressView.progress = 0.0
-            self.progressBarTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateProgressView), userInfo: nil, repeats: true)
+            btnStart.setTitle(ProgressViewStates.stop.rawValue, for: .normal)
+            progressView.progress = AppConstants.ProgressViewMinimumProgress
+            progressBarTimer = Timer.scheduledTimer(timeInterval: AppConstants.ProgressViewTimeInterval, target: self, selector: #selector(updateProgressView), userInfo: nil, repeats: true)
         }
         isRunning = !isRunning
     }
@@ -37,7 +37,7 @@ extension ProgressViewVC {
 //MARK: - View Methods
 extension ProgressViewVC {
     private func setupView() {
-        progressView.progress = 0.0
+        progressView.progress = AppConstants.ProgressViewMinimumProgress
         progressView.progressViewStyle = .default
     }
 }
@@ -45,12 +45,12 @@ extension ProgressViewVC {
 //MARK: - @objc Methods
 extension ProgressViewVC {
     @objc func updateProgressView() {
-        progressView.progress += 0.1
+        progressView.progress += AppConstants.ProgressViewProgress
         progressView.setProgress(progressView.progress, animated: true)
-        if progressView.progress == 1.0 {
+        if progressView.progress == AppConstants.ProgressViewMaximumProgress {
             progressBarTimer.invalidate()
             isRunning = false
-            btnStart.setTitle("Start", for: .normal)
+            btnStart.setTitle(ProgressViewStates.start.rawValue, for: .normal)
         }
     }
 }

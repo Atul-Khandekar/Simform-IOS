@@ -9,6 +9,6 @@ class TextViewVC: UIViewController {
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        txtView.text = "hello this is set programatically"
+        txtView.text = AppConstants.TextViewString
     }
 }

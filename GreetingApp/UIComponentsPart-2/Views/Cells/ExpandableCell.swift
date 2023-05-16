@@ -16,7 +16,7 @@ class ExpandableCell: UITableViewCell {
 //MARK: - configureCell
 extension ExpandableCell {
     
-    func configureCell(model: [ExpandableSectionDetails] , indexPath: IndexPath) {
-        lblCell.text = model[indexPath.section].rows[indexPath.row]
+    func configureCell(model: String) {
+        lblCell.text = model
     }
 }

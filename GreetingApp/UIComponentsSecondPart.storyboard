@@ -11,25 +11,36 @@
         <!--Components Second PartVC-->
         <scene sceneID="xVo-Ji-aqc">
             <objects>
-                <viewController storyboardIdentifier="UIComponentsSecondPartViewController" id="l6d-rh-Oi6" customClass="UIComponentsSecondPartVC" customModule="Demo_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UIComponentsSecondPartViewController" id="l6d-rh-Oi6" customClass="UIComponentsSecondPartVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r2r-WT-yFG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXL-nd-mGu">
-                                <rect key="frame" x="138" y="98" width="117" height="34.333333333333343"/>
+                                <rect key="frame" x="120.66666666666667" y="98" width="151.66666666666663" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="UITableView"/>
                                 <connections>
                                     <segue destination="ly5-Vj-zpy" kind="show" id="pd8-EC-6Kz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGe-Et-Edk">
+                                <rect key="frame" x="120.66666666666667" y="142.33333333333334" width="151.66666666666663" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Books Collection"/>
+                                <connections>
+                                    <segue destination="3hK-Oi-FpL" kind="show" id="eSn-Wj-az1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oww-Py-WQy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="DGe-Et-Edk" firstAttribute="width" secondItem="CXL-nd-mGu" secondAttribute="width" id="9Sh-V1-byM"/>
                             <constraint firstItem="CXL-nd-mGu" firstAttribute="centerY" secondItem="oww-Py-WQy" secondAttribute="centerY" multiplier="0.25" id="Grn-N7-5Jv"/>
                             <constraint firstItem="CXL-nd-mGu" firstAttribute="centerX" secondItem="oww-Py-WQy" secondAttribute="centerX" id="MSa-5e-Eft"/>
+                            <constraint firstItem="DGe-Et-Edk" firstAttribute="centerX" secondItem="CXL-nd-mGu" secondAttribute="centerX" id="omr-tP-FU5"/>
+                            <constraint firstItem="DGe-Et-Edk" firstAttribute="top" secondItem="CXL-nd-mGu" secondAttribute="bottom" constant="10" id="u2e-eb-4UU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tSz-YZ-aoy"/>
@@ -91,7 +102,7 @@
         <!--Custom TableVC-->
         <scene sceneID="gv1-X5-pQo">
             <objects>
-                <viewController id="cDP-k2-0G5" customClass="CustomTableVC" customModule="Demo_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cDP-k2-0G5" customClass="CustomTableVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iAN-Ku-dZI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,7 +118,7 @@
         <!--ExpandableVC-->
         <scene sceneID="0lK-gF-kq9">
             <objects>
-                <viewController id="jxa-fw-C9U" customClass="ExpandableVC" customModule="Demo_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jxa-fw-C9U" customClass="ExpandableVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RWs-qZ-cAc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,7 +149,7 @@
         <!--User Table ViewVC-->
         <scene sceneID="tAA-pQ-cYW">
             <objects>
-                <viewController id="KVr-bl-XEC" customClass="UserTableViewVC" customModule="Demo_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KVr-bl-XEC" customClass="UserTableViewVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pX1-Es-hdi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,7 +160,7 @@
                                 <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableViewCell" rowHeight="137" id="VXY-XS-2yd" customClass="UserTableViewCell" customModule="Demo_iOS_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableViewCell" rowHeight="137" id="VXY-XS-2yd" customClass="UserTableViewCell" customModule="GreetingApp" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.333332061767578" width="353" height="137"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VXY-XS-2yd" id="AWv-UN-rJO">
@@ -183,7 +194,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="imgCellExample" destination="zGl-qb-DJB" id="uU0-9A-MQq"/>
-                                            <outlet property="nameCellExample" destination="U9h-zR-XYS" id="2N6-wN-a9k"/>
+                                            <outlet property="lblNameCellExample" destination="U9h-zR-XYS" id="2N6-wN-a9k"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -224,6 +235,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INK-3s-EgC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1025.1908396946565" y="-65.492957746478879"/>
+        </scene>
+        <!--Books CollectionVC-->
+        <scene sceneID="ELE-qK-UbL">
+            <objects>
+                <viewController id="3hK-Oi-FpL" customClass="BooksCollectionVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PjI-wX-hAe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aDj-B0-VPR">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8Au-YC-uv2">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gAa-zD-kQv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gAa-zD-kQv" firstAttribute="bottom" secondItem="aDj-B0-VPR" secondAttribute="bottom" id="4n2-ip-QP0"/>
+                            <constraint firstItem="aDj-B0-VPR" firstAttribute="top" secondItem="gAa-zD-kQv" secondAttribute="top" id="CLr-PX-NLZ"/>
+                            <constraint firstItem="gAa-zD-kQv" firstAttribute="trailing" secondItem="aDj-B0-VPR" secondAttribute="trailing" id="Jeu-Ks-x0A"/>
+                            <constraint firstItem="aDj-B0-VPR" firstAttribute="top" secondItem="gAa-zD-kQv" secondAttribute="top" id="atQ-rT-qxR"/>
+                            <constraint firstItem="aDj-B0-VPR" firstAttribute="leading" secondItem="gAa-zD-kQv" secondAttribute="leading" id="tF3-I2-fze"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fTM-mw-N2o"/>
+                    <connections>
+                        <outlet property="booksCollection" destination="aDj-B0-VPR" id="CO3-cv-DAG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="94K-cS-526" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="662"/>
         </scene>
     </scenes>
     <resources>
