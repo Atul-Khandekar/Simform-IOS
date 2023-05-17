@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "youOnlyLiveOnce.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

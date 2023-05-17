@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BooksCollectionCell" id="gTV-IL-0wX" customClass="BooksCollectionCell" customModule="GreetingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="82"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JdA-07-Okh">
+                        <rect key="frame" x="0.0" y="0.0" width="105" height="82"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JdA-07-Okh" secondAttribute="trailing" id="C4P-4L-Umm"/>
+                <constraint firstItem="JdA-07-Okh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ekY-xT-ycf"/>
+                <constraint firstItem="JdA-07-Okh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="miF-KL-L1e"/>
+                <constraint firstAttribute="bottom" secondItem="JdA-07-Okh" secondAttribute="bottom" id="u3B-yl-tOh"/>
+            </constraints>
+            <size key="customSize" width="105" height="82"/>
+            <connections>
+                <outlet property="imgOfBook" destination="JdA-07-Okh" id="0bA-U5-1PG"/>
+            </connections>
+            <point key="canvasLocation" x="374.80916030534348" y="7.042253521126761"/>
+        </collectionViewCell>
+    </objects>
+</document>

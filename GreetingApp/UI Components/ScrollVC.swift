@@ -5,7 +5,7 @@ class ScrollVC: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak private var scrollView: UIScrollView!
-    @IBOutlet weak private var txtScrollView: UILabel!
+    @IBOutlet weak private var txtStatus: UILabel!
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -18,6 +18,6 @@ class ScrollVC: UIViewController {
 extension ScrollVC: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        txtScrollView.text = "scrolling ...... "
+        txtStatus.text = AppConstants.ScrollViewStatus
     }
 }

@@ -4,7 +4,7 @@ import UIKit
 class CustomTableVC: UIViewController {
     
     //MARK: - Variables
-    private var data = CustomNames.getData()
+    private var Names = CustomNames.getData()
     private let btnAdd: UIButton = {
         let button = UIButton()
         button.setTitle("Add data", for: .normal)
@@ -15,7 +15,7 @@ class CustomTableVC: UIViewController {
     }()
     private let tableView: UITableView = {
         let table = UITableView()
-        table.register(CustomCell.self, forCellReuseIdentifier: AppConstant.CustomCell)
+        table.register(CustomCell.self, forCellReuseIdentifier: AppConstants.CustomCell)
         table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
@@ -32,14 +32,14 @@ class CustomTableVC: UIViewController {
 extension CustomTableVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return Names.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: AppConstant.CustomCell, for: indexPath) as? CustomCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.CustomCell, for: indexPath) as? CustomCell else {
             return UITableViewCell()
         }
-        cell.configureCell(data: data, indexPath: indexPath)
+        cell.configureCell(data: Names[indexPath.row])
         return cell
     }
 }
@@ -52,7 +52,7 @@ extension CustomTableVC: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        data.remove(at: indexPath.row)
+        Names.remove(at: indexPath.row)
         tableView.deleteRows(at: [indexPath], with: .left)
     }
 }
@@ -98,8 +98,8 @@ extension CustomTableVC {
                 return
             }
             let name = field[0]
-            self.data.append(CustomNames(name: name.text ?? "Couldn't add name"))
-            self.tableView.insertRows(at: [IndexPath(row: self.data.count - 1, section: 0)], with: .left)
+            self.Names.append(CustomNames(name: name.text ?? "Couldn't add name"))
+            self.tableView.insertRows(at: [IndexPath(row: self.Names.count - 1, section: 0)], with: .left)
             
         }))
         present(alert,animated: true)

@@ -5,13 +5,13 @@ class SwitchViewVC: UIViewController {
     
     //MARK: - Outlets
     @IBOutlet weak private var lblInfo: UILabel!
-    @IBOutlet weak private var enterName: UITextField!
+    @IBOutlet weak private var txtEnterName: UITextField!
     @IBOutlet weak private var stateOnOff: UISwitch!
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        enterName.delegate = self
+        txtEnterName.delegate = self
     }
 }
 
@@ -29,16 +29,16 @@ extension SwitchViewVC {
     @IBAction private func switchState(_ sender: UISwitch) {
         if stateOnOff.isOn {
             print(stateOnOff.isOn)
-            lblInfo.text = "Editing is enabled"
-            enterName.isEnabled = true
+            lblInfo.text = AppConstants.SwitchEnableText
+            txtEnterName.isEnabled = true
             sender.onTintColor = .systemGreen
             sender.backgroundColor = .clear
         } else {
             print(stateOnOff.isOn)
-            lblInfo.text = "Editing is diabled"
-            enterName.isEnabled = false
+            lblInfo.text = AppConstants.SwitchDisableText
+            txtEnterName.isEnabled = false
             sender.backgroundColor = .systemRed
-            sender.layer.cornerRadius = 15
+            sender.layer.cornerRadius = CGFloat(AppConstants.SwitchCornerRadius)
         }
     }
 }

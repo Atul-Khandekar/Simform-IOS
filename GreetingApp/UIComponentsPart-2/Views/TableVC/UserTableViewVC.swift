@@ -49,10 +49,11 @@ extension UserTableViewVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: AppConstant.UserTableViewCell , for: indexPath) as? UserTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.UserTableViewCell , for: indexPath) as? UserTableViewCell else {
             return UITableViewCell()
         }
-        cell.configureCell( data: model, indexPath: indexPath)
+        let value =  model[indexPath.section].rows[indexPath.row]
+        cell.configureCell( data: model[indexPath.section].rows[indexPath.row] )
         return cell
     }
 }

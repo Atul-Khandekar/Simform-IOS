@@ -14,7 +14,7 @@ class CustomCell: UITableViewCell {
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: .default, reuseIdentifier: AppConstant.CustomCell)
+        super.init(style: .default, reuseIdentifier: AppConstants.CustomCell)
         addSubview(lblText)
         setConstraints()
     }
@@ -25,23 +25,26 @@ class CustomCell: UITableViewCell {
     
     //MARK: - Overriden Methods
     override func prepareForReuse() {
-        self.lblText.text = nil
+        lblText.text = nil
     }
 }
 
 //MARK: - configureCell
 extension CustomCell {
-
-    func configureCell(data: [CustomNames] , indexPath: IndexPath ) {
-        self.lblText.text = data[indexPath.row].name
+    
+    func configureCell(data: CustomNames ) {
+       lblText.text = data.name
     }
 }
 //MARK: - setConstraints
 extension CustomCell {
     private func setConstraints() {
-        lblText.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0).isActive = true
-        lblText.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0).isActive = true
-        lblText.topAnchor.constraint(equalTo: topAnchor, constant: 0).isActive = true
-        lblText.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
+        var constraints = [NSLayoutConstraint]()
+        constraints.append(lblText.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 0))
+        constraints.append(lblText.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0))
+        constraints.append(lblText.topAnchor.constraint(equalTo: topAnchor, constant: 0))
+        constraints.append(lblText.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0))
+        
+        NSLayoutConstraint.activate(constraints)
     }
 }
