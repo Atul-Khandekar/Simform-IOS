@@ -16,5 +16,9 @@ extension UIImage {
     static let onBoardingScreenPage1 = "onboardingScreenPage1"
     static let onBoardingScreenPage2 = "onboardingScreenPage2"
     static let onBoardingScreenPage3 = "onboardingScreenPage3"
+    static let menuProfileIcon = "person"
+    static let menuBrightnessIcon = "sun.max"
+    static let menuDocumentsIcon = "doc"
+    static let menuBookmarksIcon = "book.fill"
 }
 

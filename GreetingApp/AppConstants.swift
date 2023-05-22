@@ -49,6 +49,23 @@ struct AppConstants {
     static let onboardingPage = 1
     static let defaultLatLong = 30.0
     static let selectionLimit = 3
+    static let storyboardNavigationController = "NavigationController"
+    static let senderVC = "SenderVC"
+    static let receiverVC = "ReceiverVC"
+    static let firstViewController = "FirstVC"
+    static let navigationControllerVC = "NavigationControllerVC"
+    static let secondViewController = "SecondVC"
+    static let thirdViewController = "ThirdVC"
+    static let presentStylesVC = "PresentStylesVC"
+    static let fourthVC = "FourthVC"
+    static let overFullScreenAlpha = 0.4
+    
+    static let barButtonTitle = "Menu"
+    static let navigationScreenTitle = "Navigation Controller"
+    static let menuProfile = "Profile"
+    static let menuBrightness  = "Brightness"
+    static let menuDocuments = "Documents"
+    static let menuBookMarks = "BookMarks"
 }
 
 //MARK: - Enum Constants
