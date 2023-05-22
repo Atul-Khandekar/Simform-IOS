@@ -33,6 +33,9 @@ struct AppConstants {
     static let searchBarPrompt = "Fruit Search"
     static let emptyString = ""
     static let searchBarCell = "SearchBarCell"
+    static let dateFormat = " MMM dd , yyyy"
+    static let britishTimeFormat24Hr = "en_gb"
+    static let numberOfComponentsInPicker = 1
     static let alertTitleForToolBar = "Alert"
     static let enableEditingToolBar = "Editing is enabled"
     static let disableEditingToolBar = "Editing is disabled"
@@ -59,6 +62,15 @@ enum BooksAndEmailsSections: Int {
 enum ProgressViewStates: String {
     case start = "Start"
     case stop = "Stop"
+}
+
+enum Colors: Int {
+    case Red
+    case Blue
+    case Green
+    case Yellow
+    case Pink
+    case Orange
 }
 
 enum FruitsScopeIndex: Int {
