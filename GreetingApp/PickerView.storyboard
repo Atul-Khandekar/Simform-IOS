@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picker ViewVC-->
+        <scene sceneID="FWF-E1-v7n">
+            <objects>
+                <viewController storyboardIdentifier="PickerView" id="Wev-wa-fET" customClass="PickerViewVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qfe-Jo-sbi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0F5-4n-J5h">
+                                <rect key="frame" x="51.5" y="71.5" width="47.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKN-kQ-pBk">
+                                <rect key="frame" x="51.5" y="114.5" width="114" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sf3-2o-ntU">
+                                <rect key="frame" x="197.5" y="66.5" width="131.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select DOB" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ryi-a8-0J0">
+                                <rect key="frame" x="197.5" y="109.5" width="131.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isc-Pp-0Td">
+                                <rect key="frame" x="51.5" y="166" width="80" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Duration " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sph-xv-MOu">
+                                <rect key="frame" x="197.5" y="161" width="131.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w2D-IB-R34"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ryi-a8-0J0" firstAttribute="width" secondItem="sph-xv-MOu" secondAttribute="width" id="13L-Gt-oZ2"/>
+                            <constraint firstItem="ryi-a8-0J0" firstAttribute="centerY" secondItem="MKN-kQ-pBk" secondAttribute="centerY" id="2Gf-Dw-wIo"/>
+                            <constraint firstItem="MKN-kQ-pBk" firstAttribute="top" secondItem="0F5-4n-J5h" secondAttribute="bottom" multiplier="1.2" id="Ehp-2F-y3t"/>
+                            <constraint firstItem="ryi-a8-0J0" firstAttribute="leading" secondItem="sf3-2o-ntU" secondAttribute="leading" id="EnK-zc-e9e"/>
+                            <constraint firstItem="sf3-2o-ntU" firstAttribute="width" secondItem="ryi-a8-0J0" secondAttribute="width" id="Hzu-uY-VUk"/>
+                            <constraint firstItem="sf3-2o-ntU" firstAttribute="leading" secondItem="0F5-4n-J5h" secondAttribute="trailing" multiplier="2" id="Iuq-M5-AE9"/>
+                            <constraint firstItem="isc-Pp-0Td" firstAttribute="leading" secondItem="MKN-kQ-pBk" secondAttribute="leading" id="Jpi-bX-lqF"/>
+                            <constraint firstItem="0F5-4n-J5h" firstAttribute="centerY" secondItem="Qfe-Jo-sbi" secondAttribute="centerY" multiplier="0.25" id="Pm1-g8-NiW"/>
+                            <constraint firstItem="sph-xv-MOu" firstAttribute="leading" secondItem="ryi-a8-0J0" secondAttribute="leading" id="Vao-EC-Ptu"/>
+                            <constraint firstItem="sph-xv-MOu" firstAttribute="centerY" secondItem="isc-Pp-0Td" secondAttribute="centerY" id="bqR-EK-cqV"/>
+                            <constraint firstItem="0F5-4n-J5h" firstAttribute="centerX" secondItem="Qfe-Jo-sbi" secondAttribute="centerX" multiplier="0.4" id="cA6-zW-u42"/>
+                            <constraint firstItem="sf3-2o-ntU" firstAttribute="centerY" secondItem="0F5-4n-J5h" secondAttribute="centerY" id="cNY-wA-6s4"/>
+                            <constraint firstItem="isc-Pp-0Td" firstAttribute="top" secondItem="MKN-kQ-pBk" secondAttribute="bottom" multiplier="1.2" id="wMW-8a-9RV"/>
+                            <constraint firstItem="MKN-kQ-pBk" firstAttribute="leading" secondItem="0F5-4n-J5h" secondAttribute="leading" id="zTE-2i-18X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorTextField" destination="sf3-2o-ntU" id="dhb-DQ-e6N"/>
+                        <outlet property="dateOfBirthTextField" destination="ryi-a8-0J0" id="9V8-ho-Ady"/>
+                        <outlet property="durationTextField" destination="sph-xv-MOu" id="8uz-be-I1v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVx-SU-Bps" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-628" y="-639.13043478260875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

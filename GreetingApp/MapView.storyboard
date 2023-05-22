@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map ViewVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MapView" id="Y6W-OH-hqX" customClass="MapViewVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2pz-3p-jZV">
+                                <rect key="frame" x="0.0" y="59" width="393" height="543"/>
+                                <hybridMapConfiguration key="preferredConfiguration" elevationStyle="realistic" showsTraffic="YES">
+                                    <pointOfInterestFilter key="pointOfInterestFilter">
+                                        <excludedCategories/>
+                                    </pointOfInterestFilter>
+                                </hybridMapConfiguration>
+                            </mapView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BF5-i0-TOZ">
+                                <rect key="frame" x="0.0" y="602" width="393" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gb9-1x-xVD">
+                                <rect key="frame" x="343" y="552" width="35" height="35"/>
+                                <buttonConfiguration key="configuration" style="filled" image="location.circle.fill" catalog="system" cornerStyle="capsule"/>
+                                <connections>
+                                    <action selector="onClickCurrentLocation:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JHl-AP-Dr9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Gb9-1x-xVD" secondAttribute="trailing" constant="15" id="4Ck-s7-iGJ"/>
+                            <constraint firstItem="BF5-i0-TOZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="J8d-lM-sVy"/>
+                            <constraint firstItem="BF5-i0-TOZ" firstAttribute="top" secondItem="Gb9-1x-xVD" secondAttribute="bottom" constant="15" id="LDi-p1-vac"/>
+                            <constraint firstItem="BF5-i0-TOZ" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="QHk-FE-NcE"/>
+                            <constraint firstItem="BF5-i0-TOZ" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="VLu-tJ-PZ2"/>
+                            <constraint firstItem="2pz-3p-jZV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ZHN-QS-wpN"/>
+                            <constraint firstItem="2pz-3p-jZV" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="jk5-63-1k9"/>
+                            <constraint firstItem="2pz-3p-jZV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qNX-0S-eQG"/>
+                            <constraint firstItem="BF5-i0-TOZ" firstAttribute="top" secondItem="2pz-3p-jZV" secondAttribute="bottom" id="ukk-6C-cZq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="locationPicker" destination="BF5-i0-TOZ" id="rAv-wO-GPD"/>
+                        <outlet property="mapView" destination="2pz-3p-jZV" id="s7X-Nu-jkD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-234" y="-666"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
