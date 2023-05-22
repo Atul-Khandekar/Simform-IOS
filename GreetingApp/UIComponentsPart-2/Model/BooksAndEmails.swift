@@ -8,13 +8,13 @@ struct BooksAndEmails {
     static func getBooksAndEmails() -> [BooksAndEmails] {
         let data = [
             BooksAndEmails(section: "Books",
-                           rows: [ getImage(UIImage.AtomicHabits) ,
-                                   getImage(UIImage.AttitudeIsEverything) ,
-                                   getImage(UIImage.PsychologyOfMoney) ,
-                                   getImage(UIImage.TheAlchemist),
-                                   getImage(UIImage.SherlockHolmes) ,
-                                   getImage(UIImage.YouOnlyLiveOnce) ,
-                                   getImage(UIImage.TheGirlWhoKnewTooMuch)]) ,
+                           rows: [ getImage(UIImage.atomicHabits) ,
+                                   getImage(UIImage.attitudeIsEverything) ,
+                                   getImage(UIImage.psychologyOfMoney) ,
+                                   getImage(UIImage.theAlchemist),
+                                   getImage(UIImage.sherlockHolmes) ,
+                                   getImage(UIImage.youOnlyLiveOnce) ,
+                                   getImage(UIImage.theGirlWhoKnewTooMuch)]) ,
             
             BooksAndEmails(section: "Emails",
                            rows: [ "Kha",
@@ -31,13 +31,13 @@ struct BooksAndEmails {
     
     static func getBooks() -> [UIImage] {
         let model = [
-            getImage(UIImage.AtomicHabits),
-            getImage(UIImage.AttitudeIsEverything),
-            getImage(UIImage.PsychologyOfMoney),
-            getImage(UIImage.TheAlchemist),
-            getImage(UIImage.SherlockHolmes),
-            getImage(UIImage.YouOnlyLiveOnce),
-            getImage(UIImage.TheGirlWhoKnewTooMuch)
+            getImage(UIImage.atomicHabits),
+            getImage(UIImage.attitudeIsEverything),
+            getImage(UIImage.psychologyOfMoney),
+            getImage(UIImage.theAlchemist),
+            getImage(UIImage.sherlockHolmes),
+            getImage(UIImage.youOnlyLiveOnce),
+            getImage(UIImage.theGirlWhoKnewTooMuch)
         ]
         return model
     }

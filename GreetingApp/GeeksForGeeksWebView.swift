@@ -25,7 +25,7 @@ class GeeksForGeeksWebView: UIViewController {
 extension GeeksForGeeksWebView: WKNavigationDelegate {
     func setupView() {
         webView.navigationDelegate = self
-        if let url = URL(string: URL.GeeksForGeeks) {
+        if let url = URL(string: URL.geeksForGeeks) {
             webView.load(URLRequest(url: url))
         }
         webView.allowsBackForwardNavigationGestures = true

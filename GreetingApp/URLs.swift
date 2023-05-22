@@ -8,5 +8,5 @@
 import Foundation
 
 extension URL {
-    static let GeeksForGeeks = "https://practice.geeksforgeeks.org/"
+    static let geeksForGeeks = "https://practice.geeksforgeeks.org/"
 }
