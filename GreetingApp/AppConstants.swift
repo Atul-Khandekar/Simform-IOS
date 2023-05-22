@@ -33,11 +33,19 @@ struct AppConstants {
     static let searchBarPrompt = "Fruit Search"
     static let emptyString = ""
     static let searchBarCell = "SearchBarCell"
+    static let dateFormat = " MMM dd , yyyy"
+    static let britishTimeFormat24Hr = "en_gb"
+    static let numberOfComponentsInPicker = 1
     static let alertTitleForToolBar = "Alert"
     static let enableEditingToolBar = "Editing is enabled"
     static let disableEditingToolBar = "Editing is disabled"
     static let tblFruitsInsets = UIEdgeInsets(top: 0, left: 0, bottom: 100, right: 0)
     static let lettersCountInFruits = 6
+    static let singleComponentInPickerView = 1
+    static let mapViewCallOutSubtitle = "Welcome to "
+    static let customAnnotationIdentifier = "CustomPin"
+    static let customAnnotationImage = "myLocation"
+    static let defaultLatLong = 30.0
 }
 
 //MARK: - Enum Constants
