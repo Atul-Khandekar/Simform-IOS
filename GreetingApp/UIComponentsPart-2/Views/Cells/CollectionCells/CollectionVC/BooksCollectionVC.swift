@@ -33,14 +33,14 @@ extension BooksCollectionVC: UICollectionViewDataSource {
         
         if indexPath.section == BooksAndEmailsSections.emails.rawValue {
             
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AppConstants.EmailCell, for: indexPath) as? EmailCell else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AppConstants.emailCell, for: indexPath) as? EmailCell else {
                 return UICollectionViewCell()
             }
             cell.configureCell(data: booksAndEmails[indexPath.section].rows[indexPath.row])
             return cell
         }
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AppConstants.BooksCollectionCell, for: indexPath) as? BooksCollectionCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AppConstants.booksCollectionCell, for: indexPath) as? BooksCollectionCell else {
             return UICollectionViewCell()
         }
         
@@ -51,14 +51,14 @@ extension BooksCollectionVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         if kind == UICollectionView.elementKindSectionFooter {
-            guard let footer = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: AppConstants.FooterCell, for: indexPath) as? FooterCell else {
+            guard let footer = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: AppConstants.footerCell, for: indexPath) as? FooterCell else {
                 return UICollectionReusableView()
             }
             footer.configureCell()
             return footer
         }
         
-        guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: AppConstants.HeaderCell, for: indexPath) as? HeaderCell else {
+        guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: AppConstants.headerCell, for: indexPath) as? HeaderCell else {
             return UICollectionReusableView()
         }
         
@@ -83,7 +83,7 @@ extension BooksCollectionVC: UICollectionViewDelegateFlowLayout {
             }
             
             let itemSize = item.size(withAttributes: [
-                NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: AppConstants.FontSizeForEmail)
+                NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: AppConstants.fontSizeForEmail)
             ])
             
             return itemSize
@@ -108,10 +108,10 @@ extension BooksCollectionVC {
     private func setupView() {
         booksCollection.dataSource = self
         booksCollection.delegate = self
-        booksCollection.register(UINib(nibName: AppConstants.BooksCollectionCell, bundle: nil), forCellWithReuseIdentifier: AppConstants.BooksCollectionCell)
-        booksCollection.register(UINib(nibName: AppConstants.HeaderCell, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: AppConstants.HeaderCell)
-        booksCollection.register(UINib(nibName: AppConstants.FooterCell, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: AppConstants.FooterCell)
-        booksCollection.register(UINib(nibName: AppConstants.EmailCell, bundle: nil), forCellWithReuseIdentifier: AppConstants.EmailCell)
+        booksCollection.register(UINib(nibName: AppConstants.booksCollectionCell, bundle: nil), forCellWithReuseIdentifier: AppConstants.booksCollectionCell)
+        booksCollection.register(UINib(nibName: AppConstants.headerCell, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: AppConstants.headerCell)
+        booksCollection.register(UINib(nibName: AppConstants.footerCell, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: AppConstants.footerCell)
+        booksCollection.register(UINib(nibName: AppConstants.emailCell, bundle: nil), forCellWithReuseIdentifier: AppConstants.emailCell)
         booksCollection.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
         

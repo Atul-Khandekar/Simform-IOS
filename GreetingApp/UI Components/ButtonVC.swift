@@ -21,8 +21,8 @@ extension ButtonVC {
     @IBAction private func changeState(_ sender: Any) {
         if tap {
             view.backgroundColor = .orange
-            btnAlter.layer.cornerRadius = CGFloat(AppConstants.SwitchCornerRadius)
-            btnAlter.layer.borderWidth  = AppConstants.BorderWidth
+            btnAlter.layer.cornerRadius = CGFloat(AppConstants.switchCornerRadius)
+            btnAlter.layer.borderWidth  = AppConstants.borderWidth
             btnAlter.configuration = .plain()
             switch(btnAlter.state) {
             case .selected:

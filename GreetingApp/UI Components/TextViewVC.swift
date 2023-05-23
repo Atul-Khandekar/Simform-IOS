@@ -9,6 +9,6 @@ class TextViewVC: UIViewController {
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        txtView.text = AppConstants.TextViewString
+        txtView.text = AppConstants.textViewString
     }
 }

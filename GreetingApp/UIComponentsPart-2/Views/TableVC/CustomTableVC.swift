@@ -15,7 +15,7 @@ class CustomTableVC: UIViewController {
     }()
     private let tableView: UITableView = {
         let table = UITableView()
-        table.register(CustomCell.self, forCellReuseIdentifier: AppConstants.CustomCell)
+        table.register(CustomCell.self, forCellReuseIdentifier: AppConstants.customCell)
         table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
@@ -36,7 +36,7 @@ extension CustomTableVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.CustomCell, for: indexPath) as? CustomCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.customCell, for: indexPath) as? CustomCell else {
             return UITableViewCell()
         }
         cell.configureCell(data: Names[indexPath.row])

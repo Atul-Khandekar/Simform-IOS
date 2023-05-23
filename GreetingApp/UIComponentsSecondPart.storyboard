@@ -32,14 +32,25 @@
                                     <segue destination="3hK-Oi-FpL" kind="show" id="eSn-Wj-az1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCW-RZ-eDp">
+                                <rect key="frame" x="120.66666666666667" y="408.66666666666669" width="151.66666666666663" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SearchBar"/>
+                                <connections>
+                                    <segue destination="3kd-su-swp" kind="show" id="2D8-9n-aoK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oww-Py-WQy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="WCW-RZ-eDp" firstAttribute="centerX" secondItem="r2r-WT-yFG" secondAttribute="centerX" id="2Mu-Ci-Dt0"/>
                             <constraint firstItem="DGe-Et-Edk" firstAttribute="width" secondItem="CXL-nd-mGu" secondAttribute="width" id="9Sh-V1-byM"/>
+                            <constraint firstItem="WCW-RZ-eDp" firstAttribute="centerY" secondItem="r2r-WT-yFG" secondAttribute="centerY" id="CFs-H4-enZ"/>
                             <constraint firstItem="CXL-nd-mGu" firstAttribute="centerY" secondItem="oww-Py-WQy" secondAttribute="centerY" multiplier="0.25" id="Grn-N7-5Jv"/>
                             <constraint firstItem="CXL-nd-mGu" firstAttribute="centerX" secondItem="oww-Py-WQy" secondAttribute="centerX" id="MSa-5e-Eft"/>
                             <constraint firstItem="DGe-Et-Edk" firstAttribute="centerX" secondItem="CXL-nd-mGu" secondAttribute="centerX" id="omr-tP-FU5"/>
+                            <constraint firstItem="WCW-RZ-eDp" firstAttribute="width" secondItem="DGe-Et-Edk" secondAttribute="width" id="tSW-Bg-bkX"/>
                             <constraint firstItem="DGe-Et-Edk" firstAttribute="top" secondItem="CXL-nd-mGu" secondAttribute="bottom" constant="10" id="u2e-eb-4UU"/>
                         </constraints>
                     </view>
@@ -235,6 +246,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INK-3s-EgC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1025.1908396946565" y="-65.492957746478879"/>
+        </scene>
+        <!--SearchBar-->
+        <scene sceneID="Mlm-Fw-uCg">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SearchBar" storyboardName="SearchBar" referencedIdentifier="SearchBar" id="3kd-su-swp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5UO-nA-wVN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCh-Ie-t8z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-509" y="330"/>
         </scene>
         <!--Books CollectionVC-->
         <scene sceneID="ELE-qK-UbL">
