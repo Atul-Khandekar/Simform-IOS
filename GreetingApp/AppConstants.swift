@@ -1,4 +1,5 @@
 import CoreGraphics
+import UIKit
 
 //MARK: - Reusable identifiers
 struct AppConstants {
@@ -32,6 +33,11 @@ struct AppConstants {
     static let searchBarPrompt = "Fruit Search"
     static let emptyString = ""
     static let searchBarCell = "SearchBarCell"
+    static let alertTitleForToolBar = "Alert"
+    static let enableEditingToolBar = "Editing is enabled"
+    static let disableEditingToolBar = "Editing is disabled"
+    static let tblFruitsInsets = UIEdgeInsets(top: 0, left: 0, bottom: 100, right: 0)
+    static let lettersCountInFruits = 6
 }
 
 //MARK: - Enum Constants

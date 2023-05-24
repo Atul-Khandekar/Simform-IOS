@@ -15,7 +15,7 @@ class SearchBarVC: UIViewController {
     
     //MARK: - Variables
     private let fruits = Fruits.getData()
-    private var filteredData: [String]!
+    private var filteredData: [String] = []
     
     //MARK: - View LifeCycle
     override func viewDidLoad() {
@@ -40,7 +40,7 @@ extension SearchBarVC {
         searchBar.showsScopeBar  = true
         searchBar.scopeButtonTitles = [FruitsScopeTitles.winter.rawValue, FruitsScopeTitles.summer.rawValue]
         searchBar.selectedScopeButtonIndex = FruitsScopeIndex.winter.rawValue
-        tblFruits.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 100, right: 0)
+        tblFruits.contentInset = AppConstants.tblFruitsInsets
     }
 }
 
@@ -85,6 +85,7 @@ extension SearchBarVC: UISearchBarDelegate {
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
         searchBar.searchTextField.text = AppConstants.emptyString
         filteredData = fruits
         tblFruits.reloadData()
@@ -110,12 +111,12 @@ extension SearchBarVC {
         guard let text else {
             switch filterString  {
             case FruitsScopeTitles.winter.rawValue :
-                return fruits.filter{
-                    $0.count <= 6
+                return fruits.filter {
+                    $0.count <= AppConstants.lettersCountInFruits
                 }
             case FruitsScopeTitles.summer.rawValue :
-                return fruits.filter{
-                    $0.count > 6
+                return fruits.filter { 
+                    $0.count > AppConstants.lettersCountInFruits
                 }
             default:
                 break

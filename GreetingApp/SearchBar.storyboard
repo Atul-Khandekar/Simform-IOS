@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search BarVC-->
+        <!--Search Bar-->
         <scene sceneID="csD-zR-2AI">
             <objects>
-                <viewController storyboardIdentifier="SearchBar" id="wFS-uD-ZfT" customClass="SearchBarVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchBar" id="wFS-uD-ZfT" customClass="SearchBarVC" customModule="GreetingApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rhC-po-e5e">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4lE-i4-LE1">
-                                <rect key="frame" x="0.0" y="115" width="393" height="703"/>
+                                <rect key="frame" x="0.0" y="115" width="393" height="654"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -40,6 +40,8 @@
                             <constraint firstItem="4lE-i4-LE1" firstAttribute="top" secondItem="vUh-iJ-7bV" secondAttribute="bottom" id="wsd-ap-5Id"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Search Bar" image="magnifyingglass" catalog="system" id="MWB-ZX-TlK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="searchBar" destination="vUh-iJ-7bV" id="XvN-DV-PqG"/>
                         <outlet property="tblFruits" destination="4lE-i4-LE1" id="jDL-V1-cc2"/>
@@ -51,6 +53,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
