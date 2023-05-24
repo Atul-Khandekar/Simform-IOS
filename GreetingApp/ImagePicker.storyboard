@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image PickerVC-->
+        <scene sceneID="GlO-37-klz">
+            <objects>
+                <viewController storyboardIdentifier="ImagePicker" id="TNf-Y3-P7y" customClass="ImagePickerVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lMp-Be-SXX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fyP-cA-XiW">
+                                <rect key="frame" x="20" y="58.999999999999986" width="353" height="255.66666666666663"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxf-QJ-LLc">
+                                <rect key="frame" x="90.666666666666671" y="472" width="211.66666666666663" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Select Image" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" red="0.87119709359999997" green="0.38193197239999999" blue="0.8291184492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectImage:" destination="TNf-Y3-P7y" eventType="touchUpInside" id="sua-LN-4HU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TWk-OL-iEm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TWk-OL-iEm" firstAttribute="trailing" secondItem="fyP-cA-XiW" secondAttribute="trailing" constant="20" id="1JZ-i1-3NH"/>
+                            <constraint firstItem="oxf-QJ-LLc" firstAttribute="width" secondItem="fyP-cA-XiW" secondAttribute="width" multiplier="0.6" id="6z2-i1-hKS"/>
+                            <constraint firstItem="fyP-cA-XiW" firstAttribute="top" secondItem="TWk-OL-iEm" secondAttribute="top" id="Epf-Pp-PzN"/>
+                            <constraint firstItem="fyP-cA-XiW" firstAttribute="height" secondItem="lMp-Be-SXX" secondAttribute="height" multiplier="0.3" id="jpO-5D-E1f"/>
+                            <constraint firstItem="oxf-QJ-LLc" firstAttribute="centerX" secondItem="fyP-cA-XiW" secondAttribute="centerX" id="pbu-de-1YC"/>
+                            <constraint firstItem="oxf-QJ-LLc" firstAttribute="top" secondItem="fyP-cA-XiW" secondAttribute="bottom" multiplier="1.5" id="w1Y-Is-pts"/>
+                            <constraint firstItem="fyP-cA-XiW" firstAttribute="leading" secondItem="TWk-OL-iEm" secondAttribute="leading" constant="20" id="wae-gt-gNb"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imgSelectedFromAlbum" destination="fyP-cA-XiW" id="5Uk-wm-umt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKr-I1-8cq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="-21"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
