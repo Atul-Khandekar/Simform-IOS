@@ -2,31 +2,36 @@ import CoreGraphics
 
 //MARK: - Reusable identifiers
 struct AppConstants {
-    static let ExpandableCell = "ExpandableCell"
-    static let UserTableViewCell = "UserTableViewCell"
-    static let CustomCell = "CustomCell"
-    static let BooksCollectionCell = "BooksCollectionCell"
-    static let HeaderCell = "HeaderCell"
-    static let FooterCell = "FooterCell"
-    static let HeaderText = "Header"
-    static let FooterText = "Footer"
-    static let EmailCell = "EmailCell"
-    static let BorderWidth = 4.0
-    static let MinimumLineSpacing = 10.0
-    static let MinimumInterItemSpacing = 0.0
-    static let FontSizeForEmail = 11.0
-    static let SwitchEnableText = "Editing is enabled"
-    static let SwitchDisableText = "Editing is disabled"
-    static let SwitchCornerRadius = 15
-    static let TextViewString = "Hello this is set programatically"
-    static let TextFieldPasswordPlaceholder = "Password"
-    static let SegmentSunriseTitle = "Field Sunrise"
-    static let SegmentSunsetTitle = "Beach Sunset"
-    static let ProgressViewMinimumProgress: Float = 0.0
-    static let ProgressViewMaximumProgress: Float = 1.0
-    static let ProgressViewTimeInterval: Double = 0.5
-    static let ProgressViewProgress: Float = 0.1
-    static let ScrollViewStatus = "Scrolling...."
+    static let expandableCell = "ExpandableCell"
+    static let userTableViewCell = "UserTableViewCell"
+    static let customCell = "CustomCell"
+    static let booksCollectionCell = "BooksCollectionCell"
+    static let headerCell = "HeaderCell"
+    static let footerCell = "FooterCell"
+    static let headerText = "Header"
+    static let footerText = "Footer"
+    static let emailCell = "EmailCell"
+    static let borderWidth = 4.0
+    static let minimumLineSpacing = 10.0
+    static let minimumInterItemSpacing = 0.0
+    static let fontSizeForEmail = 11.0
+    static let switchEnableText = "Editing is enabled"
+    static let switchDisableText = "Editing is disabled"
+    static let switchCornerRadius = 15
+    static let textViewString = "Hello this is set programatically"
+    static let textFieldPasswordPlaceholder = "Password"
+    static let segmentSunriseTitle = "Field Sunrise"
+    static let segmentSunsetTitle = "Beach Sunset"
+    static let progressViewMinimumProgress: Float = 0.0
+    static let progressViewMaximumProgress: Float = 1.0
+    static let progressViewTimeInterval: Double = 0.5
+    static let progressViewProgress: Float = 0.1
+    static let scrollViewStatus = "Scrolling...."
+    static let filterString = "apple"
+    static let searchBarPlaceholder = "Enter the Text"
+    static let searchBarPrompt = "Fruit Search"
+    static let emptyString = ""
+    static let searchBarCell = "SearchBarCell"
 }
 
 //MARK: - Enum Constants
@@ -50,3 +55,12 @@ enum ProgressViewStates: String {
     case stop = "Stop"
 }
 
+enum FruitsScopeIndex: Int {
+    case winter = 0
+    case summer = 1
+}
+
+enum FruitsScopeTitles: String {
+    case winter
+    case summer
+}

@@ -31,8 +31,8 @@ extension SegmentedControlVC {
 //MARK: - setupView
 extension SegmentedControlVC {
     private func setupView() {
-        segmentState.setTitle(AppConstants.SegmentSunriseTitle, forSegmentAt: SegmentControl.sunrise.rawValue )
-        segmentState.setTitle(AppConstants.SegmentSunsetTitle, forSegmentAt: SegmentControl.sunset.rawValue)
+        segmentState.setTitle(AppConstants.segmentSunriseTitle, forSegmentAt: SegmentControl.sunrise.rawValue )
+        segmentState.setTitle(AppConstants.segmentSunsetTitle, forSegmentAt: SegmentControl.sunset.rawValue)
         segmentState.selectedSegmentIndex = SegmentControl.sunrise.rawValue
         imgState.image = UIImage(imageLiteralResourceName: UIImage.Field)
     }

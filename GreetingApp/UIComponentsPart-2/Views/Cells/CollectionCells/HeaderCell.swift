@@ -17,7 +17,7 @@ class HeaderCell: UICollectionReusableView {
 //MARK: - configureCell
 extension HeaderCell {
     func configureCell() {
-        lblHeader.text = AppConstants.HeaderText
+        lblHeader.text = AppConstants.headerText
         lblHeader.backgroundColor = .blue 
     }
 }

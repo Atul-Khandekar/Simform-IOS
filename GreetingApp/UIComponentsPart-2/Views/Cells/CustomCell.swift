@@ -14,7 +14,7 @@ class CustomCell: UITableViewCell {
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: .default, reuseIdentifier: AppConstants.CustomCell)
+        super.init(style: .default, reuseIdentifier: AppConstants.customCell)
         addSubview(lblText)
         setConstraints()
     }

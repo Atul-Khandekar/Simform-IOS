@@ -24,7 +24,7 @@ extension ExpandableVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier:AppConstants.ExpandableCell, for: indexPath) as? ExpandableCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier:AppConstants.expandableCell, for: indexPath) as? ExpandableCell else {
             return UITableViewCell()
         }
         cell.configureCell(model: expandableData[indexPath.section].rows[indexPath.row])
@@ -62,7 +62,7 @@ extension ExpandableVC {
 //MARK: - setupView
 extension ExpandableVC {
     private func setupView() {
-        tblNames.register(UINib(nibName:AppConstants.ExpandableCell, bundle: nil), forCellReuseIdentifier: AppConstants.ExpandableCell)
+        tblNames.register(UINib(nibName:AppConstants.expandableCell, bundle: nil), forCellReuseIdentifier: AppConstants.expandableCell)
         tblNames.delegate = self
         tblNames.dataSource = self
         tblNames.sectionHeaderTopPadding = 5

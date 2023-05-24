@@ -17,7 +17,7 @@ class FooterCell: UICollectionReusableView {
 //MARK: - configureCell
 extension FooterCell {
     func configureCell() {
-        lblFooter.text = AppConstants.FooterText
+        lblFooter.text = AppConstants.footerText
         lblFooter.backgroundColor = .green
     }
 }

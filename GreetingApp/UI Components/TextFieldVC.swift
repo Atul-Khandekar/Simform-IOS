@@ -29,7 +29,7 @@ extension TextFieldVC {
     private func setupView() {
         txtIcon.delegate = self
         txtPassword.delegate = self
-        txtPassword.placeholder = AppConstants.TextFieldPasswordPlaceholder
+        txtPassword.placeholder = AppConstants.textFieldPasswordPlaceholder
         txtPassword.contentHorizontalAlignment = .left
         txtPassword.textAlignment = .left
         rightIcon(UIImage(imageLiteralResourceName: UIImage.Show))

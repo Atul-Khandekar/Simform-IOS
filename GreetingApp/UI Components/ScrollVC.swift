@@ -18,6 +18,6 @@ class ScrollVC: UIViewController {
 extension ScrollVC: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        txtStatus.text = AppConstants.ScrollViewStatus
+        txtStatus.text = AppConstants.scrollViewStatus
     }
 }

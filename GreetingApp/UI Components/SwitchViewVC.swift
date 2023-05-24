@@ -29,16 +29,16 @@ extension SwitchViewVC {
     @IBAction private func switchState(_ sender: UISwitch) {
         if stateOnOff.isOn {
             print(stateOnOff.isOn)
-            lblInfo.text = AppConstants.SwitchEnableText
+            lblInfo.text = AppConstants.switchEnableText
             txtEnterName.isEnabled = true
             sender.onTintColor = .systemGreen
             sender.backgroundColor = .clear
         } else {
             print(stateOnOff.isOn)
-            lblInfo.text = AppConstants.SwitchDisableText
+            lblInfo.text = AppConstants.switchDisableText
             txtEnterName.isEnabled = false
             sender.backgroundColor = .systemRed
-            sender.layer.cornerRadius = CGFloat(AppConstants.SwitchCornerRadius)
+            sender.layer.cornerRadius = CGFloat(AppConstants.switchCornerRadius)
         }
     }
 }
