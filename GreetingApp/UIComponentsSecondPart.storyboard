@@ -203,20 +203,45 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gAa-zD-kQv" firstAttribute="bottom" secondItem="aDj-B0-VPR" secondAttribute="bottom" id="4n2-ip-QP0"/>
-                            <constraint firstItem="aDj-B0-VPR" firstAttribute="top" secondItem="gAa-zD-kQv" secondAttribute="top" id="CLr-PX-NLZ"/>
                             <constraint firstItem="gAa-zD-kQv" firstAttribute="trailing" secondItem="aDj-B0-VPR" secondAttribute="trailing" id="Jeu-Ks-x0A"/>
                             <constraint firstItem="aDj-B0-VPR" firstAttribute="top" secondItem="gAa-zD-kQv" secondAttribute="top" id="atQ-rT-qxR"/>
                             <constraint firstItem="aDj-B0-VPR" firstAttribute="leading" secondItem="gAa-zD-kQv" secondAttribute="leading" id="tF3-I2-fze"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fTM-mw-N2o"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="fTM-mw-N2o">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3lk-5a-Qiw">
+                            <connections>
+                                <action selector="btnOnClickAddImages:" destination="3hK-Oi-FpL" id="gd3-g1-TeZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="booksCollection" destination="aDj-B0-VPR" id="CO3-cv-DAG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="94K-cS-526" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-314" y="378"/>
+            <point key="canvasLocation" x="752" y="355"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K9G-MX-iSL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gZL-nr-MhJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vL0-GC-jlT">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3hK-Oi-FpL" kind="relationship" relationship="rootViewController" id="MlO-oZ-0BG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGN-Y1-Ltd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74.045801526717554" y="354.92957746478874"/>
         </scene>
         <!--Geeks For Geeks Web View-->
         <scene sceneID="zHj-Fx-ovs">

@@ -1,5 +1,6 @@
 
 import UIKit
+import PhotosUI
 
 class BooksCollectionVC: UIViewController {
     
@@ -125,5 +126,35 @@ extension BooksCollectionVC {
         booksAndEmails[BooksAndEmailsSections.books.rawValue].rows.append(UIImage(imageLiteralResourceName: UIImage.wingsOfFires))
         refreshControl.endRefreshing()
         booksCollection.reloadData()
+    }
+}
+
+//MARK: - PHPickerViewControllerDelegate
+extension BooksCollectionVC: PHPickerViewControllerDelegate {
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        dismiss(animated: true)
+        for result in results {
+            result.itemProvider.loadObject(ofClass: UIImage.self) {
+                object , error in
+                if let image = object as? UIImage {
+                    self.booksAndEmails[0].rows.append(image)
+                }
+                
+                DispatchQueue.main.async {
+                    self.booksCollection.reloadData()
+                }
+            }
+        }
+    }
+}
+
+//MARK: - Actions
+extension BooksCollectionVC {
+    @IBAction private func btnOnClickAddImages(_ sender: UIBarButtonItem) {
+        var config = PHPickerConfiguration()
+        config.selectionLimit = AppConstants.selectionLimit
+        let picker = PHPickerViewController(configuration: config)
+        picker.delegate  = self
+        self.present(picker, animated: true)
     }
 }
