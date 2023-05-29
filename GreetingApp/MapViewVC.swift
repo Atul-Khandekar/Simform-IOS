@@ -96,8 +96,7 @@ extension MapViewVC: UIPickerViewDelegate {
 //MARK: - Actions
 extension MapViewVC {
     @IBAction func onClickCurrentLocation(_ sender: UIButton) {
-        let currentLocation = CLLocation(latitude: locationList.first?.coordinate.latitude ?? 30, longitude: (locationList.first?.coordinate.longitude) ?? 30)
-        render(currentLocation, title: locationList.first?.name)
+        let currentLocation = CLLocation(latitude: locationList.first?.coordinate.latitude ?? AppConstants.defaultLatLong, longitude: (locationList.first?.coordinate.longitude) ?? AppConstants.defaultLatLong)
     }
 }
 

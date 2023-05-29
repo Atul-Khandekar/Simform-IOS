@@ -45,6 +45,7 @@ struct AppConstants {
     static let mapViewCallOutSubtitle = "Welcome to "
     static let customAnnotationIdentifier = "CustomPin"
     static let customAnnotationImage = "myLocation"
+    static let defaultLatLong = 30.0
 }
 
 //MARK: - Enum Constants

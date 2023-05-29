@@ -953,7 +953,7 @@ hello there this is new text </string>
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1192.6666666666667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qBf-73-PfA">
-                                                <rect key="frame" x="10" y="0.0" width="373" height="788"/>
+                                                <rect key="frame" x="10" y="0.0" width="373" height="832.33333333333337"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ev-Tr-hJY">
                                                         <rect key="frame" x="0.0" y="0.0" width="373" height="34.333333333333336"/>
@@ -1099,6 +1099,14 @@ hello there this is new text </string>
                                                             <segue destination="mDU-Zo-KQd" kind="show" id="8dN-aH-ipB"/>
                                                         </connections>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dC-1P-Zuf">
+                                                        <rect key="frame" x="0.0" y="798" width="373" height="34.333333333333371"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="GeeksForGeeksWebView"/>
+                                                        <connections>
+                                                            <segue destination="liK-6I-i94" kind="show" id="CKf-h3-VG5"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -1152,6 +1160,16 @@ hello there this is new text </string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDw-LG-pyu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="843.51145038167931" y="681.69014084507046"/>
+        </scene>
+        <!--GeeksForGeeks-->
+        <scene sceneID="kCl-gv-TlP">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="GeeksForGeeks" storyboardName="UIComponentsSecondPart" referencedIdentifier="GeeksForGeeks" id="liK-6I-i94" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qGw-tI-5zQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Akv-h4-KJJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1469" y="239"/>
         </scene>
         <!--StackViewVC-->
         <scene sceneID="7re-9l-95P">
