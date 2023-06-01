@@ -48,6 +48,7 @@ struct AppConstants {
     static let onboardingScreenCell = "OnboardingScreenCell"
     static let onboardingPage = 1
     static let defaultLatLong = 30.0
+    static let selectionLimit = 3
 }
 
 //MARK: - Enum Constants
