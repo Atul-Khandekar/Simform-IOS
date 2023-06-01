@@ -11,7 +11,7 @@ class UserTableViewCell: UITableViewCell {
 //MARK: - configureCell
 extension UserTableViewCell {
     func configureCell( data: String) {
-        imgCellExample.image = UIImage(imageLiteralResourceName: UIImage.UserIcon)
+        imgCellExample.image = UIImage(imageLiteralResourceName: UIImage.userIcon)
         lblNameCellExample.text = data
     }
 }

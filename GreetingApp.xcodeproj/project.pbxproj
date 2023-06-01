@@ -61,6 +61,11 @@
 		B7C6FC222A122352003BA164 /* FooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C6FC202A122352003BA164 /* FooterCell.xib */; };
 		B7C6FC252A122EFC003BA164 /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C6FC232A122EFC003BA164 /* EmailCell.swift */; };
 		B7C6FC262A122EFC003BA164 /* EmailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C6FC242A122EFC003BA164 /* EmailCell.xib */; };
+		B7D785A12A206F710091EF56 /* OnboardingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D785A02A206F710091EF56 /* OnboardingScreen.storyboard */; };
+		B7D785A32A20702D0091EF56 /* OnboardingScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D785A22A20702D0091EF56 /* OnboardingScreenVC.swift */; };
+		B7D785A92A2074AB0091EF56 /* OnboardingScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D785A82A2074AB0091EF56 /* OnboardingScreenData.swift */; };
+		B7D785AC2A207A1F0091EF56 /* OnboardingScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D785AA2A207A1F0091EF56 /* OnboardingScreenCell.swift */; };
+		B7D785AD2A207A1F0091EF56 /* OnboardingScreenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7D785AB2A207A1F0091EF56 /* OnboardingScreenCell.xib */; };
 		B7E72CBD2A1D1C4400D84812 /* SearchBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E72CBC2A1D1C4400D84812 /* SearchBar.storyboard */; };
 		B7EBA33B2A14A6980095F8DB /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EBA33A2A14A6980095F8DB /* Fruits.swift */; };
 		B7EBA33D2A14A6A20095F8DB /* SearchBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EBA33C2A14A6A20095F8DB /* SearchBarVC.swift */; };
@@ -127,6 +132,11 @@
 		B7C6FC202A122352003BA164 /* FooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterCell.xib; sourceTree = "<group>"; };
 		B7C6FC232A122EFC003BA164 /* EmailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
 		B7C6FC242A122EFC003BA164 /* EmailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailCell.xib; sourceTree = "<group>"; };
+		B7D785A02A206F710091EF56 /* OnboardingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingScreen.storyboard; sourceTree = "<group>"; };
+		B7D785A22A20702D0091EF56 /* OnboardingScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenVC.swift; sourceTree = "<group>"; };
+		B7D785A82A2074AB0091EF56 /* OnboardingScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenData.swift; sourceTree = "<group>"; };
+		B7D785AA2A207A1F0091EF56 /* OnboardingScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenCell.swift; sourceTree = "<group>"; };
+		B7D785AB2A207A1F0091EF56 /* OnboardingScreenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingScreenCell.xib; sourceTree = "<group>"; };
 		B7E72CBC2A1D1C4400D84812 /* SearchBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchBar.storyboard; sourceTree = "<group>"; };
 		B7EBA33A2A14A6980095F8DB /* Fruits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fruits.swift; path = "/Users/atul/Simform-IOS/GreetingApp/UIComponentsPart-2/Model/Fruits.swift"; sourceTree = "<absolute>"; };
 		B7EBA33C2A14A6A20095F8DB /* SearchBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBarVC.swift; path = "/Users/atul/Simform-IOS/GreetingApp/UIComponentsPart-2/Views/TableVC/SearchBarVC.swift"; sourceTree = "<absolute>"; };
@@ -185,6 +195,10 @@
 				B7EBA33C2A14A6A20095F8DB /* SearchBarVC.swift */,
 				B76C8EE62A0BA245001B3403 /* UIComponentsPart1.storyboard */,
 				B76C8EFD2A0BA796001B3403 /* UIComponentsPart-2 */,
+				B7D785A02A206F710091EF56 /* OnboardingScreen.storyboard */,
+				B7D785A22A20702D0091EF56 /* OnboardingScreenVC.swift */,
+				B7D785AA2A207A1F0091EF56 /* OnboardingScreenCell.swift */,
+				B7D785AB2A207A1F0091EF56 /* OnboardingScreenCell.xib */,
 			);
 			path = GreetingApp;
 			sourceTree = "<group>";
@@ -251,6 +265,7 @@
 				B7260E3B2A1B3FD600A4C6C9 /* PickerData.swift */,
 				B7EBA33A2A14A6980095F8DB /* Fruits.swift */,
 				B7275CCC2A1E56830014BC56 /* LocationModel.swift */,
+				B7D785A82A2074AB0091EF56 /* OnboardingScreenData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,6 +366,8 @@
 				B7275CC92A1E565B0014BC56 /* MapView.storyboard in Resources */,
 				B7E72CBD2A1D1C4400D84812 /* SearchBar.storyboard in Resources */,
 				B7C6FC1E2A120E4F003BA164 /* HeaderCell.xib in Resources */,
+				B7D785A12A206F710091EF56 /* OnboardingScreen.storyboard in Resources */,
+				B7D785AD2A207A1F0091EF56 /* OnboardingScreenCell.xib in Resources */,
 				B700429B299DE92700FF5B4E /* LaunchScreen.storyboard in Resources */,
 				B7004298299DE92700FF5B4E /* Assets.xcassets in Resources */,
 				B7EBA3452A14CC320095F8DB /* StackViewAndToolBar.storyboard in Resources */,
@@ -379,6 +396,7 @@
 				B7004293299DE92600FF5B4E /* ViewController.swift in Sources */,
 				B76C8F182A0BA796001B3403 /* UserTableViewCell.swift in Sources */,
 				B72C8B8D2A163F8400E11172 /* TabBarVC.swift in Sources */,
+				B7D785A92A2074AB0091EF56 /* OnboardingScreenData.swift in Sources */,
 				B7275CCB2A1E567D0014BC56 /* MapViewVC.swift in Sources */,
 				B76C8EF22A0BA30D001B3403 /* ScrollVC.swift in Sources */,
 				B7EBA33B2A14A6980095F8DB /* Fruits.swift in Sources */,
@@ -390,9 +408,11 @@
 				B700428F299DE92600FF5B4E /* AppDelegate.swift in Sources */,
 				B71FE6C82A1F94B000C9990A /* GeeksForGeeksWebView.swift in Sources */,
 				B7C6FC212A122352003BA164 /* FooterCell.swift in Sources */,
+				B7D785A32A20702D0091EF56 /* OnboardingScreenVC.swift in Sources */,
 				B76C8F142A0BA796001B3403 /* ExpandableVC.swift in Sources */,
 				B76C8EF42A0BA30D001B3403 /* SwitchViewVC.swift in Sources */,
 				B76C8F102A0BA796001B3403 /* AppConstants.swift in Sources */,
+				B7D785AC2A207A1F0091EF56 /* OnboardingScreenCell.swift in Sources */,
 				B76C8EFA2A0BA30D001B3403 /* StepperVC.swift in Sources */,
 				B76C8EF72A0BA30D001B3403 /* TextFieldVC.swift in Sources */,
 				B76C8F152A0BA796001B3403 /* UserTableViewVC.swift in Sources */,

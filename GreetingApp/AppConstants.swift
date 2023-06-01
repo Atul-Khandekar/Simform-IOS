@@ -45,6 +45,8 @@ struct AppConstants {
     static let mapViewCallOutSubtitle = "Welcome to "
     static let customAnnotationIdentifier = "CustomPin"
     static let customAnnotationImage = "myLocation"
+    static let onboardingScreenCell = "OnboardingScreenCell"
+    static let onboardingPage = 1
     static let defaultLatLong = 30.0
 }
 

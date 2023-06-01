@@ -122,7 +122,7 @@ extension BooksCollectionVC {
 extension BooksCollectionVC {
     @objc
     func handleRefresh() {
-        booksAndEmails[BooksAndEmailsSections.books.rawValue].rows.append(UIImage(imageLiteralResourceName: UIImage.WingsOfFires))
+        booksAndEmails[BooksAndEmailsSections.books.rawValue].rows.append(UIImage(imageLiteralResourceName: UIImage.wingsOfFires))
         refreshControl.endRefreshing()
         booksCollection.reloadData()
     }

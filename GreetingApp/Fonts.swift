@@ -2,5 +2,5 @@
 import UIKit
 
 extension UIFont {
-    static let FolditExtraBold = "Foldit-ExtraBold"
+    static let folditExtraBold = "Foldit-ExtraBold"
 }

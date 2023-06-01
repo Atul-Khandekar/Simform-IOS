@@ -1,17 +1,20 @@
 import UIKit
 
 extension UIImage {
-    static let AtomicHabits = "atomicHabits"
-    static let AttitudeIsEverything = "attitudeIsEverything"
-    static let PsychologyOfMoney = "psychologyOfMoney"
-    static let SherlockHolmes = "sherlockHolmes"
-    static let TheAlchemist = "theAlchemist"
-    static let TheGirlWhoKnewTooMuch = "theGirlWhoKnewTooMuch"
-    static let YouOnlyLiveOnce = "youOnlyLiveOnce"
-    static let Field = "field"
-    static let BeachSunset = "beach_sunset"
-    static let Show = "show"
-    static let UserIcon = "user-icon"
-    static let WingsOfFires = "wingsOfFire"
+    static let atomicHabits = "atomicHabits"
+    static let attitudeIsEverything = "attitudeIsEverything"
+    static let psychologyOfMoney = "psychologyOfMoney"
+    static let sherlockHolmes = "sherlockHolmes"
+    static let theAlchemist = "theAlchemist"
+    static let theGirlWhoKnewTooMuch = "theGirlWhoKnewTooMuch"
+    static let youOnlyLiveOnce = "youOnlyLiveOnce"
+    static let field = "field"
+    static let beachSunset = "beach_sunset"
+    static let show = "show"
+    static let userIcon = "user-icon"
+    static let wingsOfFires = "wingsOfFire"
+    static let onBoardingScreenPage1 = "onboardingScreenPage1"
+    static let onBoardingScreenPage2 = "onboardingScreenPage2"
+    static let onBoardingScreenPage3 = "onboardingScreenPage3"
 }
 

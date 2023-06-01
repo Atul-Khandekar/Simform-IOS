@@ -32,7 +32,7 @@ extension TextFieldVC {
         txtPassword.placeholder = AppConstants.textFieldPasswordPlaceholder
         txtPassword.contentHorizontalAlignment = .left
         txtPassword.textAlignment = .left
-        rightIcon(UIImage(imageLiteralResourceName: UIImage.Show))
+        rightIcon(UIImage(imageLiteralResourceName: UIImage.show))
     }
 }
 

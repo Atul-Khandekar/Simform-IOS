@@ -19,9 +19,9 @@ extension SegmentedControlVC {
     @IBAction private func segmentChange(_ sender: UISegmentedControl) {
         switch SegmentControl(rawValue: sender.selectedSegmentIndex) {
         case .sunrise :
-            imgState.image = UIImage(imageLiteralResourceName: UIImage.Field)
+            imgState.image = UIImage(imageLiteralResourceName: UIImage.field)
         case .sunset :
-            imgState.image = UIImage(imageLiteralResourceName: UIImage.BeachSunset)
+            imgState.image = UIImage(imageLiteralResourceName: UIImage.beachSunset)
         default:
             break
         }
@@ -34,6 +34,6 @@ extension SegmentedControlVC {
         segmentState.setTitle(AppConstants.segmentSunriseTitle, forSegmentAt: SegmentControl.sunrise.rawValue )
         segmentState.setTitle(AppConstants.segmentSunsetTitle, forSegmentAt: SegmentControl.sunset.rawValue)
         segmentState.selectedSegmentIndex = SegmentControl.sunrise.rawValue
-        imgState.image = UIImage(imageLiteralResourceName: UIImage.Field)
+        imgState.image = UIImage(imageLiteralResourceName: UIImage.field)
     }
 }
