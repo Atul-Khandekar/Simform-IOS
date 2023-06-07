@@ -941,7 +941,7 @@ hello there this is new text </string>
         <!--UIComponentsVC-->
         <scene sceneID="xNA-Rx-t7H">
             <objects>
-                <viewController id="eja-oz-L93" userLabel="UIComponentsVC" sceneMemberID="viewController">
+                <viewController id="eja-oz-L93" userLabel="UIComponentsVC" customClass="UIComponentsHomeScreenVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GQt-LQ-g3q">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -953,7 +953,7 @@ hello there this is new text </string>
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1192.6666666666667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qBf-73-PfA">
-                                                <rect key="frame" x="10" y="0.0" width="373" height="876.66666666666663"/>
+                                                <rect key="frame" x="10" y="0.0" width="373" height="921"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ev-Tr-hJY">
                                                         <rect key="frame" x="0.0" y="0.0" width="373" height="34.333333333333336"/>
@@ -1115,6 +1115,14 @@ hello there this is new text </string>
                                                             <segue destination="eOT-xH-3Mg" kind="show" id="F0F-Ws-zPw"/>
                                                         </connections>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTc-1v-Ftk">
+                                                        <rect key="frame" x="0.0" y="886.66666666666663" width="373" height="34.333333333333371"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="NavigationController"/>
+                                                        <connections>
+                                                            <action selector="onClickToNavigationController:" destination="eja-oz-L93" eventType="touchUpInside" id="TDp-b0-YAx"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -1177,7 +1185,17 @@ hello there this is new text </string>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xkr-iT-X0p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1717" y="104"/>
+            <point key="canvasLocation" x="1992" y="178"/>
+        </scene>
+        <!--NavigationControllerVC-->
+        <scene sceneID="Pk3-eG-hKt">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="NavigationControllerVC" storyboardName="NavigationController" referencedIdentifier="NavigationControllerVC" id="0Qv-kV-miL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1LO-nt-fRJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMW-xl-Ahn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1787" y="100"/>
         </scene>
         <!--GeeksForGeeks-->
         <scene sceneID="kCl-gv-TlP">
