@@ -7,6 +7,9 @@ class TextFieldVC: UIViewController {
     @IBOutlet weak private var txtIcon: UITextField!
     @IBOutlet weak private var txtPassword: UITextField!
     
+    //MARK: - Variables
+    weak var coordinator: MainCoordinator?
+    
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,6 +7,9 @@ class StepperVC: UIViewController {
     @IBOutlet weak private var stepper: UIStepper!
     @IBOutlet weak private var lblChange: UILabel!
     
+    //MARK: - Variables
+    weak var coordinator: MainCoordinator?
+    
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()

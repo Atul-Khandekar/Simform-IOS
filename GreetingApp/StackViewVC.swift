@@ -14,6 +14,9 @@ class StackViewVC: UIViewController {
     @IBOutlet weak private var emailTextField: UITextField!
     @IBOutlet weak private var passwordTextField: UITextField!
     
+    //MARK: - Variables
+    weak var coordinator: MainCoordinator?
+    
     //MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()

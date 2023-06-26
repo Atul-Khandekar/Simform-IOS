@@ -8,7 +8,7 @@
 import UIKit
 
 class FourthVC: UIViewController {
-
+    
     //MARK: - Variables
     weak var coordinator: MainCoordinator?
     
@@ -20,7 +20,7 @@ class FourthVC: UIViewController {
 
 //MARK: - Actions
 extension FourthVC {
-    @IBAction func onClickBackToHomeScreen(_ sender: UIButton) {
+    @IBAction private func onClickBackToHomeScreen(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
 }

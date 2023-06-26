@@ -20,5 +20,6 @@ extension UIImage {
     static let menuBrightnessIcon = "sun.max"
     static let menuDocumentsIcon = "doc"
     static let menuBookmarksIcon = "book.fill"
+
 }
 

@@ -10,7 +10,7 @@ class ProgressViewVC: UIViewController {
     //MARK: - Variables
     private var isRunning = false
     private var progressBarTimer: Timer!
-    
+    weak var coordinator: MainCoordinator?
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()

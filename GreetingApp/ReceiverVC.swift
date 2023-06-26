@@ -10,8 +10,8 @@ import UIKit
 class ReceiverVC: UIViewController {
 
     //MARK: - Outlets
-    @IBOutlet weak var textFieldTitle: UITextField!
-    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak private var textFieldTitle: UITextField!
+    @IBOutlet weak private var lblName: UILabel!
     
     //MARK: - Variables
     var text: String = ""
@@ -27,7 +27,7 @@ class ReceiverVC: UIViewController {
 
 //MARK: - Actions
 extension ReceiverVC {
-    @IBAction func onClickBackwardDataPass(_ sender: UIButton) {
+    @IBAction private func onClickBackwardDataPass(_ sender: UIButton) {
         delegate?.setTitle(textFieldTitle.text)
         coordinator?.goBackToViewController()
     }

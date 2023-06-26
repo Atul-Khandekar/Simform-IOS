@@ -7,6 +7,9 @@ class ScrollVC: UIViewController {
     @IBOutlet weak private var scrollView: UIScrollView!
     @IBOutlet weak private var txtStatus: UILabel!
     
+    //MARK: - Variables
+    weak var coordinator: MainCoordinator?
+    
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()

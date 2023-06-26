@@ -11,6 +11,7 @@ class BooksCollectionVC: UIViewController {
     private var booksAndEmails = BooksAndEmails.getBooksAndEmails()
     private var coverOfBooks = BooksAndEmails.getBooks()
     private var refreshControl = UIRefreshControl()
+    weak var coordinator: MainCoordinator?
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {

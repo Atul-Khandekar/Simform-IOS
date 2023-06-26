@@ -15,6 +15,7 @@ class PickerViewVC: UIViewController {
     @IBOutlet weak private var durationTextField: UITextField!
     
     //MARK: - Variables
+    weak var coordinator: MainCoordinator?
     private let colors = Color.getColors()
     private let dateFormatter = DateFormatter()
     private let colorPicker: UIPickerView  = {

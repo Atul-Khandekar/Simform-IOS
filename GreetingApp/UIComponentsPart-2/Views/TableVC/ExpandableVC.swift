@@ -8,6 +8,7 @@ class ExpandableVC: UIViewController {
     
     //MARK: - Variables
     private var expandableData: [ExpandableSectionDetails] = ExpandableSectionDetails.getData()
+    weak var coordinator: MainCoordinator?
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {

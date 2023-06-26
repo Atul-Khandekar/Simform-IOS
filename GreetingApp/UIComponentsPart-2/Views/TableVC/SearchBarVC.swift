@@ -16,6 +16,7 @@ class SearchBarVC: UIViewController {
     //MARK: - Variables
     private let fruits = Fruits.getData()
     private var filteredData: [String] = []
+    weak var coordinator: MainCoordinator?
     
     //MARK: - View LifeCycle
     override func viewDidLoad() {

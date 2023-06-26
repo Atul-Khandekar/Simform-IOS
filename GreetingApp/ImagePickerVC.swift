@@ -10,7 +10,10 @@ import UIKit
 class ImagePickerVC: UIViewController {
 
     //MARK: - Outlets
-    @IBOutlet weak var imgSelectedFromAlbum: UIImageView!
+    @IBOutlet weak private var imgSelectedFromAlbum: UIImageView!
+    
+    //MARK: - Variables
+    weak var coordinator: MainCoordinator?
     
     //MARK: - View LifeCycle
     override func viewDidLoad() {
@@ -20,7 +23,7 @@ class ImagePickerVC: UIViewController {
 
 //MARK: - Actions
 extension ImagePickerVC: UINavigationControllerDelegate {
-    @IBAction func selectImage(_ sender: UIButton) {
+    @IBAction private func selectImage(_ sender: UIButton) {
         let imageController = UIImagePickerController()
         imageController.delegate = self
         imageController.sourceType = .photoLibrary

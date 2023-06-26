@@ -14,6 +14,9 @@ class GeeksForGeeksWebView: UIViewController {
     @IBOutlet weak private var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak private var webView: WKWebView!
     
+    //MARK: - Variables
+    weak var coordinator: MainCoordinator?
+    
     //MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +26,15 @@ class GeeksForGeeksWebView: UIViewController {
 
 //MARK: - setupView
 extension GeeksForGeeksWebView: WKNavigationDelegate {
-    func setupView() {
+    private func setupView() {
         webView.navigationDelegate = self
         if let url = URL(string: URL.geeksForGeeks) {
             webView.load(URLRequest(url: url))
         }
         webView.allowsBackForwardNavigationGestures = true
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .rewind, target: self, action: #selector(btnBack))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .fastForward, target: self, action: #selector(btnForward))
+        navigationItem.hidesBackButton = true
     }
 }
 
@@ -45,6 +51,7 @@ extension GeeksForGeeksWebView: UIWebViewDelegate {
 
 //MARK: - Actions
 extension GeeksForGeeksWebView {
+    
     @IBAction private func btnForward(_ sender: UIBarButtonItem) {
         webView.goForward()
     }

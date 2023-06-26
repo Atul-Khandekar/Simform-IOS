@@ -16,6 +16,7 @@ class OnboardingScreenVC: UIViewController {
     
     //MARK: - Variables
     private var onboardingScreenData = OnboardingScreenData.getOnboardingScreenData()
+    weak var coordinator: MainCoordinator?
     
     //MARK: - View LifeCycle
     override func viewDidLoad() {

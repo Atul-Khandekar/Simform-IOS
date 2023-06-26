@@ -10,7 +10,7 @@ import UIKit
 class NavigationControllerVC: UIViewController {
     
     //MARK: - Variables
-    var coordinator: MainCoordinator?
+    weak var coordinator: MainCoordinator?
     lazy var navBar = navigationController?.navigationBar
     
     //MARK: - View LifeCycle
@@ -23,21 +23,24 @@ class NavigationControllerVC: UIViewController {
 //MARK: - Actions
 extension NavigationControllerVC {
     
-    @IBAction func onClickToSenderVC(_ sender: UIButton) {
+    @IBAction private func onClickToSenderVC(_ sender: UIButton) {
         coordinator?.goToSenderVC()
     }
-    @IBAction func onClickToFirstVC(_ sender: UIButton) {
+    @IBAction private func onClickToFirstVC(_ sender: UIButton) {
         coordinator?.goToFirstVC()
     }
-    @IBAction func onClickToPresentStylesVC(_ sender: UIButton) {
+    @IBAction private func onClickToPresentStylesVC(_ sender: UIButton) {
         coordinator?.goToPresentVC()
     }
 }
 //MARK: - setupView
 extension NavigationControllerVC {
     private func setupView() {
+        if let _ = navigationController?.viewControllers.contains(self) {
+            navBar?.tintColor = UIColor.brown
+        }
+        
         let moreButton =  UIBarButtonItem(title: AppConstants.barButtonTitle, style: .plain, target: self, action: nil)
-        navBar?.tintColor = UIColor.brown
         navigationItem.rightBarButtonItem = moreButton
         navigationItem.title = AppConstants.navigationScreenTitle
         

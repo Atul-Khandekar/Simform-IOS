@@ -8,10 +8,10 @@
 import UIKit
 
 class SecondVC: UIViewController {
-
+    
     //MARK: - Variables
     weak var coordinator: MainCoordinator?
-    var lblTitleForSecondVC: UILabel = {
+    private var lblTitleForSecondVC: UILabel = {
         let label = UILabel()
         label.text = AppConstants.secondViewController
         label.textColor = UIColor.red
@@ -28,7 +28,7 @@ class SecondVC: UIViewController {
 
 //MARK: - Actions
 extension SecondVC {
-    @IBAction func onClickToThirdVC(_ sender: UIButton) {
+    @IBAction private func onClickToThirdVC(_ sender: UIButton) {
         coordinator?.goToThirdVC()
     }
 }
