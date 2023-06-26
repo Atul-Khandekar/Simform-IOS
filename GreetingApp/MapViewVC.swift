@@ -18,6 +18,7 @@ class MapViewVC: UIViewController {
     //MARK: - Variables
     private var locationManager = CLLocationManager()
     private let locationList = LocationModel.getLocations()
+    weak var coordinator: MainCoordinator?
     
     //MARK: - View LifeCycle
     override func viewDidLoad() {

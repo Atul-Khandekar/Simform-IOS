@@ -9,7 +9,8 @@ class SliderVC: UIViewController {
     
     //MARK: - Variables
     let step: Float = 5
-    
+    weak var coordinator: MainCoordinator?
+
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()

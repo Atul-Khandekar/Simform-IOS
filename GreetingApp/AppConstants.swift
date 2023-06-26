@@ -66,6 +66,62 @@ struct AppConstants {
     static let menuBrightness  = "Brightness"
     static let menuDocuments = "Documents"
     static let menuBookMarks = "BookMarks"
+    
+    //MARK: - View controllers
+    static let uiComponentsHomeScreen = "UIComponentsHomeScreenVC"
+    static let textFieldVC = "TextFieldVC"
+    static let homeViewController = "HomeViewController"
+    static let labelVC = "LabelVC"
+    static let switchVC = "SwitchVC"
+    static let textViewVC = "TextViewVC"
+    static let segmentedControlVC = "SegmentedControlVC"
+    static let progressViewVC = "ProgressViewVC"
+    static let sliderVC = "SliderVC"
+    static let stepperVC = "StepperVC"
+    static let scrollVC = "ScrollVC"
+    static let tabBarVC = "TabBar"
+    static let geeksForGeeksWebViewVC = "GeeksForGeeks"
+    static let mapViewVC = "MapView"
+    static let pickerViewVC = "PickerView"
+    static let imagePickerVC = "ImagePicker"
+    static let stackViewVC = "StackViewVC"
+    static let searchBarVC = "SearchBar"
+    static let buttonVC = "ButtonVC"
+    static let tableViewVC = "TableViewVC"
+    static let collectionViewVC = "CollectionView"
+    static let userTableViewVC = "UserTableViewVC"
+    static let expandableSectionsVC = "ExpandableVC"
+    static let customTableVC = "CustomTableVC"
+    static let onBoardingScreenVC = "OnboardingScreenVC"
+    
+    //MARK: - CustomTableVC
+    static let customTableAddButtonTitle =  "Add Data"
+    static let customTableAlertTitle = "Add Name"
+    static let customTableAlertMessage = "Please enter your name"
+    static let customTableAlertPlaceholder = "First letter should be capital "
+    static let customTableAlertButtonCancel = "Cancel"
+    static let customTableAlertButtonContinue = "Continue"
+    static let customTableAddFail = "Couldn't Add Name"
+    static let customTableButtonCornerRadius = 10.0
+    static let estimatedRowHeight = 44.0
+    
+    //MARK: - UserTableVC
+    static let userTableCellCornerRadius = 10.0
+    static let userTableCellBorderWidth = 5.0
+}
+
+//MARK: - Storyboards
+struct Storyboards {
+    static let uiComponentsPart1 = UIStoryboard(name: "UIComponentsPart1", bundle: nil)
+    static let uiComponentsSecondPart = UIStoryboard(name: "UIComponentsSecondPart", bundle: nil)
+    static let pickerView = UIStoryboard(name: "PickerView", bundle: nil)
+    static let stackViewAndToolBar = UIStoryboard(name: "StackViewAndToolBar", bundle: nil)
+    static let tabBar = UIStoryboard(name: "TabBar", bundle: nil)
+    static let imagePicker = UIStoryboard(name: "ImagePicker", bundle: nil)
+    static let searchBar = UIStoryboard(name: "SearchBar", bundle: nil)
+    static let mapView = UIStoryboard(name: "MapView", bundle: nil)
+    static let navigationController = UIStoryboard(name: "NavigationController", bundle: nil)
+    static let onBoardingScreen = UIStoryboard(name: "OnboardingScreen", bundle: nil)
 }
 
 //MARK: - Enum Constants

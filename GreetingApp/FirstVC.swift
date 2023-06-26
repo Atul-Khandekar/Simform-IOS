@@ -11,7 +11,7 @@ class FirstVC: UIViewController {
     
     //MARK: - Variables
     weak var coordinator: MainCoordinator?
-    var lblTitle: UILabel = {
+    private var lblTitle: UILabel = {
         let label = UILabel()
         label.text = AppConstants.firstViewController
         label.textColor = UIColor.blue
@@ -28,7 +28,7 @@ class FirstVC: UIViewController {
 
 //MARK: - Actions
 extension FirstVC {
-    @IBAction func onClickToSecondVC(_ sender: UIButton) {
+    @IBAction private func onClickToSecondVC(_ sender: UIButton) {
         coordinator?.goToSecondVC()
     }
 }

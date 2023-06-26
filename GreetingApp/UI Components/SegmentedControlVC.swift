@@ -7,6 +7,9 @@ class SegmentedControlVC: UIViewController {
     @IBOutlet weak private var segmentState: UISegmentedControl!
     @IBOutlet weak private var imgState: UIImageView!
     
+    //MARK: - Variables
+    weak var coordinator: MainCoordinator?
+    
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()

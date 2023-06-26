@@ -8,6 +8,7 @@ class UserTableViewVC: UIViewController {
     
     //MARK: - Variables
     private let model:[UserDetails] = UserDetails.getData()
+    weak var coordinator: MainCoordinator?
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {

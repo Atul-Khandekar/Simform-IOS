@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Table ViewVC-->
         <scene sceneID="Pea-MD-WFG">
             <objects>
-                <viewController storyboardIdentifier="TableView" id="5NX-Sc-HOF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TableViewVC" id="5NX-Sc-HOF" customClass="TableViewVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yhf-j9-zqs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="List of names with image"/>
                                 <connections>
-                                    <segue destination="KVr-bl-XEC" kind="show" id="l8l-vT-WhU"/>
+                                    <action selector="onClickToUserNames:" destination="5NX-Sc-HOF" eventType="touchUpInside" id="y53-hU-bqe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7A-K7-iN5">
@@ -29,7 +29,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Expandable Sections"/>
                                 <connections>
-                                    <segue destination="jxa-fw-C9U" kind="show" id="jKp-VJ-DVK"/>
+                                    <action selector="onClickToExpandableSections:" destination="5NX-Sc-HOF" eventType="touchUpInside" id="CtI-ob-tQN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4H0-eZ-oDE">
@@ -37,7 +37,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add and Delete from names table"/>
                                 <connections>
-                                    <segue destination="cDP-k2-0G5" kind="show" id="oHE-L8-2s6"/>
+                                    <action selector="onClickToCustomTable:" destination="5NX-Sc-HOF" eventType="touchUpInside" id="cIa-33-Lno"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,9 +63,9 @@
         <!--Custom TableVC-->
         <scene sceneID="gv1-X5-pQo">
             <objects>
-                <viewController id="cDP-k2-0G5" customClass="CustomTableVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomTableVC" id="cDP-k2-0G5" customClass="CustomTableVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iAN-Ku-dZI">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Fvo-Up-fVF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -74,18 +74,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ih1-9s-ydq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2315.2671755725191" y="312.67605633802816"/>
+            <point key="canvasLocation" x="1039" y="163"/>
         </scene>
         <!--ExpandableVC-->
         <scene sceneID="0lK-gF-kq9">
             <objects>
-                <viewController id="jxa-fw-C9U" customClass="ExpandableVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExpandableVC" id="jxa-fw-C9U" customClass="ExpandableVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RWs-qZ-cAc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CKK-Ud-MCS">
-                                <rect key="frame" x="0.0" y="59" width="393" height="724"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -105,18 +105,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PiJ-16-dh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="-325"/>
+            <point key="canvasLocation" x="-280" y="163"/>
         </scene>
         <!--User Table ViewVC-->
         <scene sceneID="tAA-pQ-cYW">
             <objects>
-                <viewController id="KVr-bl-XEC" customClass="UserTableViewVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserTableViewVC" id="KVr-bl-XEC" customClass="UserTableViewVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pX1-Es-hdi">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="O44-hi-sZF">
-                                <rect key="frame" x="0.0" y="59" width="393" height="724"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -177,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L8d-1o-8B3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1475.5725190839694" y="-975.35211267605644"/>
+            <point key="canvasLocation" x="390" y="-500"/>
         </scene>
         <!--Books CollectionVC-->
         <scene sceneID="ELE-qK-UbL">
@@ -188,7 +188,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aDj-B0-VPR">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8Au-YC-uv2">
                                     <size key="itemSize" width="128" height="128"/>
@@ -223,25 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="94K-cS-526" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752" y="355"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="K9G-MX-iSL">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gZL-nr-MhJ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vL0-GC-jlT">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="3hK-Oi-FpL" kind="relationship" relationship="rootViewController" id="MlO-oZ-0BG"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eGN-Y1-Ltd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-74.045801526717554" y="354.92957746478874"/>
+            <point key="canvasLocation" x="1039" y="-500"/>
         </scene>
         <!--Geeks For Geeks Web View-->
         <scene sceneID="zHj-Fx-ovs">
@@ -252,7 +234,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" customUserAgent="" findInteractionEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WP4-49-M7Y">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration" allowsAirPlayForMediaPlayback="NO" allowsInlineMediaPlayback="YES" selectionGranularity="character">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" video="YES"/>
@@ -260,7 +242,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="7NC-VQ-RUD">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Aek-X3-XdO"/>
@@ -295,25 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OSg-WV-25O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452.6717557251907" y="357.74647887323948"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="vuf-wT-GgH">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OY8-iQ-aNT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pAJ-9E-Y1y" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bVH-Fq-0d5">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="S6n-nP-ZhM" kind="relationship" relationship="rootViewController" id="8I2-xh-Iwx"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="752" y="623"/>
+            <point key="canvasLocation" x="389" y="163"/>
         </scene>
     </scenes>
     <resources>

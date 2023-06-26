@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jVV-K7-H9j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -12,7 +12,7 @@
         <!--ScrollVC-->
         <scene sceneID="i93-zC-Y7Z">
             <objects>
-                <viewController id="kKs-oR-zSD" customClass="ScrollVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScrollVC" id="kKs-oR-zSD" customClass="ScrollVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fMR-WX-1fH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="tyn-LR-FsN">
-                                <rect key="frame" x="20" y="203" width="353" height="415"/>
+                                <rect key="frame" x="20" y="159" width="353" height="459"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yup-BK-CuZ">
                                         <rect key="frame" x="0.0" y="0.0" width="3648" height="5472"/>
@@ -120,12 +120,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GdZ-sn-YXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3134" y="-25"/>
+            <point key="canvasLocation" x="2804" y="1"/>
         </scene>
         <!--Segmented ControlVC-->
         <scene sceneID="Pwt-cn-QjR">
             <objects>
-                <viewController id="R2G-LO-w1Q" customClass="SegmentedControlVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SegmentedControlVC" id="R2G-LO-w1Q" customClass="SegmentedControlVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lI7-tp-j3A">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,12 +181,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hq0-Mv-b3S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2804" y="-697"/>
+            <point key="canvasLocation" x="2827" y="-668"/>
         </scene>
         <!--StepperVC-->
         <scene sceneID="xKL-Td-vQU">
             <objects>
-                <viewController id="MwD-45-RS6" customClass="StepperVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepperVC" id="MwD-45-RS6" customClass="StepperVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TZx-am-q8P">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,12 +224,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sa9-wx-yph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4651" y="30"/>
+            <point key="canvasLocation" x="1404" y="654"/>
         </scene>
         <!-- UISwitch View Controller-->
         <scene sceneID="7dk-kY-Ekn">
             <objects>
-                <viewController id="Cnn-ZK-KDN" userLabel=" UISwitch View Controller" customClass="SwitchViewVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SwitchVC" id="Cnn-ZK-KDN" userLabel=" UISwitch View Controller" customClass="SwitchVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VkD-m8-3PP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -275,12 +275,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NYR-Ht-X12" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3708" y="-763"/>
+            <point key="canvasLocation" x="3508" y="-668"/>
         </scene>
         <!--SliderVC-->
         <scene sceneID="7LH-zL-Hp7">
             <objects>
-                <viewController id="KrK-Gj-Rog" customClass="SliderVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SliderVC" id="KrK-Gj-Rog" customClass="SliderVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qgz-WU-au7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,12 +320,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJo-9r-WuV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053" y="-763"/>
+            <point key="canvasLocation" x="1404" y="-668"/>
         </scene>
         <!-- TextField View Controller-->
         <scene sceneID="5r8-og-iUe">
             <objects>
-                <viewController id="1bL-N8-jxH" userLabel=" TextField View Controller" customClass="TextFieldVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TextFieldVC" id="1bL-N8-jxH" userLabel=" TextField View Controller" customClass="TextFieldVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E0Q-p9-8g0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -369,12 +369,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Vr-HJ-ene" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2517" y="1279"/>
+            <point key="canvasLocation" x="3508" y="654"/>
         </scene>
         <!--Text ViewVC-->
         <scene sceneID="nFy-hG-1gH">
             <objects>
-                <viewController id="oeY-db-xjt" customClass="TextViewVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TextViewVC" id="oeY-db-xjt" customClass="TextViewVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F3T-yl-zLx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -431,12 +431,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFY-rs-vOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884" y="-763"/>
+            <point key="canvasLocation" x="2102" y="-668"/>
         </scene>
         <!--Progress ViewVC-->
         <scene sceneID="vbt-rX-8kJ">
             <objects>
-                <viewController id="QUt-F5-7NC" customClass="ProgressViewVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProgressViewVC" id="QUt-F5-7NC" customClass="ProgressViewVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="37H-m4-Ory">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -474,12 +474,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Cg-Ju-6fr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3888" y="-42"/>
+            <point key="canvasLocation" x="3509" y="1"/>
         </scene>
         <!--Button View Controller-->
         <scene sceneID="JuN-5Z-BTl">
             <objects>
-                <viewController id="3uH-3F-9o7" userLabel="Button View Controller" customClass="ButtonVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ButtonVC" id="3uH-3F-9o7" userLabel="Button View Controller" customClass="ButtonVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aja-BB-UQK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -581,12 +581,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOL-hn-cTo" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3483" y="703"/>
+            <point key="canvasLocation" x="2102" y="654"/>
         </scene>
         <!--Label View Controller-->
         <scene sceneID="gbh-jg-puN">
             <objects>
-                <viewController id="nC7-9T-IqM" userLabel="Label View Controller" customClass="ViewController" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LabelVC" id="nC7-9T-IqM" userLabel="Label View Controller" customClass="LabelVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Egh-8y-lAX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -716,12 +716,12 @@ hello there this is new text </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdO-wV-OWE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5124" y="789"/>
+            <point key="canvasLocation" x="2804" y="654"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="2kM-42-6o9">
             <objects>
-                <viewController id="qDV-F4-aiU" customClass="ViewController" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="qDV-F4-aiU" customClass="HomeViewController" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ONU-7y-oAF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -739,7 +739,7 @@ hello there this is new text </string>
                                     <fontDescription key="titleFontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="eja-oz-L93" kind="show" id="Zg6-rj-KQz"/>
+                                    <action selector="onClickToUIComponents:" destination="qDV-F4-aiU" eventType="touchUpInside" id="loh-iu-Iuy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -756,7 +756,7 @@ hello there this is new text </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z73-jw-f81" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770.2290076335878" y="681.69014084507046"/>
+            <point key="canvasLocation" x="1404" y="1"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="krl-Eh-uBI">
@@ -941,13 +941,13 @@ hello there this is new text </string>
         <!--UIComponentsVC-->
         <scene sceneID="xNA-Rx-t7H">
             <objects>
-                <viewController id="eja-oz-L93" userLabel="UIComponentsVC" customClass="UIComponentsHomeScreenVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UIComponentsHomeScreenVC" id="eja-oz-L93" userLabel="UIComponentsVC" customClass="UIComponentsHomeScreenVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GQt-LQ-g3q">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yji-86-MCm">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Zo-kL-uTE">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1192.6666666666667"/>
@@ -960,15 +960,15 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="UILabel"/>
                                                         <connections>
-                                                            <segue destination="nC7-9T-IqM" kind="show" id="be3-5K-mPE"/>
+                                                            <action selector="onClickToLabel:" destination="eja-oz-L93" eventType="touchUpInside" id="145-TR-4l3"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xZ-oF-Z7j">
-                                                        <rect key="frame" x="0.0" y="44.333333333333343" width="373" height="34.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="44.333333333333329" width="373" height="34.333333333333329"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="TextField"/>
                                                         <connections>
-                                                            <segue destination="1bL-N8-jxH" kind="show" id="hFs-mh-emA"/>
+                                                            <action selector="onClickToTextFieldVC:" destination="eja-oz-L93" eventType="touchUpInside" id="tmM-dc-uyR"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzb-Ie-9DN">
@@ -976,7 +976,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="UISwitch"/>
                                                         <connections>
-                                                            <segue destination="Cnn-ZK-KDN" kind="show" id="8qx-8H-wti"/>
+                                                            <action selector="onClickToSwitchVC:" destination="eja-oz-L93" eventType="touchUpInside" id="hF2-M0-htl"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6g-66-LWU">
@@ -984,15 +984,15 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="TextView"/>
                                                         <connections>
-                                                            <segue destination="oeY-db-xjt" kind="show" id="Q2J-WF-5W6"/>
+                                                            <action selector="onClickToTextViewVC:" destination="eja-oz-L93" eventType="touchUpInside" id="aLu-My-dKg"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vl-pM-78Y">
-                                                        <rect key="frame" x="0.0" y="177.33333333333331" width="373" height="34.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="177.33333333333334" width="373" height="34.333333333333343"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="UISlider"/>
                                                         <connections>
-                                                            <segue destination="KrK-Gj-Rog" kind="show" id="GsT-63-LZF"/>
+                                                            <action selector="onClickToSliderVC:" destination="eja-oz-L93" eventType="touchUpInside" id="O9l-xi-AFT"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnI-hC-Q1D">
@@ -1000,7 +1000,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="UIProgressView"/>
                                                         <connections>
-                                                            <segue destination="QUt-F5-7NC" kind="show" id="eB5-1j-SSh"/>
+                                                            <action selector="onClickToProgressViewVC:" destination="eja-oz-L93" eventType="touchUpInside" id="Q6C-0d-odI"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msz-Cg-Zn6">
@@ -1008,7 +1008,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="UISegmentControl"/>
                                                         <connections>
-                                                            <segue destination="R2G-LO-w1Q" kind="show" id="jy8-pu-4iY"/>
+                                                            <action selector="onClickToSegmentControlVC:" destination="eja-oz-L93" eventType="touchUpInside" id="4bk-N0-LGc"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNk-7M-3vy">
@@ -1016,7 +1016,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="UIStepper"/>
                                                         <connections>
-                                                            <segue destination="MwD-45-RS6" kind="show" id="TCH-aO-JvP"/>
+                                                            <action selector="onClickToStepperVC:" destination="eja-oz-L93" eventType="touchUpInside" id="97w-RV-ECm"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5I6-I2-lOO">
@@ -1024,7 +1024,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="UIScrollView"/>
                                                         <connections>
-                                                            <segue destination="kKs-oR-zSD" kind="show" id="DY1-oM-2Da"/>
+                                                            <action selector="onClickToScrollView:" destination="eja-oz-L93" eventType="touchUpInside" id="vSK-Hi-qd6"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXN-NX-4xE">
@@ -1032,15 +1032,15 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="UIButton"/>
                                                         <connections>
-                                                            <segue destination="3uH-3F-9o7" kind="show" id="skd-I5-g0D"/>
+                                                            <action selector="onClickToButtonVC:" destination="eja-oz-L93" eventType="touchUpInside" id="zKE-zo-j7k"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqz-N8-tdy">
-                                                        <rect key="frame" x="0.0" y="443.33333333333337" width="373" height="34.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="443.33333333333331" width="373" height="34.333333333333314"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="UITableView"/>
                                                         <connections>
-                                                            <segue destination="fJY-wK-rex" kind="show" id="xSw-lL-hqE"/>
+                                                            <action selector="onClickToTableView:" destination="eja-oz-L93" eventType="touchUpInside" id="iwP-Bb-8LS"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDD-zO-PaR">
@@ -1048,7 +1048,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="UICollectionView"/>
                                                         <connections>
-                                                            <segue destination="o5E-El-T98" kind="show" id="E9F-BW-dVM"/>
+                                                            <action selector="onClickToCollectionViewVC:" destination="eja-oz-L93" eventType="touchUpInside" id="BNF-Ci-qKH"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOB-Lg-UzY">
@@ -1056,7 +1056,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Search bar "/>
                                                         <connections>
-                                                            <segue destination="5WV-5Z-o8P" kind="show" id="ahJ-3g-6B9"/>
+                                                            <action selector="onClickToSearchBarVC:" destination="eja-oz-L93" eventType="touchUpInside" id="D78-gY-fWA"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC1-xE-lfz">
@@ -1064,7 +1064,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Stack view and Tool bar "/>
                                                         <connections>
-                                                            <segue destination="ZUD-Es-80d" kind="show" id="GRG-oP-Uml"/>
+                                                            <action selector="onClickToStackViewAndToolBarVC:" destination="eja-oz-L93" eventType="touchUpInside" id="qOr-hf-UfF"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPX-gs-ux1">
@@ -1072,7 +1072,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Tab bar "/>
                                                         <connections>
-                                                            <segue destination="bBv-60-hC6" kind="show" id="Tcv-uN-M9k"/>
+                                                            <action selector="onClickToTabBar:" destination="eja-oz-L93" eventType="touchUpInside" id="FiA-uN-QKd"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K8-o2-X4m">
@@ -1080,7 +1080,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Image Picker"/>
                                                         <connections>
-                                                            <segue destination="gSp-J1-d3s" kind="show" id="Kwh-t0-MEJ"/>
+                                                            <action selector="onClickToImagePickerVC:" destination="eja-oz-L93" eventType="touchUpInside" id="erb-8O-dEP"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cde-r4-Dxb">
@@ -1088,7 +1088,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Picker view and Date picker"/>
                                                         <connections>
-                                                            <segue destination="RIs-bC-ewF" kind="show" id="1go-kF-bCX"/>
+                                                            <action selector="onClickToPickerVC:" destination="eja-oz-L93" eventType="touchUpInside" id="smY-iI-HIu"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SO0-tv-Lu7">
@@ -1096,7 +1096,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Map view"/>
                                                         <connections>
-                                                            <segue destination="mDU-Zo-KQd" kind="show" id="8dN-aH-ipB"/>
+                                                            <action selector="onClickToMapViewVC:" destination="eja-oz-L93" eventType="touchUpInside" id="xn3-MT-vq8"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dC-1P-Zuf">
@@ -1104,7 +1104,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="GeeksForGeeksWebView"/>
                                                         <connections>
-                                                            <segue destination="liK-6I-i94" kind="show" id="CKf-h3-VG5"/>
+                                                            <action selector="onClickToWebViewVC:" destination="eja-oz-L93" eventType="touchUpInside" id="AW3-1z-lTg"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdi-aG-akU">
@@ -1112,7 +1112,7 @@ hello there this is new text </string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="UIPageControl"/>
                                                         <connections>
-                                                            <segue destination="eOT-xH-3Mg" kind="show" id="F0F-Ws-zPw"/>
+                                                            <action selector="onClickToOnboardinScreenVC:" destination="eja-oz-L93" eventType="touchUpInside" id="kw1-qe-u8X"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTc-1v-Ftk">
@@ -1157,135 +1157,7 @@ hello there this is new text </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TS8-5K-aLS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2471" y="-61"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Ueh-F7-ryT">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jVV-K7-H9j" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fKE-ox-Pmf">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="qDV-F4-aiU" kind="relationship" relationship="rootViewController" id="mbr-HC-tPo"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aDw-LG-pyu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="843.51145038167931" y="681.69014084507046"/>
-        </scene>
-        <!--OnboardingScreen-->
-        <scene sceneID="l92-r6-V4m">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="OnboardingScreen" storyboardName="OnboardingScreen" referencedIdentifier="OnboardingScreen" id="eOT-xH-3Mg" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="dw7-oR-JVg"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xkr-iT-X0p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1992" y="178"/>
-        </scene>
-        <!--NavigationControllerVC-->
-        <scene sceneID="Pk3-eG-hKt">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="NavigationControllerVC" storyboardName="NavigationController" referencedIdentifier="NavigationControllerVC" id="0Qv-kV-miL" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="1LO-nt-fRJ"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hMW-xl-Ahn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1787" y="100"/>
-        </scene>
-        <!--GeeksForGeeks-->
-        <scene sceneID="kCl-gv-TlP">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="GeeksForGeeks" storyboardName="UIComponentsSecondPart" referencedIdentifier="GeeksForGeeks" id="liK-6I-i94" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="qGw-tI-5zQ"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Akv-h4-KJJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1469" y="239"/>
-        </scene>
-        <!--StackViewVC-->
-        <scene sceneID="7re-9l-95P">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="StackViewVC" storyboardName="StackViewAndToolBar" referencedIdentifier="StackViewVC" id="ZUD-Es-80d" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="FKJ-pH-o8C"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YRp-KM-wQb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2524" y="391"/>
-        </scene>
-        <!--SearchBar-->
-        <scene sceneID="6ew-vo-8Cj">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="SearchBar" storyboardName="SearchBar" referencedIdentifier="SearchBar" id="5WV-5Z-o8P" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="OER-IE-4fy"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZIg-bE-O9j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2747" y="356"/>
-        </scene>
-        <!--PickerView-->
-        <scene sceneID="y8Z-UX-8k7">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="PickerView" storyboardName="PickerView" referencedIdentifier="PickerView" id="RIs-bC-ewF" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Nte-D1-krx"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9ej-gg-iNH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2696" y="441"/>
-        </scene>
-        <!--MapView-->
-        <scene sceneID="gsJ-1a-Dbc">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MapView" storyboardName="MapView" referencedIdentifier="MapView" id="mDU-Zo-KQd" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="zLf-2v-c9O"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="STk-vc-uxc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2454" y="485"/>
-        </scene>
-        <!--TabBar-->
-        <scene sceneID="cZr-Rw-DA4">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="TabBar" storyboardName="TabBar" referencedIdentifier="TabBar" id="bBv-60-hC6" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="FEj-2Z-CIx"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q4a-xz-KIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2695" y="544"/>
-        </scene>
-        <!--CollectionView-->
-        <scene sceneID="e78-GF-K3m">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="CollectionView" storyboardName="UIComponentsSecondPart" referencedIdentifier="CollectionView" id="o5E-El-T98" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="BfJ-gi-Jy0"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OOw-TL-h3q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2926" y="515"/>
-        </scene>
-        <!--TableView-->
-        <scene sceneID="wlA-2Z-wYA">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="TableView" storyboardName="UIComponentsSecondPart" referencedIdentifier="TableView" id="fJY-wK-rex" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="xVo-Fn-v0g"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Spf-w7-V0q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2682" y="813"/>
-        </scene>
-        <!--ImagePicker-->
-        <scene sceneID="M4O-J8-Qhd">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="ImagePicker" storyboardName="ImagePicker" referencedIdentifier="ImagePicker" id="gSp-J1-d3s" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="7gC-dT-ZzR"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o2j-G0-W3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2251" y="433"/>
+            <point key="canvasLocation" x="2103" y="-8"/>
         </scene>
     </scenes>
     <resources>

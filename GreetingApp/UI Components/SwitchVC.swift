@@ -1,12 +1,15 @@
 
 import UIKit
 
-class SwitchViewVC: UIViewController {
+class SwitchVC: UIViewController {
     
     //MARK: - Outlets
     @IBOutlet weak private var lblInfo: UILabel!
     @IBOutlet weak private var txtEnterName: UITextField!
     @IBOutlet weak private var stateOnOff: UISwitch!
+    
+    //MARK: - Variables
+    weak var coordinator: MainCoordinator?
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -16,7 +19,7 @@ class SwitchViewVC: UIViewController {
 }
 
 //MARK: - UITextFieldDelegate
-extension SwitchViewVC: UITextFieldDelegate {
+extension SwitchVC: UITextFieldDelegate {
      func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -24,7 +27,7 @@ extension SwitchViewVC: UITextFieldDelegate {
 }
 
 //MARK: - Actions
-extension SwitchViewVC {
+extension SwitchVC {
     
     @IBAction private func switchState(_ sender: UISwitch) {
         if stateOnOff.isOn {

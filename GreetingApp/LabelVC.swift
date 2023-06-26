@@ -1,14 +1,14 @@
 //
-//  TabBarVC.swift
+//  LabelVC.swift
 //  GreetingApp
 //
-//  Created by Atul Khandekar on 18/05/23.
+//  Created by Atul Khandekar on 24/06/23.
 //
 
 import UIKit
 
-class TabBarVC: UITabBarController {
-
+class LabelVC: UIViewController {
+    
     //MARK: - Variables
     weak var coordinator: MainCoordinator?
     
@@ -16,4 +16,5 @@ class TabBarVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
 }

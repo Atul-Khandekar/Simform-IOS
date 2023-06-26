@@ -8,10 +8,10 @@
 import UIKit
 
 class ThirdVC: UIViewController {
-
+    
     //MARK: - Variables
     weak var coordinator: MainCoordinator?
-    var lblTitleForThirdVC: UILabel = {
+    private var lblTitleForThirdVC: UILabel = {
         let label = UILabel()
         label.text = AppConstants.thirdViewController
         label.textColor = UIColor.white
@@ -29,11 +29,11 @@ class ThirdVC: UIViewController {
 //MARK: - Actions
 extension ThirdVC {
     
-    @IBAction func onClickToHomeScreen(_ sender: Any) {
+    @IBAction private func onClickToHomeScreen(_ sender: Any) {
         coordinator?.backToHome()
     }
     
-    @IBAction func backToNavigationController(_ sender: Any) {
+    @IBAction private func backToNavigationController(_ sender: Any) {
         coordinator?.backToNavigationController()
     }
 }

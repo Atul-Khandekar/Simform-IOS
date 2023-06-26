@@ -4,6 +4,7 @@ import UIKit
 class CustomTableVC: UIViewController {
     
     //MARK: - Variables
+    weak var coordinator: MainCoordinator?
     private var Names = CustomNames.getData()
     private let btnAdd: UIButton = {
         let button = UIButton()

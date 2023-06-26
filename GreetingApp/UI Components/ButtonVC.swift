@@ -8,6 +8,7 @@ class ButtonVC: UIViewController {
     
     //MARK: - Variables
     private var tap = true
+    weak var coordinator: MainCoordinator?
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {

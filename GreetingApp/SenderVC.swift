@@ -14,8 +14,8 @@ protocol SenderVCDelegate: AnyObject {
 class SenderVC: UIViewController {
     
     //MARK: - Outlets
-    @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var textFieldName: UITextField!
+    @IBOutlet weak private var lblTitle: UILabel!
+    @IBOutlet weak private var textFieldName: UITextField!
 
     //MARK: - Variables
     weak var coordinator: MainCoordinator?
@@ -29,7 +29,7 @@ class SenderVC: UIViewController {
 
 //MARK: - Actions
 extension SenderVC {
-    @IBAction func onClickForwardDataPass(_ sender: UIButton) {
+    @IBAction private func onClickForwardDataPass(_ sender: UIButton) {
         if let txtName = textFieldName.text {
             coordinator?.goToReceiverVC(text: txtName, viewController: self)
         }

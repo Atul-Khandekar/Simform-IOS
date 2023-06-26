@@ -20,22 +20,22 @@ class PresentStylesVC: UIViewController {
 
 //MARK: - Actions
 extension PresentStylesVC {
-    @IBAction func onClickFullScreen(_ sender: Any) {
+    @IBAction private func onClickFullScreen(_ sender: Any) {
         coordinator?.goToFourthWithFullScreen()
     }
     
-    @IBAction func onClickCurrentContext(_ sender: Any) {
+    @IBAction private func onClickCurrentContext(_ sender: Any) {
         coordinator?.goToFourthWithCurrentContext()
     }
     
-    @IBAction func onClickOverFullScreen(_ sender: Any) {
+    @IBAction private func onClickOverFullScreen(_ sender: Any) {
         coordinator?.goToFourthWithOverFullScreen()
     }
-    @IBAction func onClickPageSheet(_ sender: Any) {
+    @IBAction private func onClickPageSheet(_ sender: Any) {
         coordinator?.goToFourthWithPageSheet()
     }
     
-    @IBAction func onClickFormSheet(_ sender: Any) {
+    @IBAction private func onClickFormSheet(_ sender: Any) {
         coordinator?.goToFourthWithFormSheet()
     }
 }
