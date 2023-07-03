@@ -23,6 +23,19 @@
 		B7275CC92A1E565B0014BC56 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7275CC82A1E565B0014BC56 /* MapView.storyboard */; };
 		B7275CCB2A1E567D0014BC56 /* MapViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7275CCA2A1E567D0014BC56 /* MapViewVC.swift */; };
 		B7275CCD2A1E56830014BC56 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7275CCC2A1E56830014BC56 /* LocationModel.swift */; };
+		B72AE5612A52979500371C09 /* ParkingLotScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72AE5602A52979500371C09 /* ParkingLotScreen.storyboard */; };
+		B72AE5632A5297BA00371C09 /* ParkingLotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AE5622A5297BA00371C09 /* ParkingLotModel.swift */; };
+		B72AE5652A5297C500371C09 /* ParkingLotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AE5642A5297C500371C09 /* ParkingLotCell.swift */; };
+		B72AE5672A5297CB00371C09 /* ParkingLotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72AE5662A5297CB00371C09 /* ParkingLotCell.xib */; };
+		B72AE5692A5297D500371C09 /* ParkingLotHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AE5682A5297D500371C09 /* ParkingLotHeaderCell.swift */; };
+		B72AE56B2A5297D900371C09 /* ParkingLotHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72AE56A2A5297D900371C09 /* ParkingLotHeaderCell.xib */; };
+		B72AE56D2A5297E000371C09 /* ParkingLotTimeSheetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AE56C2A5297E000371C09 /* ParkingLotTimeSheetCell.swift */; };
+		B72AE56F2A5297E400371C09 /* ParkingLotTimeSheetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72AE56E2A5297E400371C09 /* ParkingLotTimeSheetCell.xib */; };
+		B72AE5712A5297FB00371C09 /* ParkingLotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AE5702A5297FB00371C09 /* ParkingLotVC.swift */; };
+		B72AE5732A52A29E00371C09 /* ProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72AE5722A52A29E00371C09 /* ProfileScreen.storyboard */; };
+		B72AE5772A52A2D100371C09 /* CloseAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AE5742A52A2D000371C09 /* CloseAccountVC.swift */; };
+		B72AE5782A52A2D100371C09 /* ChangeEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AE5752A52A2D000371C09 /* ChangeEmailVC.swift */; };
+		B72AE5792A52A2D100371C09 /* ProfileScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AE5762A52A2D100371C09 /* ProfileScreenVC.swift */; };
 		B72C8B8B2A162D4100E11172 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72C8B8A2A162D4100E11172 /* TabBar.storyboard */; };
 		B72C8B8D2A163F8400E11172 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72C8B8C2A163F8400E11172 /* TabBarVC.swift */; };
 		B72C8B8F2A1640EC00E11172 /* ImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72C8B8E2A1640EC00E11172 /* ImagePicker.storyboard */; };
@@ -106,6 +119,19 @@
 		B7275CC82A1E565B0014BC56 /* MapView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
 		B7275CCA2A1E567D0014BC56 /* MapViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewVC.swift; sourceTree = "<group>"; };
 		B7275CCC2A1E56830014BC56 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		B72AE5602A52979500371C09 /* ParkingLotScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ParkingLotScreen.storyboard; sourceTree = "<group>"; };
+		B72AE5622A5297BA00371C09 /* ParkingLotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotModel.swift; sourceTree = "<group>"; };
+		B72AE5642A5297C500371C09 /* ParkingLotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotCell.swift; sourceTree = "<group>"; };
+		B72AE5662A5297CB00371C09 /* ParkingLotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingLotCell.xib; sourceTree = "<group>"; };
+		B72AE5682A5297D500371C09 /* ParkingLotHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotHeaderCell.swift; sourceTree = "<group>"; };
+		B72AE56A2A5297D900371C09 /* ParkingLotHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingLotHeaderCell.xib; sourceTree = "<group>"; };
+		B72AE56C2A5297E000371C09 /* ParkingLotTimeSheetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotTimeSheetCell.swift; sourceTree = "<group>"; };
+		B72AE56E2A5297E400371C09 /* ParkingLotTimeSheetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingLotTimeSheetCell.xib; sourceTree = "<group>"; };
+		B72AE5702A5297FB00371C09 /* ParkingLotVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotVC.swift; sourceTree = "<group>"; };
+		B72AE5722A52A29E00371C09 /* ProfileScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileScreen.storyboard; sourceTree = "<group>"; };
+		B72AE5742A52A2D000371C09 /* CloseAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseAccountVC.swift; sourceTree = "<group>"; };
+		B72AE5752A52A2D000371C09 /* ChangeEmailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeEmailVC.swift; sourceTree = "<group>"; };
+		B72AE5762A52A2D100371C09 /* ProfileScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileScreenVC.swift; sourceTree = "<group>"; };
 		B72C8B8A2A162D4100E11172 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		B72C8B8C2A163F8400E11172 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		B72C8B8E2A1640EC00E11172 /* ImagePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePicker.storyboard; sourceTree = "<group>"; };
@@ -213,6 +239,8 @@
 				B7E72CBC2A1D1C4400D84812 /* SearchBar.storyboard */,
 				B7275CC82A1E565B0014BC56 /* MapView.storyboard */,
 				B738A77A2A25F51F00080BC8 /* NavigationController.storyboard */,
+				B72AE5602A52979500371C09 /* ParkingLotScreen.storyboard */,
+				B72AE5722A52A29E00371C09 /* ProfileScreen.storyboard */,
 				B71FE6C72A1F94B000C9990A /* GeeksForGeeksWebView.swift */,
 				B738A76F2A25D58600080BC8 /* NavigationControllerVC.swift */,
 				B738A7712A25D85700080BC8 /* FirstVC.swift */,
@@ -228,6 +256,10 @@
 				B797BEE12A151D4500703F02 /* ImagePickerVC.swift */,
 				B7EBA3462A14CC7D0095F8DB /* StackViewVC.swift */,
 				B7EBA33C2A14A6A20095F8DB /* SearchBarVC.swift */,
+				B72AE5702A5297FB00371C09 /* ParkingLotVC.swift */,
+				B72AE5752A52A2D000371C09 /* ChangeEmailVC.swift */,
+				B72AE5742A52A2D000371C09 /* CloseAccountVC.swift */,
+				B72AE5762A52A2D100371C09 /* ProfileScreenVC.swift */,
 				B76C8EFD2A0BA796001B3403 /* UIComponentsPart-2 */,
 				B7D785A02A206F710091EF56 /* OnboardingScreen.storyboard */,
 				B7D785A22A20702D0091EF56 /* OnboardingScreenVC.swift */,
@@ -295,6 +327,7 @@
 		B76C8EFE2A0BA796001B3403 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B72AE5622A5297BA00371C09 /* ParkingLotModel.swift */,
 				B75E81D92A0CEF5B00D3616F /* BooksAndEmails.swift */,
 				B76C8EFF2A0BA796001B3403 /* ExpandableSectionDetails.swift */,
 				B76C8F002A0BA796001B3403 /* UserDetails.swift */,
@@ -332,6 +365,12 @@
 		B76C8F092A0BA796001B3403 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				B72AE56E2A5297E400371C09 /* ParkingLotTimeSheetCell.xib */,
+				B72AE56C2A5297E000371C09 /* ParkingLotTimeSheetCell.swift */,
+				B72AE56A2A5297D900371C09 /* ParkingLotHeaderCell.xib */,
+				B72AE5682A5297D500371C09 /* ParkingLotHeaderCell.swift */,
+				B72AE5642A5297C500371C09 /* ParkingLotCell.swift */,
+				B72AE5662A5297CB00371C09 /* ParkingLotCell.xib */,
 				B76C8F0A2A0BA796001B3403 /* CustomCell.swift */,
 				B76C8F0B2A0BA796001B3403 /* ExpandableCell.swift */,
 				B76C8F0C2A0BA796001B3403 /* UserTableViewCell.swift */,
@@ -400,23 +439,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72AE5612A52979500371C09 /* ParkingLotScreen.storyboard in Resources */,
 				B7275CC92A1E565B0014BC56 /* MapView.storyboard in Resources */,
 				B7E72CBD2A1D1C4400D84812 /* SearchBar.storyboard in Resources */,
+				B72AE5732A52A29E00371C09 /* ProfileScreen.storyboard in Resources */,
 				B7C6FC1E2A120E4F003BA164 /* HeaderCell.xib in Resources */,
 				B7D785A12A206F710091EF56 /* OnboardingScreen.storyboard in Resources */,
 				B7D785AD2A207A1F0091EF56 /* OnboardingScreenCell.xib in Resources */,
 				B700429B299DE92700FF5B4E /* LaunchScreen.storyboard in Resources */,
 				B7004298299DE92700FF5B4E /* Assets.xcassets in Resources */,
 				B7EBA3452A14CC320095F8DB /* StackViewAndToolBar.storyboard in Resources */,
+				B72AE56B2A5297D900371C09 /* ParkingLotHeaderCell.xib in Resources */,
 				B7004296299DE92600FF5B4E /* Main.storyboard in Resources */,
 				B76C8EFC2A0BA725001B3403 /* UIComponentsSecondPart.storyboard in Resources */,
 				B7C6FC222A122352003BA164 /* FooterCell.xib in Resources */,
 				B740DBF12A1E066F00D7D28C /* SearchBarCell.xib in Resources */,
 				B738A77B2A25F51F00080BC8 /* NavigationController.storyboard in Resources */,
+				B72AE56F2A5297E400371C09 /* ParkingLotTimeSheetCell.xib in Resources */,
 				B7C6FC262A122EFC003BA164 /* EmailCell.xib in Resources */,
 				B7260E382A1B3A9E00A4C6C9 /* PickerView.storyboard in Resources */,
 				B76C8EE72A0BA245001B3403 /* UIComponentsPart1.storyboard in Resources */,
 				B76C8F192A0BA796001B3403 /* ExpandableCell.xib in Resources */,
+				B72AE5672A5297CB00371C09 /* ParkingLotCell.xib in Resources */,
 				B72C8B8B2A162D4100E11172 /* TabBar.storyboard in Resources */,
 				B75E81D52A0CEEF200D3616F /* BooksCollectionCell.xib in Resources */,
 				B72C8B8F2A1640EC00E11172 /* ImagePicker.storyboard in Resources */,
@@ -436,8 +480,12 @@
 				B73179AE2A24F968005DCBF3 /* SenderVC.swift in Sources */,
 				B72C8B8D2A163F8400E11172 /* TabBarVC.swift in Sources */,
 				B7D785A92A2074AB0091EF56 /* OnboardingScreenData.swift in Sources */,
+				B72AE5692A5297D500371C09 /* ParkingLotHeaderCell.swift in Sources */,
+				B72AE5652A5297C500371C09 /* ParkingLotCell.swift in Sources */,
 				B7275CCB2A1E567D0014BC56 /* MapViewVC.swift in Sources */,
+				B72AE56D2A5297E000371C09 /* ParkingLotTimeSheetCell.swift in Sources */,
 				B76C8EF22A0BA30D001B3403 /* ScrollVC.swift in Sources */,
+				B72AE5772A52A2D100371C09 /* CloseAccountVC.swift in Sources */,
 				B7EBA33B2A14A6980095F8DB /* Fruits.swift in Sources */,
 				B76C8EF92A0BA30D001B3403 /* SliderVC.swift in Sources */,
 				B76C8EF82A0BA30D001B3403 /* ProgressViewVC.swift in Sources */,
@@ -453,6 +501,7 @@
 				B76C8F102A0BA796001B3403 /* AppConstants.swift in Sources */,
 				B7D785AC2A207A1F0091EF56 /* OnboardingScreenCell.swift in Sources */,
 				B76C8EFA2A0BA30D001B3403 /* StepperVC.swift in Sources */,
+				B72AE5632A5297BA00371C09 /* ParkingLotModel.swift in Sources */,
 				B76C8EF72A0BA30D001B3403 /* TextFieldVC.swift in Sources */,
 				B75085262A2611B800D15861 /* UIComponentsHomeScreenVC.swift in Sources */,
 				B76C8F152A0BA796001B3403 /* UserTableViewVC.swift in Sources */,
@@ -462,6 +511,7 @@
 				B738A7792A25E32E00080BC8 /* MainCoordinator.swift in Sources */,
 				B76C8F0E2A0BA796001B3403 /* ExpandableSectionDetails.swift in Sources */,
 				B75E81D82A0CEF0500D3616F /* BooksCollectionVC.swift in Sources */,
+				B72AE5712A5297FB00371C09 /* ParkingLotVC.swift in Sources */,
 				B76C8F112A0BA796001B3403 /* CustomNames.swift in Sources */,
 				B7D92E2B2A27580C002CF8AA /* PresentStylesVC.swift in Sources */,
 				B7EBA3432A14A6FF0095F8DB /* SearchBarCell.swift in Sources */,
@@ -486,7 +536,9 @@
 				B7D92E2D2A275B06002CF8AA /* FourthVC.swift in Sources */,
 				B7223A482A470CDD00C7F1AF /* HomeViewController.swift in Sources */,
 				B76C8EF52A0BA30D001B3403 /* SegmentedControlVC.swift in Sources */,
+				B72AE5782A52A2D100371C09 /* ChangeEmailVC.swift in Sources */,
 				B738A7742A25D8C500080BC8 /* SecondVC.swift in Sources */,
+				B72AE5792A52A2D100371C09 /* ProfileScreenVC.swift in Sources */,
 				B7260E3A2A1B3B3100A4C6C9 /* PickerViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

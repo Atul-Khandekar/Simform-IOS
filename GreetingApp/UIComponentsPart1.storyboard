@@ -953,7 +953,7 @@ hello there this is new text </string>
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1192.6666666666667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qBf-73-PfA">
-                                                <rect key="frame" x="10" y="0.0" width="373" height="921"/>
+                                                <rect key="frame" x="10" y="0.0" width="373" height="1009.6666666666666"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ev-Tr-hJY">
                                                         <rect key="frame" x="0.0" y="0.0" width="373" height="34.333333333333336"/>
@@ -1121,6 +1121,22 @@ hello there this is new text </string>
                                                         <buttonConfiguration key="configuration" style="filled" title="NavigationController"/>
                                                         <connections>
                                                             <action selector="onClickToNavigationController:" destination="eja-oz-L93" eventType="touchUpInside" id="TDp-b0-YAx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNU-JV-PHc">
+                                                        <rect key="frame" x="0.0" y="931" width="373" height="34.333333333333371"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Parking Lot Screen "/>
+                                                        <connections>
+                                                            <action selector="onClickToParkingLotScreen:" destination="eja-oz-L93" eventType="touchUpInside" id="Y0v-Eu-QYG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtA-tp-FyW">
+                                                        <rect key="frame" x="0.0" y="975.33333333333326" width="373" height="34.333333333333371"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Profile Screen "/>
+                                                        <connections>
+                                                            <action selector="onClickToProfileScreen:" destination="eja-oz-L93" eventType="touchUpInside" id="Ac4-1o-k6V"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>

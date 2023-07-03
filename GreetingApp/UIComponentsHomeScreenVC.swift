@@ -8,10 +8,10 @@
 import UIKit
 
 class UIComponentsHomeScreenVC: UIViewController {
-
+    
     //MARK: - Variables
     weak var coordinator: MainCoordinator?
-
+    
     //MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,16 +20,16 @@ class UIComponentsHomeScreenVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.tintColor = UIColor.systemBlue
     }
-
+    
 }
 
 //MARK: - Actions
 extension UIComponentsHomeScreenVC {
     @IBAction private func onClickToNavigationController(_ sender: UIButton) {
-            coordinator?.goToNavigationControllVC()
+        coordinator?.goToNavigationControllVC()
     }
     
-    @IBAction private func onClickToOnboardinScreenVC(_ sender: UIButton) {
+    @IBAction private func onClickToOnboardingScreenVC(_ sender: UIButton) {
         coordinator?.goToOnboardingScreenVc()
     }
     
@@ -109,4 +109,11 @@ extension UIComponentsHomeScreenVC {
         coordinator?.goToWebViewVC()
     }
     
+    @IBAction private func onClickToParkingLotScreen(_ sender: UIButton) {
+        coordinator?.goToParkingLotVC()
+    }
+    
+    @IBAction func onClickToProfileScreen(_ sender: UIButton) {
+        coordinator?.goToProfileScreen()
+    }
 }

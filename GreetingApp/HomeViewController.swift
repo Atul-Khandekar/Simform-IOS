@@ -2,9 +2,9 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    
-    //MARK: - Variables
-    weak var coordinator: MainCoordinator?
+
+//MARK: - Variables
+weak var coordinator: MainCoordinator?
     
     //MARK: - View LifeCycle
     override func viewDidLoad() {
