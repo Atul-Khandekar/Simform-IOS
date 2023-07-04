@@ -21,6 +21,10 @@ class UIComponentsHomeScreenVC: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.systemBlue
     }
     
+    @IBAction func onClickToUserListVC(_ sender: UIButton) {
+        coordinator?.goToUserListVC()
+    }
+    
 }
 
 //MARK: - Actions

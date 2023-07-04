@@ -135,6 +135,13 @@ struct AppConstants {
     static let profileSCreenAddressMaxLines = 3
     static let changeEmailVCHeight = 375.0
     static let closeAccountHeight = 325.0
+    
+    //MARK: - UserList
+    static let userListCellTableViewCell = "UserListCellTableViewCell"
+    static let userListVC = "UserListVC"
+    static let userListSectionCount = 1
+    static let userListHeightDivider = 8.0
+    
 }
 
 //MARK: - Storyboards
@@ -151,6 +158,7 @@ struct Storyboards {
     static let onBoardingScreen = UIStoryboard(name: "OnboardingScreen", bundle: nil)
     static let parkingLotScreen = UIStoryboard(name: "ParkingLotScreen", bundle: nil)
     static let profileScreen = UIStoryboard(name:"ProfileScreen", bundle: nil)
+    static let userListStoryboard = UIStoryboard(name: "UserListStoryboard", bundle: nil)
 
 }
 
@@ -202,4 +210,9 @@ enum FruitsScopeTitles: String {
 enum ParkingLotSegments: Int {
     case markAttendance = 0
     case timeSheet
+}
+
+enum UserListPageNumberSegment: Int {
+    case first
+    case second 
 }

@@ -37,7 +37,7 @@ class StackViewModel: BaseViewModel {
                     return
                     
                 }
-                
+                print(response)
                 DispatchQueue.main.async { [weak self] in
                     self?.loginSuccess.value = token
                 }

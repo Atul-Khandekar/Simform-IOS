@@ -9,4 +9,5 @@ import Foundation
 
 struct StackResponseModel: Codable {
     let token: String?
+    let age: Int?
 }

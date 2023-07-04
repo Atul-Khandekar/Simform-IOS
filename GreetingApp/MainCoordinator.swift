@@ -424,4 +424,12 @@ class MainCoordinator: Coordinator {
         }
         navigationController.present(closeAccountVC, animated: true)
     }
+    
+    func goToUserListVC() {
+        guard let userListVC = Storyboards.userListStoryboard.instantiateViewController(withIdentifier: AppConstants.userListVC) as? UserListVC else {
+            return
+        }
+        userListVC.coordinator = self
+        navigationController.pushViewController(userListVC, animated: true)
+    }
 }

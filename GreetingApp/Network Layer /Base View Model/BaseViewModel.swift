@@ -15,7 +15,7 @@ class BaseViewModel: NSObject {
     ///   - requestPayload: payload to pass while making a POST call
     ///   - requestType: type of httpRequest to make
     ///   - completionHandler: generic completion handler which gives callback after api call finished and response arrieved
-    func callLoginApi<T: Decodable>(requestPayload: Data?, requestType: RequestType, completionHandler: @escaping (Result<T, Error>) -> ()) {
+    func callLoginApi(requestPayload: Data?, requestType: RequestType, completionHandler: @escaping (Result<StackResponseModel, Error>) -> ()) {
         guard let targetUrl = URL(string: requestType.targetUrl) else { return }
         var urlRequest = URLRequest(url: targetUrl)
         urlRequest.allHTTPHeaderFields = requestType.httpHeaders
@@ -30,7 +30,7 @@ class BaseViewModel: NSObject {
             guard let data = data else { return }
             let decoder = JSONDecoder()
             do {
-                let userResponse = try decoder.decode(T.self, from: data)
+                let userResponse = try decoder.decode(StackResponseModel.self, from: data)
                 completionHandler(.success(userResponse))
             } catch {
                 completionHandler(.failure(error))
