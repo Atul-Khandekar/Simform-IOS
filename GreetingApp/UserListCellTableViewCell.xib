@@ -43,8 +43,14 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axP-FW-ycN">
+                        <rect key="frame" x="335" y="10" width="36" height="26"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" image="iconPencil"/>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="axP-FW-ycN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5iV-7O-bX7"/>
                     <constraint firstItem="23K-yd-blw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Ap2-lu-c5n"/>
                     <constraint firstItem="5Ml-yc-E2c" firstAttribute="leading" secondItem="tHP-e0-XvF" secondAttribute="leading" id="BsK-3G-Oil"/>
                     <constraint firstItem="23K-yd-blw" firstAttribute="leading" secondItem="1RE-7f-2OC" secondAttribute="trailing" constant="20" id="Fp3-fr-eYb"/>
@@ -53,6 +59,7 @@
                     <constraint firstItem="tHP-e0-XvF" firstAttribute="top" secondItem="23K-yd-blw" secondAttribute="bottom" constant="10" id="WtT-pp-uBs"/>
                     <constraint firstAttribute="bottom" secondItem="1RE-7f-2OC" secondAttribute="bottom" id="ogn-ZO-gWq"/>
                     <constraint firstItem="1RE-7f-2OC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="q5y-hX-f6D"/>
+                    <constraint firstAttribute="trailing" secondItem="axP-FW-ycN" secondAttribute="trailing" constant="10" id="qR3-HT-rFI"/>
                     <constraint firstItem="1RE-7f-2OC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sjg-Yq-Paq"/>
                     <constraint firstItem="1RE-7f-2OC" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.35" id="yCC-Ir-3gl"/>
                     <constraint firstItem="NdS-9H-dsj" firstAttribute="leading" secondItem="tHP-e0-XvF" secondAttribute="trailing" constant="10" id="z1k-Ad-uSd"/>
@@ -70,4 +77,7 @@
             <point key="canvasLocation" x="176.33587786259542" y="33.098591549295776"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="iconPencil" width="12" height="12"/>
+    </resources>
 </document>

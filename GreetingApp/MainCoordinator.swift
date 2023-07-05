@@ -432,4 +432,16 @@ class MainCoordinator: Coordinator {
         userListVC.coordinator = self
         navigationController.pushViewController(userListVC, animated: true)
     }
+    
+    func goToUserDetails(listener: ((UserDetailVC) -> ())?) {
+        guard let userDetailsVC = Storyboards.userListStoryboard.instantiateViewController(withIdentifier: AppConstants.userDetailVC) as? UserDetailVC else {
+            return
+        }
+        userDetailsVC.coordinator = self
+        navigationController.pushViewController(userDetailsVC, animated: true)
+        guard let listener else {
+            return
+        }
+        listener(userDetailsVC)
+    }
 }

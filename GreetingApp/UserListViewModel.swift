@@ -10,8 +10,6 @@ import Alamofire
 
 class UserListViewModel {
     
-    var userList:Dynamic<UserListModel>? = nil
-    
     func getUserList(page: Int , listHandler: @escaping (UserListModel?) -> Void) {
         
         AF.request(RequestType.listUser(page).targetUrl).responseData { responseData in
@@ -26,13 +24,38 @@ class UserListViewModel {
                     }
                     
                 } catch {
-                    print("exception can not decode data ")
+                    print(error)
                 }
                 
             case .failure(let error):
                 print(error)
                 
             }
+            
+        }
+    }
+    
+    func getSingleUserDetail(id: Int, singleUserHandler: @escaping ((UserDetail) -> ())) {
+        AF.request(RequestType.singleUser(id).targetUrl).responseData { responseData in
+            
+            switch responseData.result {
+            case .success(let data):
+                do {
+                    let decoder = JSONDecoder()
+                    let responseSingleUser = try decoder.decode(UserDetail.self, from: data)
+                    DispatchQueue.main.async {
+                      singleUserHandler(responseSingleUser)
+                    }
+                    
+                } catch {
+                    print(error)
+                }
+                
+            case .failure(let error):
+                print(error)
+                
+            }
+            
             
         }
     }

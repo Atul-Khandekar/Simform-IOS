@@ -82,13 +82,14 @@ extension StackViewVC {
     
     private func bindErrorMessage() {
         viewModel.errorMessage.bind { [weak self] message in
+            guard let message = message else {return}
             self?.showAlert(title: "Login failed", message: message)
         }
     }
     
     private func bindLoginStatus() {
         viewModel.loginSuccess.bind { [weak self] token in
-            self?.showAlert(title: "Login successful", message: "Token: \(token)")
+            self?.showAlert(title: "Login successful", message: "Token: \(String(describing: token))")
         }
     }
 }

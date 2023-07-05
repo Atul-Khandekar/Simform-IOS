@@ -9,25 +9,30 @@ import UIKit
 
 class UserListCellTableViewCell: UITableViewCell {
     
+    //MARK: - Outlets
     @IBOutlet weak var imgAvatar: UIImageView!
     @IBOutlet weak var lblId: UILabel!
     @IBOutlet weak var lblFirstName: UILabel!
     @IBOutlet weak var lblLastName: UILabel!
     @IBOutlet weak var lblEmail: UILabel!
     
+}
+
+//MARK: - configureCell
+extension UserListCellTableViewCell {
     func configureCell(list: UserListData?) {
-        guard let id = list?.id else {return}
-        guard let firstName = list?.firstName else {return}
-        guard let lastName = list?.lastName else {return}
-        guard let email = list?.email else {return}
+        
+        if let id = list?.id {
+            lblId.text = String(id)
+        }
+        
+        lblFirstName.text = list?.firstName
+        lblLastName.text = list?.lastName
+        lblEmail.text = list?.email
+        
         guard let avatar = list?.avatar else {return}
-        lblId.text = String(id)
-        lblFirstName.text = firstName
-        lblLastName.text = lastName
-        lblEmail.text = email
         if let url = URL(string: avatar) {
             imgAvatar.load(url: url)
         }
     }
-    
 }

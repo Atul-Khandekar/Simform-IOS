@@ -93,6 +93,7 @@ struct AppConstants {
     static let expandableSectionsVC = "ExpandableVC"
     static let customTableVC = "CustomTableVC"
     static let onBoardingScreenVC = "OnboardingScreenVC"
+    static let userDetailVC = "UserDetailVC"
     
     //MARK: - CustomTableVC
     static let customTableAddButtonTitle =  "Add Data"
@@ -141,6 +142,7 @@ struct AppConstants {
     static let userListVC = "UserListVC"
     static let userListSectionCount = 1
     static let userListHeightDivider = 8.0
+    static let exceptionMessage = "Data can not be decoded!!"
     
 }
 

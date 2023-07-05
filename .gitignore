@@ -1,1 +1,3 @@
 *.xcuserstate
+GreetingApp/Pods/*
+Pods/*

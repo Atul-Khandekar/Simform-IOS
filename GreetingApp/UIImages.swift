@@ -33,6 +33,9 @@ extension UIImage {
     static let dismissIcon = "xmark.circle"
     static let menuProfileScreen = "menuProfileScreen"
     
+    //MARK: - UserList
+    static let defaultImage = "defaultUser"
+    
     //MARK: - getImage
     static func getImage( _ image: String) -> UIImage? {
         return UIImage(systemName: image) ?? UIImage()
