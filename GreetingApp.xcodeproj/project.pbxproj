@@ -50,6 +50,11 @@
 		B72C8B8F2A1640EC00E11172 /* ImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72C8B8E2A1640EC00E11172 /* ImagePicker.storyboard */; };
 		B73179AE2A24F968005DCBF3 /* SenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73179AD2A24F968005DCBF3 /* SenderVC.swift */; };
 		B73179B02A24F96D005DCBF3 /* ReceiverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73179AF2A24F96D005DCBF3 /* ReceiverVC.swift */; };
+		B73266DA2A569AB000E96410 /* UserUpdateRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73266D92A569AB000E96410 /* UserUpdateRequestModel.swift */; };
+		B73266DC2A56A22A00E96410 /* UploadImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73266DB2A56A22A00E96410 /* UploadImageVC.swift */; };
+		B73266DE2A56D15F00E96410 /* UploadApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73266DD2A56D15F00E96410 /* UploadApiManager.swift */; };
+		B73266E02A56D2F300E96410 /* UploadImageResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73266DF2A56D2F300E96410 /* UploadImageResponseModel.swift */; };
+		B73266E22A56D33B00E96410 /* UploadImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73266E12A56D33B00E96410 /* UploadImageViewModel.swift */; };
 		B7366AD32A5578A000266672 /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7366AD22A5578A000266672 /* UserDetailModel.swift */; };
 		B7366AD72A55B8AD00266672 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7366AD62A55B8AD00266672 /* UserDetailViewModel.swift */; };
 		B7366AD92A55BB5A00266672 /* UserUpdateDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7366AD82A55BB5A00266672 /* UserUpdateDetailModel.swift */; };
@@ -118,6 +123,13 @@
 		B7EBA3432A14A6FF0095F8DB /* SearchBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EBA3422A14A6FF0095F8DB /* SearchBarCell.swift */; };
 		B7EBA3452A14CC320095F8DB /* StackViewAndToolBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7EBA3442A14CC320095F8DB /* StackViewAndToolBar.storyboard */; };
 		B7EBA3472A14CC7D0095F8DB /* StackViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EBA3462A14CC7D0095F8DB /* StackViewVC.swift */; };
+		B7F457232A56E56C00F48D28 /* RailwayApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F457222A56E56C00F48D28 /* RailwayApiManager.swift */; };
+		B7F457252A56E8B400F48D28 /* RailwayResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F457242A56E8B400F48D28 /* RailwayResponseModel.swift */; };
+		B7F457272A56E94800F48D28 /* RailwayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F457262A56E94800F48D28 /* RailwayViewModel.swift */; };
+		B7F457292A56EC2000F48D28 /* RailwayStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F457282A56EC2000F48D28 /* RailwayStoryboard.storyboard */; };
+		B7F4572B2A56EC7100F48D28 /* RailwayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4572A2A56EC7100F48D28 /* RailwayVC.swift */; };
+		B7F4572E2A56ED5E00F48D28 /* RailwayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4572C2A56ED5E00F48D28 /* RailwayCell.swift */; };
+		B7F4572F2A56ED5E00F48D28 /* RailwayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F4572D2A56ED5E00F48D28 /* RailwayCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +178,11 @@
 		B72C8B8E2A1640EC00E11172 /* ImagePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePicker.storyboard; sourceTree = "<group>"; };
 		B73179AD2A24F968005DCBF3 /* SenderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderVC.swift; sourceTree = "<group>"; };
 		B73179AF2A24F96D005DCBF3 /* ReceiverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverVC.swift; sourceTree = "<group>"; };
+		B73266D92A569AB000E96410 /* UserUpdateRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdateRequestModel.swift; sourceTree = "<group>"; };
+		B73266DB2A56A22A00E96410 /* UploadImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageVC.swift; sourceTree = "<group>"; };
+		B73266DD2A56D15F00E96410 /* UploadApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadApiManager.swift; sourceTree = "<group>"; };
+		B73266DF2A56D2F300E96410 /* UploadImageResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageResponseModel.swift; sourceTree = "<group>"; };
+		B73266E12A56D33B00E96410 /* UploadImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageViewModel.swift; sourceTree = "<group>"; };
 		B7366AD22A5578A000266672 /* UserDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
 		B7366AD62A55B8AD00266672 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		B7366AD82A55BB5A00266672 /* UserUpdateDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdateDetailModel.swift; sourceTree = "<group>"; };
@@ -234,6 +251,13 @@
 		B7EBA3422A14A6FF0095F8DB /* SearchBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBarCell.swift; path = "/Users/atul/Simform-IOS/GreetingApp/UIComponentsPart-2/Views/Cells/SearchBarCell.swift"; sourceTree = "<absolute>"; };
 		B7EBA3442A14CC320095F8DB /* StackViewAndToolBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackViewAndToolBar.storyboard; sourceTree = "<group>"; };
 		B7EBA3462A14CC7D0095F8DB /* StackViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewVC.swift; sourceTree = "<group>"; };
+		B7F457222A56E56C00F48D28 /* RailwayApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayApiManager.swift; sourceTree = "<group>"; };
+		B7F457242A56E8B400F48D28 /* RailwayResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayResponseModel.swift; sourceTree = "<group>"; };
+		B7F457262A56E94800F48D28 /* RailwayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayViewModel.swift; sourceTree = "<group>"; };
+		B7F457282A56EC2000F48D28 /* RailwayStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RailwayStoryboard.storyboard; sourceTree = "<group>"; };
+		B7F4572A2A56EC7100F48D28 /* RailwayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayVC.swift; sourceTree = "<group>"; };
+		B7F4572C2A56ED5E00F48D28 /* RailwayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailwayCell.swift; sourceTree = "<group>"; };
+		B7F4572D2A56ED5E00F48D28 /* RailwayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RailwayCell.xib; sourceTree = "<group>"; };
 		BBDDA6999FB2FB129D3F4D98 /* Pods-GreetingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreetingApp.release.xcconfig"; path = "Target Support Files/Pods-GreetingApp/Pods-GreetingApp.release.xcconfig"; sourceTree = "<group>"; };
 		D3BC88EBEFD5DB73285F4F69 /* Pods_GreetingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreetingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -343,6 +367,16 @@
 				B7366AD22A5578A000266672 /* UserDetailModel.swift */,
 				B7366AD62A55B8AD00266672 /* UserDetailViewModel.swift */,
 				B7366AD82A55BB5A00266672 /* UserUpdateDetailModel.swift */,
+				B73266D92A569AB000E96410 /* UserUpdateRequestModel.swift */,
+				B73266DB2A56A22A00E96410 /* UploadImageVC.swift */,
+				B73266DF2A56D2F300E96410 /* UploadImageResponseModel.swift */,
+				B73266E12A56D33B00E96410 /* UploadImageViewModel.swift */,
+				B7F457242A56E8B400F48D28 /* RailwayResponseModel.swift */,
+				B7F457262A56E94800F48D28 /* RailwayViewModel.swift */,
+				B7F457282A56EC2000F48D28 /* RailwayStoryboard.storyboard */,
+				B7F4572A2A56EC7100F48D28 /* RailwayVC.swift */,
+				B7F4572C2A56ED5E00F48D28 /* RailwayCell.swift */,
+				B7F4572D2A56ED5E00F48D28 /* RailwayCell.xib */,
 			);
 			path = GreetingApp;
 			sourceTree = "<group>";
@@ -362,6 +396,8 @@
 				B72AE57E2A52DC3B00371C09 /* ApiManager.swift */,
 				B72AE5872A52E58F00371C09 /* Convertible.swift */,
 				B72AE5932A52FD8A00371C09 /* Dynamic.swift */,
+				B73266DD2A56D15F00E96410 /* UploadApiManager.swift */,
+				B7F457222A56E56C00F48D28 /* RailwayApiManager.swift */,
 			);
 			path = "Api Manager ";
 			sourceTree = "<group>";
@@ -562,6 +598,7 @@
 				B7D785A12A206F710091EF56 /* OnboardingScreen.storyboard in Resources */,
 				B7D785AD2A207A1F0091EF56 /* OnboardingScreenCell.xib in Resources */,
 				B700429B299DE92700FF5B4E /* LaunchScreen.storyboard in Resources */,
+				B7F4572F2A56ED5E00F48D28 /* RailwayCell.xib in Resources */,
 				B7004298299DE92700FF5B4E /* Assets.xcassets in Resources */,
 				B7A4D82B2A53F8C100608AFD /* UserListStoryboard.storyboard in Resources */,
 				B7EBA3452A14CC320095F8DB /* StackViewAndToolBar.storyboard in Resources */,
@@ -579,6 +616,7 @@
 				B76C8F192A0BA796001B3403 /* ExpandableCell.xib in Resources */,
 				B72AE5672A5297CB00371C09 /* ParkingLotCell.xib in Resources */,
 				B72C8B8B2A162D4100E11172 /* TabBar.storyboard in Resources */,
+				B7F457292A56EC2000F48D28 /* RailwayStoryboard.storyboard in Resources */,
 				B75E81D52A0CEEF200D3616F /* BooksCollectionCell.xib in Resources */,
 				B72C8B8F2A1640EC00E11172 /* ImagePicker.storyboard in Resources */,
 			);
@@ -636,12 +674,15 @@
 				B75E81DE2A0D1CCE00D3616F /* Fonts.swift in Sources */,
 				B738A7722A25D85700080BC8 /* FirstVC.swift in Sources */,
 				B76C8F182A0BA796001B3403 /* UserTableViewCell.swift in Sources */,
+				B73266DA2A569AB000E96410 /* UserUpdateRequestModel.swift in Sources */,
+				B7F4572B2A56EC7100F48D28 /* RailwayVC.swift in Sources */,
 				B7366AD92A55BB5A00266672 /* UserUpdateDetailModel.swift in Sources */,
 				B73179AE2A24F968005DCBF3 /* SenderVC.swift in Sources */,
 				B7A4D8302A53FA5600608AFD /* UserListCellTableViewCell.swift in Sources */,
 				B72C8B8D2A163F8400E11172 /* TabBarVC.swift in Sources */,
 				B7D785A92A2074AB0091EF56 /* OnboardingScreenData.swift in Sources */,
 				B72AE5692A5297D500371C09 /* ParkingLotHeaderCell.swift in Sources */,
+				B7F457252A56E8B400F48D28 /* RailwayResponseModel.swift in Sources */,
 				B72AE5652A5297C500371C09 /* ParkingLotCell.swift in Sources */,
 				B7275CCB2A1E567D0014BC56 /* MapViewVC.swift in Sources */,
 				B72AE56D2A5297E000371C09 /* ParkingLotTimeSheetCell.swift in Sources */,
@@ -659,6 +700,7 @@
 				B7D785A32A20702D0091EF56 /* OnboardingScreenVC.swift in Sources */,
 				B76C8F142A0BA796001B3403 /* ExpandableVC.swift in Sources */,
 				B7A4D8392A546B0D00608AFD /* UserDetailVC.swift in Sources */,
+				B73266E02A56D2F300E96410 /* UploadImageResponseModel.swift in Sources */,
 				B76C8EF42A0BA30D001B3403 /* SwitchVC.swift in Sources */,
 				B76C8F102A0BA796001B3403 /* AppConstants.swift in Sources */,
 				B7D785AC2A207A1F0091EF56 /* OnboardingScreenCell.swift in Sources */,
@@ -675,6 +717,7 @@
 				B738A7792A25E32E00080BC8 /* MainCoordinator.swift in Sources */,
 				B76C8F0E2A0BA796001B3403 /* ExpandableSectionDetails.swift in Sources */,
 				B75E81D82A0CEF0500D3616F /* BooksCollectionVC.swift in Sources */,
+				B7F4572E2A56ED5E00F48D28 /* RailwayCell.swift in Sources */,
 				B72AE5712A5297FB00371C09 /* ParkingLotVC.swift in Sources */,
 				B76C8F112A0BA796001B3403 /* CustomNames.swift in Sources */,
 				B7D92E2B2A27580C002CF8AA /* PresentStylesVC.swift in Sources */,
@@ -685,9 +728,12 @@
 				B76C8EF32A0BA30D001B3403 /* ButtonVC.swift in Sources */,
 				B71FE6CA2A1F94D900C9990A /* URLs.swift in Sources */,
 				B7C6FC252A122EFC003BA164 /* EmailCell.swift in Sources */,
+				B73266DC2A56A22A00E96410 /* UploadImageVC.swift in Sources */,
 				B7260E3C2A1B3FD600A4C6C9 /* PickerData.swift in Sources */,
 				B76C8F0F2A0BA796001B3403 /* UserDetails.swift in Sources */,
 				B72AE57F2A52DC3B00371C09 /* ApiManager.swift in Sources */,
+				B7F457232A56E56C00F48D28 /* RailwayApiManager.swift in Sources */,
+				B73266DE2A56D15F00E96410 /* UploadApiManager.swift in Sources */,
 				B7004291299DE92600FF5B4E /* SceneDelegate.swift in Sources */,
 				B75E81D42A0CEEF200D3616F /* BooksCollectionCell.swift in Sources */,
 				B738A7772A25DAC600080BC8 /* ThirdVC.swift in Sources */,
@@ -697,6 +743,7 @@
 				B72AE5822A52E20200371C09 /* BaseViewModel.swift in Sources */,
 				B7EBA3472A14CC7D0095F8DB /* StackViewVC.swift in Sources */,
 				B72AE58A2A52F39B00371C09 /* StackResponseModel.swift in Sources */,
+				B7F457272A56E94800F48D28 /* RailwayViewModel.swift in Sources */,
 				B797BEE22A151D4500703F02 /* ImagePickerVC.swift in Sources */,
 				B7A4D8352A540EDB00608AFD /* UserListViewModel.swift in Sources */,
 				B738A7702A25D58600080BC8 /* NavigationControllerVC.swift in Sources */,
@@ -710,6 +757,7 @@
 				B7D92E2D2A275B06002CF8AA /* FourthVC.swift in Sources */,
 				B7223A482A470CDD00C7F1AF /* HomeViewController.swift in Sources */,
 				B72AE5922A52FB3300371C09 /* UIViewcontroller+extensions.swift in Sources */,
+				B73266E22A56D33B00E96410 /* UploadImageViewModel.swift in Sources */,
 				B76C8EF52A0BA30D001B3403 /* SegmentedControlVC.swift in Sources */,
 				B72AE5782A52A2D100371C09 /* ChangeEmailVC.swift in Sources */,
 				B738A7742A25D8C500080BC8 /* SecondVC.swift in Sources */,

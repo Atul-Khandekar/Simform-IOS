@@ -10,20 +10,17 @@ import UIKit
 class UserDetailVC: UIViewController {
     
     //MARK: - Outlets
-    @IBOutlet weak var imgUserDetail: UIImageView!
-    @IBOutlet weak var lblId: UILabel!
-    @IBOutlet weak var lblFirstName: UILabel!
-    @IBOutlet weak var lblEmail: UILabel!
-    @IBOutlet weak var lblLastName: UILabel!
-    @IBOutlet weak var detailLodingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak private var imgUserDetail: UIImageView!
+    @IBOutlet weak private var lblId: UILabel!
+    @IBOutlet weak private var lblFirstName: UILabel!
+    @IBOutlet weak private var lblEmail: UILabel!
+    @IBOutlet weak private var lblLastName: UILabel!
+    @IBOutlet weak private var detailLodingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak private var lblUpdatedName: UILabel!
+    @IBOutlet weak private var lblUpdatedJob: UILabel!
+    @IBOutlet weak private var lblUpdatedAt: UILabel!
+    @IBOutlet weak private var UpdatedDetailsStack: UIStackView!
     
-    @IBOutlet weak var textFieldName: UITextField!
-    @IBOutlet weak var textFieldJob: UITextField!
-    
-    @IBOutlet weak var textFieldUpdatedName: UITextField!
-    @IBOutlet weak var textFieldUpdatedJob: UITextField!
-    
-    @IBOutlet weak var textFieldUpdateTime: UITextField!
     
     //MARK: - Variables
     weak var coordinator: MainCoordinator?
@@ -33,20 +30,15 @@ class UserDetailVC: UIViewController {
     //MARK: - ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        UpdatedDetailsStack.isHidden = true
         detailLodingIndicator.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.setupView()
-            
-        }
-        userUpdateViewModel.updatedDetail.bind { updatedResponse in
-            self.textFieldUpdatedName.text = updatedResponse?.name
-            self.textFieldUpdatedJob.text = updatedResponse?.job
-            self.textFieldUpdateTime.text = updatedResponse?.updatedAt
         }
     }
     
-    @IBAction func onClickToUpdateDetails(_ sender: UIButton) {
-        userUpdateViewModel.updateDetails(name: textFieldName.text ?? AppConstants.emptyString, job: textFieldJob.text ?? AppConstants.emptyString)
+    @IBAction func onClickToUploadImageVC(_ sender: UIButton) {
+        coordinator?.goToUploadImageVC()
     }
     
 }
@@ -85,5 +77,25 @@ extension  UserDetailVC {
             imgUserDetail.image = UIImage.getImage(UIImage.defaultImage)
         }
         detailLodingIndicator.stopAnimating()
+        
+        
+        userUpdateViewModel.updatedDetail.bind { [weak self] details in
+            self?.lblUpdatedName.text = details?.name
+            self?.lblUpdatedJob.text = details?.job
+            self?.lblUpdatedAt.text = details?.updatedAt
+            self?.UpdatedDetailsStack.isHidden = false
+        }
     }
+}
+
+//MARK: - Actions
+extension UserDetailVC {
+    @IBAction private func onClickToEdit(_ sender: UIButton) {
+        self.showEditAlert(title: "Update Details" , message: "Enter your details here to update") { [weak self] requestModel in
+            self?.userUpdateViewModel.updateDetails(name: requestModel.name ?? AppConstants.emptyString, job: requestModel.job ?? AppConstants.emptyString)
+            
+        }
+    }
+    
+  
 }

@@ -94,6 +94,8 @@ struct AppConstants {
     static let customTableVC = "CustomTableVC"
     static let onBoardingScreenVC = "OnboardingScreenVC"
     static let userDetailVC = "UserDetailVC"
+    static let uploadImageVC = "UploadImageVC"
+    static let railwayVC = "RailwayVC"
     
     //MARK: - CustomTableVC
     static let customTableAddButtonTitle =  "Add Data"
@@ -144,6 +146,9 @@ struct AppConstants {
     static let userListHeightDivider = 8.0
     static let exceptionMessage = "Data can not be decoded!!"
     
+    //MARK: - RailwayVC
+    static let railwayCell = "RailwayCell"
+    
 }
 
 //MARK: - Storyboards
@@ -161,6 +166,7 @@ struct Storyboards {
     static let parkingLotScreen = UIStoryboard(name: "ParkingLotScreen", bundle: nil)
     static let profileScreen = UIStoryboard(name:"ProfileScreen", bundle: nil)
     static let userListStoryboard = UIStoryboard(name: "UserListStoryboard", bundle: nil)
+    static let railwayStoryboard = UIStoryboard(name: "RailwayStoryboard", bundle: nil)
 
 }
 

@@ -14,16 +14,14 @@ class UserDetailViewModel {
     
     func updateDetails(name: String , job: String) {
         
-        let param = ["name": name , "job": job]
-        
-        AF.request(RequestType.updateUser.targetUrl , method: .patch , parameters: param).responseData { responseData in
+        AF.request(RequestType.updateUser.targetUrl , method: .patch , parameters: UserUpdateRequestModel(name: name, job: job).convertToDictionary()).responseData { responseData in
             
             switch responseData.result {
                 
             case .success(let data):
                 do {
                     let decoder = JSONDecoder()
-                    let responseData = try decoder.decode(UserUpdateDetailModel.self.self, from: data)
+                    let responseData = try decoder.decode(UserUpdateDetailModel.self, from: data)
                     self.updatedDetail.value = responseData
                     
                 } catch {

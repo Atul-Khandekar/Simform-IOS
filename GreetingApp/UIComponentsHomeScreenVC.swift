@@ -21,6 +21,10 @@ class UIComponentsHomeScreenVC: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.systemBlue
     }
     
+    @IBAction func onClickToRailwayVC(_ sender: UIButton) {
+        coordinator?.goToRailwayVC()
+    }
+    
 }
 
 //MARK: - Actions

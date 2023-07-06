@@ -444,4 +444,20 @@ class MainCoordinator: Coordinator {
         }
         listener(userDetailsVC)
     }
+    
+    func goToUploadImageVC()  {
+        guard let uploadImageVC = Storyboards.userListStoryboard.instantiateViewController(withIdentifier: AppConstants.uploadImageVC) as? UploadImageVC else {
+            return
+        }
+        uploadImageVC.coordinator = self
+        navigationController.pushViewController(uploadImageVC, animated: true)
+    }
+    
+    func goToRailwayVC() {
+        guard let railwayVC = Storyboards.railwayStoryboard.instantiateViewController(withIdentifier: AppConstants.railwayVC) as? RailwayVC else {
+            return
+        }
+        railwayVC.coordinator = self
+        navigationController.pushViewController(railwayVC, animated: true)
+    }
 }
