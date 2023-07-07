@@ -10,6 +10,7 @@ import Foundation
 class RailwayViewModel {
     
     var railwayResponseData = Dynamic<RailwayResponseModel>(nil)
+    var liveRailwayRecords = Dynamic<[RailwayRecord]>([])
     
     func getRailwayTimeTable(offset: Int) {
         
@@ -22,6 +23,7 @@ class RailwayViewModel {
                     let railwayResponse = try decoder.decode(RailwayResponseModel.self, from: data)
                     DispatchQueue.main.async { [weak self] in
                         self?.railwayResponseData.value = railwayResponse
+                        self?.liveRailwayRecords.value?.append(contentsOf: railwayResponse.records ?? [])
                     }
                 } catch {
                     print(error)

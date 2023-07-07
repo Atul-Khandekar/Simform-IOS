@@ -22,6 +22,14 @@ class RailwayCell: UITableViewCell {
     @IBOutlet weak var lblTrainDestinationCode: UILabel!
     
     @IBOutlet weak var lblTrainCurrentStation: UILabel!
+    
+    
+    @IBOutlet weak var lblTrainArrivalTime: UILabel!
+    
+    @IBOutlet weak var lblTrainDepartureTime: UILabel!
+    
+    @IBOutlet weak var lblTrainDistance: UILabel!
+    
 }
 
 //MARK: - configureCell
@@ -36,5 +44,8 @@ extension RailwayCell {
         lblTrainDestination.text = data.destinationStationName
         lblTrainDestinationCode.text = data.destinationStation
         lblTrainCurrentStation.text = data.stationName
+        lblTrainArrivalTime.text = data.arrivalTime
+        lblTrainDepartureTime.text = data.departureTime
+        lblTrainDistance.text = data.distance
     }
 }
