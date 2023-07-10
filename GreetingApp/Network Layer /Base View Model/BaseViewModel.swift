@@ -20,6 +20,7 @@ class BaseViewModel: NSObject {
         var urlRequest = URLRequest(url: targetUrl)
         urlRequest.allHTTPHeaderFields = requestType.httpHeaders
         urlRequest.httpMethod = requestType.httpMethods
+        
         if requestPayload != nil {
             urlRequest.httpBody = requestPayload
         }
@@ -27,6 +28,7 @@ class BaseViewModel: NSObject {
             if let error = error {
                 print("Error in DataTask: \(error.localizedDescription)")
             }
+        
             guard let data = data else { return }
             let decoder = JSONDecoder()
             do {
@@ -36,6 +38,7 @@ class BaseViewModel: NSObject {
                 completionHandler(.failure(error))
             }
         }
+        
         dataTask.resume()
     }
 }

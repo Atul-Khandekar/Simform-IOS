@@ -148,6 +148,7 @@ struct AppConstants {
     
     //MARK: - RailwayVC
     static let railwayCell = "RailwayCell"
+
     
 }
 
@@ -181,6 +182,7 @@ struct CustomColor {
     static let profileScreenBorderColor = "profileScreenBorderColor"
     static let btnDismissColor = "btnDismissColor"
     static let warningColor = "warningColor"
+    static let railwayPrimary = "railwayPrimary"
     
 }
 

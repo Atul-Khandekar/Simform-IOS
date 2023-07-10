@@ -9,26 +9,16 @@ import UIKit
 
 class RailwayCell: UITableViewCell {
 
-    @IBOutlet weak var lblTrainNo: UILabel!
-    
-    @IBOutlet weak var lblTrainName: UILabel!
-    
-    @IBOutlet weak var lblTrainSource: UILabel!
-    
-    @IBOutlet weak var lblTrainDestination: UILabel!
- 
-    @IBOutlet weak var lblTrainSourceCode: UILabel!
-    
-    @IBOutlet weak var lblTrainDestinationCode: UILabel!
-    
-    @IBOutlet weak var lblTrainCurrentStation: UILabel!
-    
-    
-    @IBOutlet weak var lblTrainArrivalTime: UILabel!
-    
-    @IBOutlet weak var lblTrainDepartureTime: UILabel!
-    
-    @IBOutlet weak var lblTrainDistance: UILabel!
+    @IBOutlet weak private var lblTrainNo: UILabel!
+    @IBOutlet weak private var lblTrainName: UILabel!
+    @IBOutlet weak private var lblTrainSource: UILabel!
+    @IBOutlet weak private var lblTrainDestination: UILabel!
+    @IBOutlet weak private var lblTrainSourceCode: UILabel!
+    @IBOutlet weak private var lblTrainDestinationCode: UILabel!
+    @IBOutlet weak private var lblTrainCurrentStation: UILabel!
+    @IBOutlet weak private var lblTrainArrivalTime: UILabel!
+    @IBOutlet weak private var lblTrainDepartureTime: UILabel!
+    @IBOutlet weak private var lblTrainDistance: UILabel!
     
 }
 

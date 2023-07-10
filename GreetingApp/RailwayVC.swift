@@ -21,18 +21,18 @@ class RailwayVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        setActivityIndicator()
         viewModel.getRailwayTimeTable(offset: 0)
         viewModel.liveRailwayRecords.bind { [weak self] responseData in
             self?.railwayRecord = responseData
             self?.tblRailwaySchedule.reloadData()
         }
     }
+}
+
+//MARK: - UITableViewDelegate
+extension RailwayVC: UITableViewDelegate {
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        setActivityIndicator()
-    }
-   
 }
 
 //MARK: - UITableViewDataSource
@@ -54,19 +54,12 @@ extension RailwayVC: UITableViewDataSource {
     
 }
 
-//MARK: - UITableViewDelegate
-extension RailwayVC: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 200
-//    }
-}
-
 //MARK: - setupView
 extension RailwayVC {
     private func setupView() {
         tblRailwaySchedule.register(UINib(nibName: AppConstants.railwayCell, bundle: nil), forCellReuseIdentifier: AppConstants.railwayCell)
-        tblRailwaySchedule.delegate = self
         tblRailwaySchedule.dataSource = self
+        tblRailwaySchedule.delegate = self
     }
 }
 
