@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Parking LotVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ParkingLotVC" id="Y6W-OH-hqX" customClass="ParkingLotVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qb0-Lt-Luo">
+                                <rect key="frame" x="20.5" y="48" width="373" height="37"/>
+                                <segments>
+                                    <segment title="Mark Attendance"/>
+                                    <segment title="TimeSheet"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onSelectSegment:" destination="Y6W-OH-hqX" eventType="valueChanged" id="xze-ly-Wyd"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cGa-q7-BiJ">
+                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qb0-Lt-Luo" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="893-Rq-Pnn"/>
+                            <constraint firstItem="cGa-q7-BiJ" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="DRW-Bl-C9S"/>
+                            <constraint firstItem="qb0-Lt-Luo" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.04" id="FR6-oo-Ekv"/>
+                            <constraint firstItem="qb0-Lt-Luo" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="KX1-5o-fhW"/>
+                            <constraint firstItem="cGa-q7-BiJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="QSI-mj-fah"/>
+                            <constraint firstItem="cGa-q7-BiJ" firstAttribute="top" secondItem="qb0-Lt-Luo" secondAttribute="bottom" constant="10" id="YT4-O2-ofc"/>
+                            <constraint firstItem="qb0-Lt-Luo" firstAttribute="width" secondItem="cGa-q7-BiJ" secondAttribute="width" multiplier="0.9" id="ZCK-Pm-vHX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="cGa-q7-BiJ" secondAttribute="bottom" id="dcC-KK-LIg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segmentParkingLot" destination="qb0-Lt-Luo" id="hnD-KL-lbz"/>
+                        <outlet property="tableViewParkingLot" destination="cGa-q7-BiJ" id="BDz-Do-7qF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-741" y="-59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

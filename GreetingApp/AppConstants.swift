@@ -108,6 +108,33 @@ struct AppConstants {
     //MARK: - UserTableVC
     static let userTableCellCornerRadius = 10.0
     static let userTableCellBorderWidth = 5.0
+    
+    //MARK: - ParkingLotVc
+    static let parkingLotVC = "ParkingLotVC"
+    static let parkingLotTitle = "Home"
+    static let parkingLotCellIdentifier = "ParkingLotCell"
+    static let parkingLotResumeIcon = "play.circle"
+    static let parkingLotPauseIcon = "pause.circle"
+    static let parkingLotHeaderCell = "ParkingLotHeaderCell"
+    static let parkingLotTimeSheetCell = "ParkingLotTimeSheetCell"
+    static let parkingLotCanNotParkMessage = "Parking Lot is already full. please find another lot "
+    static let parkingLotOKButtonTitle = "OK"
+    static let parkingLotCanNotParkTitle = "Can't Park !!!"
+    static let parkingLotTimeSheetSectionCount = 1
+    static let parkingLotHeightDivider = 15.0
+    static let parkingLotHeaderHeightDivider = 16.0
+    
+    //MARK: - ProfileVC
+    static let profileScreenVC = "ProfileScreenVC"
+    static let changeEmailVC = "ChangeEmailVC"
+    static let closeAccountVC = "CloseAccountVC"
+    static let profileScreenRightBarButtonTitle = "Save"
+    static let profileScreenNavigationTitle = "Profile"
+    static let profileScreenViewCornerRadius = 4.0
+    static let profileScreenViewBorderWidth = 1.0
+    static let profileSCreenAddressMaxLines = 3
+    static let changeEmailVCHeight = 375.0
+    static let closeAccountHeight = 325.0
 }
 
 //MARK: - Storyboards
@@ -122,6 +149,22 @@ struct Storyboards {
     static let mapView = UIStoryboard(name: "MapView", bundle: nil)
     static let navigationController = UIStoryboard(name: "NavigationController", bundle: nil)
     static let onBoardingScreen = UIStoryboard(name: "OnboardingScreen", bundle: nil)
+    static let parkingLotScreen = UIStoryboard(name: "ParkingLotScreen", bundle: nil)
+    static let profileScreen = UIStoryboard(name:"ProfileScreen", bundle: nil)
+}
+
+//MARK: - Custom Color
+struct CustomColor {
+    static let parkingLotNavigationBarColor = "parkingNavigationBar"
+    static let parkingLotSelectedSegment = "parkingLotSelectedSegment"
+    static let parkingLotSegmentBackground = "parkingLotSegmentBackground"
+    static let parkingLotUnselectedSegmentColor = "parkingLotUnselectedSegmentColor"
+    static let dimmWhite = "dimmWhite"
+    static let reverseKTNavigationBarColor = "reverseKTNavigationBarColor"
+    static let profileScreenBorderColor = "profileScreenBorderColor"
+    static let btnDismissColor = "btnDismissColor"
+    static let warningColor = "warningColor"
+    
 }
 
 //MARK: - Enum Constants
@@ -153,4 +196,9 @@ enum FruitsScopeIndex: Int {
 enum FruitsScopeTitles: String {
     case winter
     case summer
+}
+
+enum ParkingLotSegments: Int {
+    case markAttendance = 0
+    case timeSheet
 }
