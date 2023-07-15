@@ -86,7 +86,7 @@ extension UIComponentsHomeScreenVC {
     }
     
     @IBAction private func onClickToStackViewAndToolBarVC(_ sender: UIButton) {
-        coordinator?.goToStackViewAndToolBarVC()
+        coordinator?.goToLoginScreenVC()
     }
     
     @IBAction private func onClickToTabBar(_ sender: UIButton) {

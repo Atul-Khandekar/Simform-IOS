@@ -84,7 +84,7 @@ struct AppConstants {
     static let mapViewVC = "MapView"
     static let pickerViewVC = "PickerView"
     static let imagePickerVC = "ImagePicker"
-    static let stackViewVC = "StackViewVC"
+    static let loginScreenVC = "LoginScreenVC"
     static let searchBarVC = "SearchBar"
     static let buttonVC = "ButtonVC"
     static let tableViewVC = "TableViewVC"
@@ -143,7 +143,7 @@ struct Storyboards {
     static let uiComponentsPart1 = UIStoryboard(name: "UIComponentsPart1", bundle: nil)
     static let uiComponentsSecondPart = UIStoryboard(name: "UIComponentsSecondPart", bundle: nil)
     static let pickerView = UIStoryboard(name: "PickerView", bundle: nil)
-    static let stackViewAndToolBar = UIStoryboard(name: "StackViewAndToolBar", bundle: nil)
+    static let loginScreen = UIStoryboard(name: "LoginScreen", bundle: nil)
     static let tabBar = UIStoryboard(name: "TabBar", bundle: nil)
     static let imagePicker = UIStoryboard(name: "ImagePicker", bundle: nil)
     static let searchBar = UIStoryboard(name: "SearchBar", bundle: nil)

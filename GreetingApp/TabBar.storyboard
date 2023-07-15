@@ -32,10 +32,10 @@
             </objects>
             <point key="canvasLocation" x="-1558" y="9"/>
         </scene>
-        <!--StackViewVC-->
+        <!--LoginScreenVC-->
         <scene sceneID="S6r-Te-pgf">
             <objects>
-                <viewControllerPlaceholder storyboardName="StackViewAndToolBar" referencedIdentifier="StackViewVC" id="weO-Mg-eWe" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="LoginScreenVC" storyboardName="LoginScreen" referencedIdentifier="LoginScreenVC" id="weO-Mg-eWe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="lCR-zq-cpe"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7w-lG-gmm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
