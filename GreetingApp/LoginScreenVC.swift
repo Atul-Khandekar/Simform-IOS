@@ -82,7 +82,9 @@ extension LoginScreenVC {
     
     private func bindErrorMessage() {
         viewModel.errorMessage.bind { [weak self] message in
-            
+            guard let message else {
+                return
+            }
             self?.showAlert(title: "Login failed", message: message)
         }
     }
