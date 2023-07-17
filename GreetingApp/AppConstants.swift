@@ -123,6 +123,19 @@ struct AppConstants {
     static let parkingLotTimeSheetSectionCount = 1
     static let parkingLotHeightDivider = 15.0
     static let parkingLotHeaderHeightDivider = 16.0
+    
+    //MARK: - ProfileVC
+    static let profileScreenVC = "ProfileScreenVC"
+    static let changeEmailVC = "ChangeEmailVC"
+    static let closeAccountVC = "CloseAccountVC"
+    static let profileScreenRightBarButtonTitle = "Save"
+    static let profileScreenNavigationTitle = "Profile"
+    static let profileScreenViewCornerRadius = 4.0
+    static let profileScreenViewBorderWidth = 1.0
+    static let profileSCreenAddressMaxLines = 3
+    static let changeEmailVCHeight = 375.0
+    static let closeAccountHeight = 325.0
+    static let changeEmailCornerRadius = 20.0
 }
 
 //MARK: - Storyboards
@@ -138,6 +151,7 @@ struct Storyboards {
     static let navigationController = UIStoryboard(name: "NavigationController", bundle: nil)
     static let onBoardingScreen = UIStoryboard(name: "OnboardingScreen", bundle: nil)
     static let parkingLotScreen = UIStoryboard(name: "ParkingLotScreen", bundle: nil)
+    static let profileScreen = UIStoryboard(name:"ProfileScreen", bundle: nil)
 }
 
 //MARK: - Custom Color
