@@ -26,6 +26,15 @@
 		B72C8B8B2A162D4100E11172 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72C8B8A2A162D4100E11172 /* TabBar.storyboard */; };
 		B72C8B8D2A163F8400E11172 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72C8B8C2A163F8400E11172 /* TabBarVC.swift */; };
 		B72C8B8F2A1640EC00E11172 /* ImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72C8B8E2A1640EC00E11172 /* ImagePicker.storyboard */; };
+		B72CB0992A603B1B00AD270C /* ParkingLotScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72CB0982A603B1B00AD270C /* ParkingLotScreen.storyboard */; };
+		B72CB09B2A603B2900AD270C /* ParkingLotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72CB09A2A603B2900AD270C /* ParkingLotVC.swift */; };
+		B72CB09D2A603B3B00AD270C /* ParkingLotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72CB09C2A603B3B00AD270C /* ParkingLotModel.swift */; };
+		B72CB09F2A603B5C00AD270C /* ParkingLotTimeSheetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72CB09E2A603B5C00AD270C /* ParkingLotTimeSheetCell.xib */; };
+		B72CB0A12A603B6200AD270C /* ParkingLotTimeSheetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72CB0A02A603B6200AD270C /* ParkingLotTimeSheetCell.swift */; };
+		B72CB0A32A603B6800AD270C /* ParkingLotHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72CB0A22A603B6800AD270C /* ParkingLotHeaderCell.xib */; };
+		B72CB0A52A603B6D00AD270C /* ParkingLotHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72CB0A42A603B6D00AD270C /* ParkingLotHeaderCell.swift */; };
+		B72CB0A72A603B7300AD270C /* ParkingLotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72CB0A62A603B7300AD270C /* ParkingLotCell.swift */; };
+		B72CB0A92A603B7800AD270C /* ParkingLotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72CB0A82A603B7800AD270C /* ParkingLotCell.xib */; };
 		B73179AE2A24F968005DCBF3 /* SenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73179AD2A24F968005DCBF3 /* SenderVC.swift */; };
 		B73179B02A24F96D005DCBF3 /* ReceiverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73179AF2A24F96D005DCBF3 /* ReceiverVC.swift */; };
 		B738A7702A25D58600080BC8 /* NavigationControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738A76F2A25D58600080BC8 /* NavigationControllerVC.swift */; };
@@ -109,6 +118,15 @@
 		B72C8B8A2A162D4100E11172 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		B72C8B8C2A163F8400E11172 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		B72C8B8E2A1640EC00E11172 /* ImagePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePicker.storyboard; sourceTree = "<group>"; };
+		B72CB0982A603B1B00AD270C /* ParkingLotScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ParkingLotScreen.storyboard; sourceTree = "<group>"; };
+		B72CB09A2A603B2900AD270C /* ParkingLotVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotVC.swift; sourceTree = "<group>"; };
+		B72CB09C2A603B3B00AD270C /* ParkingLotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotModel.swift; sourceTree = "<group>"; };
+		B72CB09E2A603B5C00AD270C /* ParkingLotTimeSheetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingLotTimeSheetCell.xib; sourceTree = "<group>"; };
+		B72CB0A02A603B6200AD270C /* ParkingLotTimeSheetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotTimeSheetCell.swift; sourceTree = "<group>"; };
+		B72CB0A22A603B6800AD270C /* ParkingLotHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingLotHeaderCell.xib; sourceTree = "<group>"; };
+		B72CB0A42A603B6D00AD270C /* ParkingLotHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotHeaderCell.swift; sourceTree = "<group>"; };
+		B72CB0A62A603B7300AD270C /* ParkingLotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotCell.swift; sourceTree = "<group>"; };
+		B72CB0A82A603B7800AD270C /* ParkingLotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingLotCell.xib; sourceTree = "<group>"; };
 		B73179AD2A24F968005DCBF3 /* SenderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderVC.swift; sourceTree = "<group>"; };
 		B73179AF2A24F96D005DCBF3 /* ReceiverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverVC.swift; sourceTree = "<group>"; };
 		B738A76F2A25D58600080BC8 /* NavigationControllerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerVC.swift; sourceTree = "<group>"; };
@@ -213,6 +231,8 @@
 				B7E72CBC2A1D1C4400D84812 /* SearchBar.storyboard */,
 				B7275CC82A1E565B0014BC56 /* MapView.storyboard */,
 				B738A77A2A25F51F00080BC8 /* NavigationController.storyboard */,
+				B72CB0982A603B1B00AD270C /* ParkingLotScreen.storyboard */,
+				B72CB09A2A603B2900AD270C /* ParkingLotVC.swift */,
 				B71FE6C72A1F94B000C9990A /* GeeksForGeeksWebView.swift */,
 				B738A76F2A25D58600080BC8 /* NavigationControllerVC.swift */,
 				B738A7712A25D85700080BC8 /* FirstVC.swift */,
@@ -243,6 +263,12 @@
 		B75E81D12A0CEEF200D3616F /* CollectionCells */ = {
 			isa = PBXGroup;
 			children = (
+				B72CB09E2A603B5C00AD270C /* ParkingLotTimeSheetCell.xib */,
+				B72CB0A02A603B6200AD270C /* ParkingLotTimeSheetCell.swift */,
+				B72CB0A22A603B6800AD270C /* ParkingLotHeaderCell.xib */,
+				B72CB0A42A603B6D00AD270C /* ParkingLotHeaderCell.swift */,
+				B72CB0A62A603B7300AD270C /* ParkingLotCell.swift */,
+				B72CB0A82A603B7800AD270C /* ParkingLotCell.xib */,
 				B75E81D22A0CEEF200D3616F /* BooksCollectionCell.swift */,
 				B75E81D32A0CEEF200D3616F /* BooksCollectionCell.xib */,
 				B7C6FC1B2A120E4F003BA164 /* HeaderCell.swift */,
@@ -296,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				B75E81D92A0CEF5B00D3616F /* BooksAndEmails.swift */,
+				B72CB09C2A603B3B00AD270C /* ParkingLotModel.swift */,
 				B76C8EFF2A0BA796001B3403 /* ExpandableSectionDetails.swift */,
 				B76C8F002A0BA796001B3403 /* UserDetails.swift */,
 				B76C8F022A0BA796001B3403 /* CustomNames.swift */,
@@ -400,13 +427,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72CB0992A603B1B00AD270C /* ParkingLotScreen.storyboard in Resources */,
 				B7275CC92A1E565B0014BC56 /* MapView.storyboard in Resources */,
 				B7E72CBD2A1D1C4400D84812 /* SearchBar.storyboard in Resources */,
+				B72CB09F2A603B5C00AD270C /* ParkingLotTimeSheetCell.xib in Resources */,
 				B7C6FC1E2A120E4F003BA164 /* HeaderCell.xib in Resources */,
 				B7D785A12A206F710091EF56 /* OnboardingScreen.storyboard in Resources */,
+				B72CB0A92A603B7800AD270C /* ParkingLotCell.xib in Resources */,
 				B7D785AD2A207A1F0091EF56 /* OnboardingScreenCell.xib in Resources */,
 				B700429B299DE92700FF5B4E /* LaunchScreen.storyboard in Resources */,
 				B7004298299DE92700FF5B4E /* Assets.xcassets in Resources */,
+				B72CB0A32A603B6800AD270C /* ParkingLotHeaderCell.xib in Resources */,
 				B7EBA3452A14CC320095F8DB /* StackViewAndToolBar.storyboard in Resources */,
 				B7004296299DE92600FF5B4E /* Main.storyboard in Resources */,
 				B76C8EFC2A0BA725001B3403 /* UIComponentsSecondPart.storyboard in Resources */,
@@ -442,8 +473,10 @@
 				B76C8EF92A0BA30D001B3403 /* SliderVC.swift in Sources */,
 				B76C8EF82A0BA30D001B3403 /* ProgressViewVC.swift in Sources */,
 				B76C8F122A0BA796001B3403 /* UIComponentsSecondPartVC.swift in Sources */,
+				B72CB09D2A603B3B00AD270C /* ParkingLotModel.swift in Sources */,
 				B75E81DA2A0CEF5B00D3616F /* BooksAndEmails.swift in Sources */,
 				B75E81DC2A0CEF9200D3616F /* UIImages.swift in Sources */,
+				B72CB0A72A603B7300AD270C /* ParkingLotCell.swift in Sources */,
 				B700428F299DE92600FF5B4E /* AppDelegate.swift in Sources */,
 				B71FE6C82A1F94B000C9990A /* GeeksForGeeksWebView.swift in Sources */,
 				B7C6FC212A122352003BA164 /* FooterCell.swift in Sources */,
@@ -451,6 +484,7 @@
 				B76C8F142A0BA796001B3403 /* ExpandableVC.swift in Sources */,
 				B76C8EF42A0BA30D001B3403 /* SwitchVC.swift in Sources */,
 				B76C8F102A0BA796001B3403 /* AppConstants.swift in Sources */,
+				B72CB09B2A603B2900AD270C /* ParkingLotVC.swift in Sources */,
 				B7D785AC2A207A1F0091EF56 /* OnboardingScreenCell.swift in Sources */,
 				B76C8EFA2A0BA30D001B3403 /* StepperVC.swift in Sources */,
 				B76C8EF72A0BA30D001B3403 /* TextFieldVC.swift in Sources */,
@@ -463,6 +497,7 @@
 				B76C8F0E2A0BA796001B3403 /* ExpandableSectionDetails.swift in Sources */,
 				B75E81D82A0CEF0500D3616F /* BooksCollectionVC.swift in Sources */,
 				B76C8F112A0BA796001B3403 /* CustomNames.swift in Sources */,
+				B72CB0A52A603B6D00AD270C /* ParkingLotHeaderCell.swift in Sources */,
 				B7D92E2B2A27580C002CF8AA /* PresentStylesVC.swift in Sources */,
 				B7EBA3432A14A6FF0095F8DB /* SearchBarCell.swift in Sources */,
 				B73179B02A24F96D005DCBF3 /* ReceiverVC.swift in Sources */,
@@ -472,6 +507,7 @@
 				B7C6FC252A122EFC003BA164 /* EmailCell.swift in Sources */,
 				B7260E3C2A1B3FD600A4C6C9 /* PickerData.swift in Sources */,
 				B76C8F0F2A0BA796001B3403 /* UserDetails.swift in Sources */,
+				B72CB0A12A603B6200AD270C /* ParkingLotTimeSheetCell.swift in Sources */,
 				B7004291299DE92600FF5B4E /* SceneDelegate.swift in Sources */,
 				B75E81D42A0CEEF200D3616F /* BooksCollectionCell.swift in Sources */,
 				B738A7772A25DAC600080BC8 /* ThirdVC.swift in Sources */,
