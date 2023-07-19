@@ -21,5 +21,13 @@ extension UIImage {
     static let menuDocumentsIcon = "doc"
     static let menuBookmarksIcon = "book.fill"
 
+    //MARK: - Parking lot
+    static let parkingLotNotifications = "bell"
+    static let parkingLotMenu = "line.horizontal.3"
+    
+    //MARK: - getImage
+    static func getImage( _ image: String) -> UIImage? {
+        return UIImage(systemName: image) ?? UIImage()
+    }
 }
 

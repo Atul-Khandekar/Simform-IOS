@@ -109,4 +109,8 @@ extension UIComponentsHomeScreenVC {
         coordinator?.goToWebViewVC()
     }
     
+    @IBAction func onClickToParkingLotScreen(_ sender: UIButton) {
+        coordinator?.goToParkingLotVC()
+    }
+
 }

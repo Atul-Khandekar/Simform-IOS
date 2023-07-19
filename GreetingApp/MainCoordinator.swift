@@ -376,4 +376,13 @@ class MainCoordinator: Coordinator {
         onboardingVC.coordinator = self
         navigationController.pushViewController(onboardingVC, animated: true)
     }
+    
+    //MARK: - goToParkingLotVC
+    func goToParkingLotVC() {
+        guard let parkingLotVC = Storyboards.parkingLotScreen.instantiateViewController(withIdentifier: AppConstants.parkingLotVC) as? ParkingLotVC else {
+            return
+        }
+        parkingLotVC.coordinator = self
+        navigationController.pushViewController(parkingLotVC, animated: true)
+    }
 }
