@@ -289,12 +289,12 @@ class MainCoordinator: Coordinator {
     }
     
     //MARK: - goToStackViewAndToolBarVC
-    func goToStackViewAndToolBarVC() {
-        guard let stackViewAndToolBarVC = Storyboards.stackViewAndToolBar.instantiateViewController(withIdentifier: AppConstants.stackViewVC) as? StackViewVC else {
+    func goToLoginScreenVC() {
+        guard let loginScreenVC = Storyboards.loginScreen.instantiateViewController(withIdentifier: AppConstants.loginScreenVC) as? LoginScreenVC else {
             return
         }
-        stackViewAndToolBarVC.coordinator = self
-        navigationController.pushViewController(stackViewAndToolBarVC, animated: true)
+        loginScreenVC.coordinator = self
+        navigationController.pushViewController(loginScreenVC, animated: true)
     }
     
     //MARK: - goToTabBarVC

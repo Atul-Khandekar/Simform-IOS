@@ -10,7 +10,7 @@
         <!--Stack View -->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="StackViewVC" id="Y6W-OH-hqX" customClass="StackViewVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginScreenVC" id="Y6W-OH-hqX" customClass="LoginScreenVC" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,6 +75,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                                     <color key="baseBackgroundColor" red="0.28537356850000001" green="0.3443494439" blue="0.40260887150000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onClickToLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vxr-Ck-LgL"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vdz-O7-pcc" userLabel="Horizontal Stack View Buttons">
                                                 <rect key="frame" x="0.0" y="181" width="260" height="34.5"/>
