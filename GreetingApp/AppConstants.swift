@@ -93,6 +93,9 @@ struct AppConstants {
     static let expandableSectionsVC = "ExpandableVC"
     static let customTableVC = "CustomTableVC"
     static let onBoardingScreenVC = "OnboardingScreenVC"
+    static let userDetailVC = "UserDetailVC"
+    static let uploadImageVC = "UploadImageVC"
+    static let railwayVC = "RailwayVC"
     
     //MARK: - CustomTableVC
     static let customTableAddButtonTitle =  "Add Data"
@@ -136,6 +139,16 @@ struct AppConstants {
     static let changeEmailVCHeight = 375.0
     static let closeAccountHeight = 325.0
     static let changeEmailCornerRadius = 20.0
+    
+    //MARK: - UserList
+    static let userListCellTableViewCell = "UserListCellTableViewCell"
+    static let userListVC = "UserListVC"
+    static let userListSectionCount = 1
+    static let userListHeightDivider = 8.0
+    static let exceptionMessage = "Data can not be decoded!!"
+    
+    //MARK: - RailwayVC
+    static let railwayCell = "RailwayCell"
 }
 
 //MARK: - Storyboards
@@ -152,6 +165,8 @@ struct Storyboards {
     static let onBoardingScreen = UIStoryboard(name: "OnboardingScreen", bundle: nil)
     static let parkingLotScreen = UIStoryboard(name: "ParkingLotScreen", bundle: nil)
     static let profileScreen = UIStoryboard(name:"ProfileScreen", bundle: nil)
+    static let userListStoryboard = UIStoryboard(name: "UserListStoryboard", bundle: nil)
+    static let railwayStoryboard = UIStoryboard(name: "RailwayStoryboard", bundle: nil)
 }
 
 //MARK: - Custom Color
@@ -202,4 +217,9 @@ enum FruitsScopeTitles: String {
 enum ParkingLotSegments: Int {
     case markAttendance = 0
     case timeSheet
+}
+
+enum UserListPageNumberSegment: Int {
+    case first
+    case second
 }

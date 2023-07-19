@@ -2,3 +2,4 @@
 GreetingApp/Pods/
 Pods/
 *.xcworkspacedata
+Podfile.lock

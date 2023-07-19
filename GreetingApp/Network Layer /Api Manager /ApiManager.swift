@@ -9,6 +9,9 @@ import Foundation
 
 enum RequestType {
     case loginUser
+    case listUser(Int)
+    case singleUser(Int)
+    case updateUser
 }
 
 extension RequestType {
@@ -20,6 +23,9 @@ extension RequestType {
     var httpMethods: String {
         switch self {
         case .loginUser: return "POST"
+        case .listUser(_): return "GET"
+        case .singleUser(_): return "GET"
+        case.updateUser: return "PATCH"
         }
     }
     
@@ -30,6 +36,9 @@ extension RequestType {
     var path: String {
         switch self {
         case .loginUser: return "login"
+        case .listUser(let page): return "users?page=\(page)"
+        case.singleUser(let id): return "users/\(id)"
+        case.updateUser: return "users/2"
         }
     }
     
@@ -37,3 +46,4 @@ extension RequestType {
         return baseUrl + path
     }
 }
+

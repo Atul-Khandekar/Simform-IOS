@@ -20,4 +20,9 @@ extension Convertible {
         }
         return Data()
     }
+    
+    func convertToDictionary() -> [String: Any] {
+        let encoder = JSONEncoder()
+        return (try? JSONSerialization.jsonObject(with: encoder.encode(self))) as? [String: Any] ?? [:]
+    }
 }

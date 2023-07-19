@@ -329,6 +329,7 @@
                         <outlet property="btnUploadImage" destination="EN3-1b-eAN" id="xe7-vZ-uvd"/>
                         <outlet property="imgFromServer" destination="5a1-vB-f3P" id="hIf-uM-ziH"/>
                         <outlet property="lblImageUploadStatus" destination="jkU-at-cDj" id="cvA-Ra-sRE"/>
+                        <outlet property="progressUpload" destination="KS9-L1-7BU" id="sZ8-7f-Cfc"/>
                         <outlet property="textViewImageUrl" destination="gQi-pL-2fF" id="vX1-7R-Y2c"/>
                     </connections>
                 </viewController>

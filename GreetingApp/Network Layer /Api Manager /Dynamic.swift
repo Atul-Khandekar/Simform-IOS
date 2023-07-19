@@ -11,18 +11,18 @@ import UIKit
 class Dynamic<T> {
     
     // MARK: Typealias
-    typealias Listener = (T) -> Void
+    typealias Listener = (T?) -> Void
     
     // MARK: Vars & Lets
     var listener: Listener?
-    var value: T {
+    var value: T? {
         didSet {
             self.fire()
         }
     }
     
     // MARK: Initialisation
-    init(_ v: T) {
+    init(_ v: T?) {
         value = v
     }
     
