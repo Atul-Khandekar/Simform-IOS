@@ -20,7 +20,7 @@ class UIComponentsHomeScreenVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.tintColor = UIColor.systemBlue
     }
-
+    
 }
 
 //MARK: - Actions
@@ -116,4 +116,13 @@ extension UIComponentsHomeScreenVC {
     @IBAction func onClickToProfileScreen(_ sender: UIButton) {
         coordinator?.goToProfileScreen()
     }
+    
+    @IBAction func onClickToUserList(_ sender: UIButton) {
+        coordinator?.goToUserListVC()
+    }
+    
+    @IBAction func onClickToRailwaySchedule(_ sender: UIButton) {
+        coordinator?.goToRailwayVC()
+    }
+    
 }

@@ -14,6 +14,7 @@ class UploadImageVC: UIViewController {
     @IBOutlet weak var lblImageUploadStatus: UILabel!
     @IBOutlet weak var textViewImageUrl: UITextView!
     @IBOutlet weak var btnUploadImage: UIButton!
+    @IBOutlet weak var progressUpload: UIProgressView!
     
     //MARK: - Variables
     var imageUrl: URL? = nil
@@ -28,6 +29,16 @@ class UploadImageVC: UIViewController {
             self.textViewImageUrl.text = url
             self.lblImageUploadStatus.text = "Image Uploaded"
            
+        }
+        viewModel._progress.bind { [weak self] progress in
+            guard let progress else {
+                return
+            }
+            guard let self else {
+                return
+            }
+            self.progressUpload.progress = progress
+            self.lblImageUploadStatus.text = "Uploading..."
         }
     }
 }

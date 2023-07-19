@@ -12,6 +12,7 @@ import UIKit
 class UploadImageViewModel {
     
     var imageUrl = Dynamic<String>("")
+    var _progress = Dynamic<Float>(nil)
     
     func uploadImage(image: UIImage) {
         
@@ -35,7 +36,11 @@ class UploadImageViewModel {
             case .failure(let error):
                 print(error)
             }
-        }
+        }.uploadProgress (closure: { (progress) in
+            DispatchQueue.main.async {
+                self._progress.value = Float(progress.fractionCompleted)
+            }
+        })
         
     }
 }

@@ -421,4 +421,40 @@ class MainCoordinator: Coordinator {
         }
         navigationController.present(closeAccountVC, animated: true)
     }
+    
+    func goToUserListVC() {
+        guard let userListVC = Storyboards.userListStoryboard.instantiateViewController(withIdentifier: AppConstants.userListVC) as? UserListVC else {
+            return
+        }
+        userListVC.coordinator = self
+        navigationController.pushViewController(userListVC, animated: true)
+    }
+    
+    func goToUserDetails(listener: ((UserDetailVC) -> ())?) {
+        guard let userDetailsVC = Storyboards.userListStoryboard.instantiateViewController(withIdentifier: AppConstants.userDetailVC) as? UserDetailVC else {
+            return
+        }
+        userDetailsVC.coordinator = self
+        navigationController.pushViewController(userDetailsVC, animated: true)
+        guard let listener else {
+            return
+        }
+        listener(userDetailsVC)
+    }
+    
+    func goToUploadImageVC()  {
+        guard let uploadImageVC = Storyboards.userListStoryboard.instantiateViewController(withIdentifier: AppConstants.uploadImageVC) as? UploadImageVC else {
+            return
+        }
+        uploadImageVC.coordinator = self
+        navigationController.pushViewController(uploadImageVC, animated: true)
+    }
+    
+    func goToRailwayVC() {
+        guard let railwayVC = Storyboards.railwayStoryboard.instantiateViewController(withIdentifier: AppConstants.railwayVC) as? RailwayVC else {
+            return
+        }
+        railwayVC.coordinator = self
+        navigationController.pushViewController(railwayVC, animated: true)
+    }
 }
