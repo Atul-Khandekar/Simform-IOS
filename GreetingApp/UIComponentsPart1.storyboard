@@ -953,7 +953,7 @@ hello there this is new text </string>
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1192.6666666666667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qBf-73-PfA">
-                                                <rect key="frame" x="10" y="0.0" width="373" height="1009.6666666666666"/>
+                                                <rect key="frame" x="10" y="0.0" width="373" height="1098.3333333333333"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ev-Tr-hJY">
                                                         <rect key="frame" x="0.0" y="0.0" width="373" height="34.333333333333336"/>
@@ -1137,6 +1137,22 @@ hello there this is new text </string>
                                                         <buttonConfiguration key="configuration" style="filled" title="Profile Screen"/>
                                                         <connections>
                                                             <action selector="onClickToProfileScreen:" destination="eja-oz-L93" eventType="touchUpInside" id="VZM-zW-sZq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6d-nc-lGq">
+                                                        <rect key="frame" x="0.0" y="1019.6666666666669" width="373" height="34.333333333333371"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="User List Alamofire"/>
+                                                        <connections>
+                                                            <action selector="onClickToUserList:" destination="eja-oz-L93" eventType="touchUpInside" id="Qhy-Rk-TVZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HE-wI-2uO">
+                                                        <rect key="frame" x="0.0" y="1064" width="373" height="34.333333333333258"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Railway Schedule"/>
+                                                        <connections>
+                                                            <action selector="onClickToRailwaySchedule:" destination="eja-oz-L93" eventType="touchUpInside" id="uAa-hX-kqm"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
