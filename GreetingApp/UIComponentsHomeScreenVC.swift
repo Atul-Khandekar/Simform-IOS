@@ -113,4 +113,7 @@ extension UIComponentsHomeScreenVC {
         coordinator?.goToParkingLotVC()
     }
 
+    @IBAction func onClickToProfileScreen(_ sender: UIButton) {
+        coordinator?.goToProfileScreen()
+    }
 }

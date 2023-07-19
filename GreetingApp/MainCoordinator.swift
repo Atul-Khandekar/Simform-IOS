@@ -385,4 +385,40 @@ class MainCoordinator: Coordinator {
         parkingLotVC.coordinator = self
         navigationController.pushViewController(parkingLotVC, animated: true)
     }
+    
+    //MARK: - goToProfileScreen
+    func goToProfileScreen() {
+        guard let profileScreenVC = Storyboards.profileScreen.instantiateViewController(withIdentifier: AppConstants.profileScreenVC) as? ProfileScreenVC else {
+            return
+        }
+        profileScreenVC.coordinator = self
+        navigationController.pushViewController(profileScreenVC, animated: true)
+    }
+    
+    //MARK: -  goToChangeEmailVC
+    func goToChangeEmailVC() {
+        guard let changeEmailVC = Storyboards.profileScreen.instantiateViewController(withIdentifier: AppConstants.changeEmailVC) as? ChangeEmailVC else {
+            return
+        }
+        changeEmailVC.coordinator = self
+        changeEmailVC.modalPresentationStyle = .overCurrentContext
+        navigationController.present(changeEmailVC, animated: true)
+    }
+    
+    //MARK: - goToCloseAccountVC
+    func goToCloseAccountVC() {
+        guard let closeAccountVC = Storyboards.profileScreen.instantiateViewController(withIdentifier: AppConstants.closeAccountVC) as? CloseAccountVC else {
+            return
+        }
+        closeAccountVC.coordinator = self
+        closeAccountVC.modalPresentationStyle = .formSheet
+        if let sheet = closeAccountVC.sheetPresentationController {
+            sheet.detents = [
+                .custom { _ in
+                    return AppConstants.closeAccountHeight
+                }
+            ]
+        }
+        navigationController.present(closeAccountVC, animated: true)
+    }
 }

@@ -25,6 +25,14 @@ extension UIImage {
     static let parkingLotNotifications = "bell"
     static let parkingLotMenu = "line.horizontal.3"
     
+    //MARK: - ProfileScreen
+    static let profilePicture = "proflePicture"
+    static let ovalProfilePicture = "Oval"
+    static let pathBadge = "Path"
+    static let iconPencil = "iconPencil"
+    static let dismissIcon = "xmark.circle"
+    static let menuProfileScreen = "menuProfileScreen"
+    
     //MARK: - getImage
     static func getImage( _ image: String) -> UIImage? {
         return UIImage(systemName: image) ?? UIImage()

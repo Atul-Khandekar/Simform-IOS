@@ -35,6 +35,10 @@
 		B72CB0A52A603B6D00AD270C /* ParkingLotHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72CB0A42A603B6D00AD270C /* ParkingLotHeaderCell.swift */; };
 		B72CB0A72A603B7300AD270C /* ParkingLotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72CB0A62A603B7300AD270C /* ParkingLotCell.swift */; };
 		B72CB0A92A603B7800AD270C /* ParkingLotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72CB0A82A603B7800AD270C /* ParkingLotCell.xib */; };
+		B72CB0AB2A6044EF00AD270C /* ProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72CB0AA2A6044EF00AD270C /* ProfileScreen.storyboard */; };
+		B72CB0AD2A60450100AD270C /* ProfileScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72CB0AC2A60450100AD270C /* ProfileScreenVC.swift */; };
+		B72CB0AF2A6045E200AD270C /* ChangeEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72CB0AE2A6045E200AD270C /* ChangeEmailVC.swift */; };
+		B72CB0B12A6045E900AD270C /* CloseAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72CB0B02A6045E900AD270C /* CloseAccountVC.swift */; };
 		B73179AE2A24F968005DCBF3 /* SenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73179AD2A24F968005DCBF3 /* SenderVC.swift */; };
 		B73179B02A24F96D005DCBF3 /* ReceiverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73179AF2A24F96D005DCBF3 /* ReceiverVC.swift */; };
 		B738A7702A25D58600080BC8 /* NavigationControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738A76F2A25D58600080BC8 /* NavigationControllerVC.swift */; };
@@ -127,6 +131,10 @@
 		B72CB0A42A603B6D00AD270C /* ParkingLotHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotHeaderCell.swift; sourceTree = "<group>"; };
 		B72CB0A62A603B7300AD270C /* ParkingLotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLotCell.swift; sourceTree = "<group>"; };
 		B72CB0A82A603B7800AD270C /* ParkingLotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingLotCell.xib; sourceTree = "<group>"; };
+		B72CB0AA2A6044EF00AD270C /* ProfileScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileScreen.storyboard; sourceTree = "<group>"; };
+		B72CB0AC2A60450100AD270C /* ProfileScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileScreenVC.swift; sourceTree = "<group>"; };
+		B72CB0AE2A6045E200AD270C /* ChangeEmailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeEmailVC.swift; sourceTree = "<group>"; };
+		B72CB0B02A6045E900AD270C /* CloseAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseAccountVC.swift; sourceTree = "<group>"; };
 		B73179AD2A24F968005DCBF3 /* SenderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderVC.swift; sourceTree = "<group>"; };
 		B73179AF2A24F96D005DCBF3 /* ReceiverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverVC.swift; sourceTree = "<group>"; };
 		B738A76F2A25D58600080BC8 /* NavigationControllerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerVC.swift; sourceTree = "<group>"; };
@@ -232,6 +240,8 @@
 				B7275CC82A1E565B0014BC56 /* MapView.storyboard */,
 				B738A77A2A25F51F00080BC8 /* NavigationController.storyboard */,
 				B72CB0982A603B1B00AD270C /* ParkingLotScreen.storyboard */,
+				B72CB0AA2A6044EF00AD270C /* ProfileScreen.storyboard */,
+				B72CB0AC2A60450100AD270C /* ProfileScreenVC.swift */,
 				B72CB09A2A603B2900AD270C /* ParkingLotVC.swift */,
 				B71FE6C72A1F94B000C9990A /* GeeksForGeeksWebView.swift */,
 				B738A76F2A25D58600080BC8 /* NavigationControllerVC.swift */,
@@ -245,6 +255,8 @@
 				B73179AF2A24F96D005DCBF3 /* ReceiverVC.swift */,
 				B7275CCA2A1E567D0014BC56 /* MapViewVC.swift */,
 				B7260E392A1B3B3100A4C6C9 /* PickerViewVC.swift */,
+				B72CB0AE2A6045E200AD270C /* ChangeEmailVC.swift */,
+				B72CB0B02A6045E900AD270C /* CloseAccountVC.swift */,
 				B797BEE12A151D4500703F02 /* ImagePickerVC.swift */,
 				B7EBA3462A14CC7D0095F8DB /* StackViewVC.swift */,
 				B7EBA33C2A14A6A20095F8DB /* SearchBarVC.swift */,
@@ -430,6 +442,7 @@
 				B72CB0992A603B1B00AD270C /* ParkingLotScreen.storyboard in Resources */,
 				B7275CC92A1E565B0014BC56 /* MapView.storyboard in Resources */,
 				B7E72CBD2A1D1C4400D84812 /* SearchBar.storyboard in Resources */,
+				B72CB0AB2A6044EF00AD270C /* ProfileScreen.storyboard in Resources */,
 				B72CB09F2A603B5C00AD270C /* ParkingLotTimeSheetCell.xib in Resources */,
 				B7C6FC1E2A120E4F003BA164 /* HeaderCell.xib in Resources */,
 				B7D785A12A206F710091EF56 /* OnboardingScreen.storyboard in Resources */,
@@ -472,6 +485,7 @@
 				B7EBA33B2A14A6980095F8DB /* Fruits.swift in Sources */,
 				B76C8EF92A0BA30D001B3403 /* SliderVC.swift in Sources */,
 				B76C8EF82A0BA30D001B3403 /* ProgressViewVC.swift in Sources */,
+				B72CB0B12A6045E900AD270C /* CloseAccountVC.swift in Sources */,
 				B76C8F122A0BA796001B3403 /* UIComponentsSecondPartVC.swift in Sources */,
 				B72CB09D2A603B3B00AD270C /* ParkingLotModel.swift in Sources */,
 				B75E81DA2A0CEF5B00D3616F /* BooksAndEmails.swift in Sources */,
@@ -519,9 +533,11 @@
 				B7C6FC1D2A120E4F003BA164 /* HeaderCell.swift in Sources */,
 				B7275CCD2A1E56830014BC56 /* LocationModel.swift in Sources */,
 				B76C8F162A0BA796001B3403 /* CustomCell.swift in Sources */,
+				B72CB0AD2A60450100AD270C /* ProfileScreenVC.swift in Sources */,
 				B7D92E2D2A275B06002CF8AA /* FourthVC.swift in Sources */,
 				B7223A482A470CDD00C7F1AF /* HomeViewController.swift in Sources */,
 				B76C8EF52A0BA30D001B3403 /* SegmentedControlVC.swift in Sources */,
+				B72CB0AF2A6045E200AD270C /* ChangeEmailVC.swift in Sources */,
 				B738A7742A25D8C500080BC8 /* SecondVC.swift in Sources */,
 				B7260E3A2A1B3B3100A4C6C9 /* PickerViewVC.swift in Sources */,
 			);
