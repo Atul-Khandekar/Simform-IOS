@@ -71,6 +71,7 @@ extension LoginScreenVC {
     private func setupView() {
         emailTextField.delegate = self
         passwordTextField.delegate = self
+        self.dismissKeyboard()
     }
 }
 

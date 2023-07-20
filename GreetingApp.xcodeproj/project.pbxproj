@@ -288,7 +288,6 @@
 				CE7B99C50605AE137423FD27 /* Pods-GreetingApp.debug.xcconfig */,
 				091DEE4D250F4D1530693287 /* Pods-GreetingApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

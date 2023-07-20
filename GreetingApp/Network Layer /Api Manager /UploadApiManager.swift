@@ -14,7 +14,7 @@ enum UploadRequestType {
 extension UploadRequestType {
 
     var baseUrl: String {
-        return "https://api.upload.io/v2/accounts/FW25bUj/"
+        return "https://api.upload.io/v2/accounts/kW15bXr/"
     }
     
     var httpMethods: String {
@@ -24,7 +24,7 @@ extension UploadRequestType {
     }
     
     var httpHeaders: [String: String] {
-        return ["Authorization": "Bearer public_FW25bUjFtgweJx92vvvdHbajcwzo", "Content-Type": "image/png"]
+        return ["Authorization": "Bearer public_kW15bXrgMq2hTVV8AoEiU2mK9cAY", "Content-Type": "image/png"]
     }
     
     var path: String {
