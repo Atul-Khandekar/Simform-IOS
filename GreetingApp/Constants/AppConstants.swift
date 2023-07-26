@@ -180,6 +180,7 @@ struct CustomColor {
     static let profileScreenBorderColor = "profileScreenBorderColor"
     static let btnDismissColor = "btnDismissColor"
     static let warningColor = "warningColor"
+    static let loginScreenBackgroundColor = "loginScreenBackgroundColor"
     
 }
 

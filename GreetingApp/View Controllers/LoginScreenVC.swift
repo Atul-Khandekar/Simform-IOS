@@ -25,6 +25,16 @@ class LoginScreenVC: UIViewController {
         bindErrorMessage()
         bindLoginStatus()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.tintColor = .tintColor
+        let appearance = UINavigationBarAppearance()
+        
+        appearance.backgroundColor = UIColor(named: CustomColor.loginScreenBackgroundColor)
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+    }
    
 }
 

@@ -50,6 +50,11 @@ class ProfileScreenVC: UIViewController {
         let view = UIView(frame: statusBarFrame ?? CGRect())
         view.backgroundColor = UIColor(named: CustomColor.reverseKTNavigationBarColor)
         UIApplication.shared.windows.first?.addSubview(view)
+        navigationController?.navigationBar.tintColor = .white
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.backgroundColor = UIColor(named: CustomColor.reverseKTNavigationBarColor)
+        navigationController?.navigationBar.standardAppearance = navigationBarAppearance
+        navigationController?.navigationBar.scrollEdgeAppearance = navigationBarAppearance
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -58,9 +63,15 @@ class ProfileScreenVC: UIViewController {
         let barView = UIView(frame: whiteStatusBar ?? CGRect())
         barView.backgroundColor = UIColor.white
         UIApplication.shared.windows.first?.addSubview(barView)
+        
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        print("view disappeared")
+        navigationController?.navigationBar.tintColor = .blue
         let navigationBarAppearance = UINavigationBarAppearance()
         navigationBarAppearance.backgroundColor = .white
-        navigationController?.navigationBar.tintColor = .blue
         navigationController?.navigationBar.standardAppearance = navigationBarAppearance
         navigationController?.navigationBar.scrollEdgeAppearance = navigationBarAppearance
     }
@@ -73,9 +84,6 @@ extension ProfileScreenVC {
             navigationController?.navigationBar.tintColor = .white
         }
         
-        let navigationBarAppearance = UINavigationBarAppearance()
-        navigationBarAppearance.backgroundColor = UIColor(named: CustomColor.reverseKTNavigationBarColor)
-        
         textFieldFirstName.delegate = self
         textFieldLastName.delegate = self
         textFieldCity.delegate = self
@@ -85,8 +93,6 @@ extension ProfileScreenVC {
         textFieldMobile.delegate = self
         
         navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.standardAppearance = navigationBarAppearance
-        navigationController?.navigationBar.scrollEdgeAppearance = navigationBarAppearance
         
         navigationItem.hidesBackButton = true
         navigationItem.titleView = lblProfileScreenTitle

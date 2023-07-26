@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class UserListCellTableViewCell: UITableViewCell {
     
@@ -32,7 +33,7 @@ extension UserListCellTableViewCell {
         
         guard let avatar = list?.avatar else {return}
         if let url = URL(string: avatar) {
-            imgAvatar.load(url: url)
+            imgAvatar.sd_setImage(with: url)
         }
     }
 }

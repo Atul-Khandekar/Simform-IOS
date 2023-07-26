@@ -7,4 +7,6 @@ target 'GreetingApp' do
 
  pod 'Alamofire'
 
+ pod 'SDWebImage'
+
 end
